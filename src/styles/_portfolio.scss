@@ -13,11 +13,15 @@
     margin: 15px 0;
 
     &__des {
-      color: $brand--blue;
+      @include themed($themes) {
+        color: t($brand-blue);
+      }
     }
 
     &__dev {
-      color: $brand--red;
+      @include themed($themes) {
+        color: t($brand-red);
+      }
     }
   }
 }

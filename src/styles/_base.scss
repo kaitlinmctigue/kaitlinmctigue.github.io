@@ -47,7 +47,7 @@ html, body {
     text-decoration: none;
 
     @include themed($themes) {
-      color: t($link);
+      color: t($link)!important;
     }
 
     &:hover, &.active {
