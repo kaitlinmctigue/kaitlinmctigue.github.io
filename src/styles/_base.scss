@@ -1,30 +1,25 @@
 @import "settings";
 
-body {
+html, body, #app {
   font-family: $font-family;
+  background: $bg--dark;
 }
 
 .base {
-  @include themify($themes) {
-    color: themed('text');
-    background: themed($bg);
+  @include themed($themes) {
+    color: t($text);
+    background: t($bg);
   }
-
   align-items: center;
   display: flex;
   flex-flow: column;
   height: 100vh;
   width: 100%;
-  justify-content: center;
 }
 
-.logo {
-  padding-top: 20px;
-}
-
-.title {
-  color: $smoke;
-  font-size: 48px;
-  text-transform: uppercase;
-  text-shadow: 0 0 20px black;
+.header {
+  &__links {
+    display: flex;
+    float: right;
+  }
 }

@@ -3,24 +3,29 @@ $font-family: 'Open Sans', 'Helvetica', 'Arial', 'sans-serif';
 $charcoal: #36454F;
 $smoke: rgb(230, 230, 230);
 
+//shortcuts
 $bg: 'bg';
 $text: 'text';
 
+//base vars
 $bg--light: #F5F4F3;
 $bg--dark: linear-gradient(180deg, #3E425B 0%, #060709 100%);
+$text--light: #242D30;
+$text--dark: #E8E4E0;
 
+//themes
 $themes: (
         light: (
                 bg: $bg--light,
-                text: #242D30,
+                text: $text--light,
         ),
         dark: (
                 bg: $bg--dark,
-                text: #ddd,
+                text: $text--dark,
         ),
 );
 
-@mixin themify($themes) {
+@mixin themed($themes) {
   @each $theme, $map in $themes {
     .theme-#{$theme} & {
       $theme-map: () !global;
@@ -34,6 +39,6 @@ $themes: (
   }
 }
 
-@function themed($key) {
+@function t($key) {
   @return map-get($theme-map, $key);
 }
