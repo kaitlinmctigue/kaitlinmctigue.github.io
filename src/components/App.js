@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Contact from './Contact';
 import Resume from './Resume';
+import Portfolio from './Portfolio';
 
 export default class App extends Component {
 
@@ -13,24 +14,31 @@ export default class App extends Component {
         return (
             <div className='theme-light'>
                 <div className='base'>
-                    <div className='header'>
+                    <Router>
                         <div>
-                            <Router>
-                                <div>
-                                    <ul className='header__links'>
-                                        <li>
-                                            <Link to="/">Portfolio</Link>
-                                            <Link to="/resume">Resume</Link>
-                                            <Link to="/contact">Contact</Link>
-                                        </li>
-                                    </ul>
-
+                            <div className='header d-flex flex-column flex-sm-row'>
+                                <ul className='header__utility col'>
+                                    <li>
+                                        <a className="theme-toggle link">Toggle Colors</a>
+                                    </li>
+                                </ul>
+                                <ul className='header__links col'>
+                                    <li>
+                                        <Link className="link" to="/">Portfolio</Link>
+                                        <Link className="link" to="/resume">Resume</Link>
+                                        <Link className="link" to="/contact">Contact</Link>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className="body d-flex flex-column flex-sm-row">
+                                <div className="col">
+                                    <Route exact path="/" component={Portfolio} />
                                     <Route path="/resume" component={Resume} />
                                     <Route path="/contact" component={Contact} />
                                 </div>
-                            </Router>
+                            </div>
                         </div>
-                    </div>
+                    </Router>
                 </div>
             </div>
         );

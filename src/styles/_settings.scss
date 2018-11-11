@@ -1,27 +1,51 @@
+//vars
 $font-family: 'Open Sans', 'Helvetica', 'Arial', 'sans-serif';
-
-$charcoal: #36454F;
-$smoke: rgb(230, 230, 230);
 
 //shortcuts
 $bg: 'bg';
 $text: 'text';
+$link: 'link';
+$hover: 'hover';
 
 //base vars
+$content-width: 700px;
+
+@mixin linear-gradient($from, $to) {
+  background: $to;
+  background: -moz-linear-gradient(top, $from 0%, $to 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$from), color-stop(100%,$to));
+  background: -webkit-linear-gradient(top, $from 0%,$to 100%);
+  background: -o-linear-gradient(top, $from 0%,$to 100%);
+  background: linear-gradient(to bottom, $from 0%,$to 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#{$from}, endColorstr=#{$to})
+}
+
+//--colors
 $bg--light: #F5F4F3;
-$bg--dark: linear-gradient(180deg, #3E425B 0%, #060709 100%);
+$bg--dark--top: #3E425B;
+$bg--dark--bottom: #060709;
+$bg--dark: linear-gradient(180deg, $bg--dark--top 0%, $bg--dark--bottom 100%);
 $text--light: #242D30;
 $text--dark: #E8E4E0;
+$hover--light: transparentize(#3A7ECD, .9);
+$hover--dark: transparentize(#fff, .9);
+
+//--other
+$rounded: 3px;
 
 //themes
 $themes: (
         light: (
                 bg: $bg--light,
                 text: $text--light,
+                link: $text--light,
+                hover: $hover--light,
         ),
         dark: (
                 bg: $bg--dark,
                 text: $text--dark,
+                link: $text--dark,
+                hover: $hover--dark,
         ),
 );
 
@@ -41,4 +65,12 @@ $themes: (
 
 @function t($key) {
   @return map-get($theme-map, $key);
+}
+
+.theme-dark {
+  @include linear-gradient($bg--dark--top, $bg--dark--bottom);
+}
+
+.theme-light {
+  background: $bg--light;
 }

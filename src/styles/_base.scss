@@ -1,8 +1,8 @@
 @import "settings";
 
-html, body, #app {
+html, body {
   font-family: $font-family;
-  background: $bg--dark;
+  background: $bg--dark--top;
 }
 
 .base {
@@ -10,16 +10,48 @@ html, body, #app {
     color: t($text);
     background: t($bg);
   }
-  align-items: center;
-  display: flex;
-  flex-flow: column;
+
   height: 100vh;
   width: 100%;
 }
 
 .header {
-  &__links {
-    display: flex;
-    float: right;
+  width: 100%;
+  padding: 15px 10px;
+
+  &__utility, &__links {
+    list-style: none;
   }
+
+  &__utility {
+    text-align: left;
+  }
+
+  &__links {
+    text-align: right;
+  }
+
+  .link {
+    padding: 5px 15px;
+    margin: 3px 5px;
+    border-radius: $rounded;
+    text-decoration: none;
+
+    @include themed($themes) {
+      color: t($link);
+    }
+
+    &:hover, &.active {
+      text-decoration: none;
+      cursor: pointer;
+
+      @include themed($themes) {
+        background: t('hover');
+      }
+    }
+  }
+}
+
+.body {
+  width: 100%;
 }

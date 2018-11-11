@@ -3,14 +3,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 
-
-
 // COMPONENTS
-
 import App from './components/App';
 
 // STYLES
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 import 'normalize.css';
 import './styles/app.scss';
 
@@ -18,5 +15,5 @@ import './styles/app.scss';
 ReactDOM.render(
     <BrowserRouter>
         <App />
-    </BrowserRouter>
-    , document.getElementById('app'));
+    </BrowserRouter>,
+    document.getElementById('app'));
