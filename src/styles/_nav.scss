@@ -74,7 +74,7 @@
   @media (max-width: $screen-xs-max) {
     a {
       &:after {
-        content: "Toggle Color Theme";
+        content: "Toggle Color Theme"!important;
       }
     }
   }

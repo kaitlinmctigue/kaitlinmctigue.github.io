@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Contact from './Contact';
 import Resume from './Resume';
 import Portfolio from './Portfolio';
@@ -49,6 +49,7 @@ export default class App extends Component {
                     <Router>
                         <div>
                             <Navbar collapseOnSelect className='header'>
+                                <Link to='/' className="logo"></Link>
                                 <Navbar.Header>
                                     <Navbar.Toggle />
                                 </Navbar.Header>
