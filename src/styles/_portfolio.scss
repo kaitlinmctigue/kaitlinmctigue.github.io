@@ -1,3 +1,23 @@
 .portfolio {
-  max-width: $content-width;
+  max-width: $content-width--home;
+  margin-top: -60px;
+
+  &__intro {
+    max-width: 500px;
+  }
+
+  .title {
+    font-size: $font-size--role;
+    letter-spacing: 2.7px;
+    text-transform: lowercase;
+    margin: 15px 0;
+
+    &__des {
+      color: $brand--blue;
+    }
+
+    &__dev {
+      color: $brand--red;
+    }
+  }
 }

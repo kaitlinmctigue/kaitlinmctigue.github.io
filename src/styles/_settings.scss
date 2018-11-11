@@ -1,33 +1,31 @@
 //vars
 $font-family: 'Open Sans', 'Helvetica', 'Arial', 'sans-serif';
 
+$content-width--home: 900px;
+$content-width: 700px;
+
+$font-size--base: 18px;
+$font-size--role: 24px;
+
 //shortcuts
 $bg: 'bg';
 $text: 'text';
 $link: 'link';
 $hover: 'hover';
-
-//base vars
-$content-width: 700px;
-
-@mixin linear-gradient($from, $to) {
-  background: $to;
-  background: -moz-linear-gradient(top, $from 0%, $to 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$from), color-stop(100%,$to));
-  background: -webkit-linear-gradient(top, $from 0%,$to 100%);
-  background: -o-linear-gradient(top, $from 0%,$to 100%);
-  background: linear-gradient(to bottom, $from 0%,$to 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#{$from}, endColorstr=#{$to})
-}
+$logo: 'logo';
 
 //--colors
+$brand--red: #BC553C;
+$brand--blue: #4376A3;
 $bg--light: #F5F4F3;
 $bg--dark--top: #3E425B;
 $bg--dark--bottom: #060709;
 $bg--dark: linear-gradient(180deg, $bg--dark--top 0%, $bg--dark--bottom 100%);
-$text--light: #242D30;
+$text--imp--light: #242D30;
+$text--imp--dark: #E8E4E0;
+$text--light: lighten($text--imp--light, 5%);
 $text--dark: #E8E4E0;
-$hover--light: transparentize(#3A7ECD, .9);
+$hover--light: transparentize($brand--blue, .9);
 $hover--dark: transparentize(#fff, .9);
 
 //--other
@@ -36,13 +34,14 @@ $rounded: 3px;
 //themes
 $themes: (
         light: (
+                logo: url("../images/brand/logo_vertical.svg"),
                 bg: $bg--light,
                 text: $text--light,
                 link: $text--light,
                 hover: $hover--light,
         ),
         dark: (
-                bg: $bg--dark,
+                logo: url("../images/brand/logo_vertical--invert.svg"),
                 text: $text--dark,
                 link: $text--dark,
                 hover: $hover--dark,
@@ -65,6 +64,16 @@ $themes: (
 
 @function t($key) {
   @return map-get($theme-map, $key);
+}
+
+@mixin linear-gradient($from, $to) {
+  background: $to;
+  background: -moz-linear-gradient(top, $from 0%, $to 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$from), color-stop(100%,$to));
+  background: -webkit-linear-gradient(top, $from 0%,$to 100%);
+  background: -o-linear-gradient(top, $from 0%,$to 100%);
+  background: linear-gradient(to bottom, $from 0%,$to 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#{$from}, endColorstr=#{$to})
 }
 
 .theme-dark {
