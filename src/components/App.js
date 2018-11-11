@@ -9,9 +9,11 @@ export default class App extends Component {
 
     render() {
         return (
-            <div className='container'>                
-                <img className='logo' src={logo} />
-                <h1 className='title'>React Starter</h1>
+            <div className='theme-dark'>
+                <div className='base'>
+                    <img className='logo' src={logo} />
+                    <h1 className='title'>dgsdg</h1>
+                </div>
             </div>
         );
     }

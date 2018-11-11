@@ -2,3 +2,38 @@ $font-family: 'Open Sans', 'Helvetica', 'Arial', 'sans-serif';
 
 $charcoal: #36454F;
 $smoke: rgb(230, 230, 230);
+
+$bg: 'bg';
+$text: 'text';
+
+$bg--light: #F5F4F3;
+$bg--dark: linear-gradient(180deg, #3E425B 0%, #060709 100%);
+
+$themes: (
+        light: (
+                bg: $bg--light,
+                text: #242D30,
+        ),
+        dark: (
+                bg: $bg--dark,
+                text: #ddd,
+        ),
+);
+
+@mixin themify($themes) {
+  @each $theme, $map in $themes {
+    .theme-#{$theme} & {
+      $theme-map: () !global;
+      @each $key, $submap in $map {
+        $value: map-get(map-get($themes, $theme), '#{$key}');
+        $theme-map: map-merge($theme-map, ($key: $value)) !global;
+      }
+      @content;
+      $theme-map: null !global;
+    }
+  }
+}
+
+@function themed($key) {
+  @return map-get($theme-map, $key);
+}
