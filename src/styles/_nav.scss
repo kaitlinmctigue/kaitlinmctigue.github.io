@@ -1,0 +1,109 @@
+.header {
+  width: 100%;
+  padding: $padding-top 10px;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  z-index: 1;
+
+  .container {
+    width: 100%;
+  }
+
+  &__utility, &__links {
+    list-style: none;
+  }
+
+  &__utility {}
+
+  &__links {}
+
+  .link {
+    padding: 6px 15px;
+    border-radius: $rounded;
+    text-decoration: none;
+    text-transform: lowercase;
+
+    a {
+      padding: 0;
+      background: transparent!important;
+      text-decoration: none;
+
+      @include themed($themes) {
+        color: t($link)!important;
+      }
+    }
+
+    &:hover, &.active {
+      text-decoration: none;
+      cursor: pointer;
+
+      @include themed($themes) {
+        background: t($hover);
+      }
+    }
+  }
+}
+
+@media (max-width: $screen-xs-max) {
+  .header {
+    padding-bottom: 0;
+    margin-bottom: 0;
+
+    .navbar-collapse {
+      border-color: transparent;
+      @include card-shadow;
+
+      @include themed($themes) {
+        background: t($bg);
+      }
+    }
+  }
+}
+
+
+.theme-toggle {
+  &:hover {
+    a {
+      &:after {
+        content: "Theme Me";
+      }
+    }
+  }
+
+  @media (max-width: $screen-xs-max) {
+    a {
+      &:after {
+        content: "Toggle Color Theme";
+      }
+    }
+  }
+
+  a {
+    &:before {
+      font-family: FontAwesome;
+    }
+
+    &:after {
+      margin-left: 6px;
+    }
+  }
+}
+
+.theme-light {
+  .theme-toggle a {
+    &:before {
+      content: "\f186";
+      color: $text--light;
+    }
+  }
+}
+
+.theme-dark {
+  .theme-toggle a {
+    &:before {
+      content: "\f185";
+      color: #ffdd9a;
+    }
+  }
+}

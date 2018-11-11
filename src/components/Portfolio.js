@@ -9,12 +9,11 @@ export default class Portfolio extends Component {
 
     render() {
         return (
-            <div className="mx-auto text-center portfolio">
-                <Link to='/'>
-                    <div className="logo"></div>
-                </Link>
+            <div className="portfolio text-center">
+                <Link to='/' className="logo"></Link>
                 <div className="title">
                     <span className="title__des">UX Designer & </span>
+                    <br className='hidden-sm hidden-md hidden-lg'/>
                     <span className="title__dev">UI Developer</span>
                 </div>
                 <div className="portfolio__intro mx-auto text-center">

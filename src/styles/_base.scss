@@ -4,12 +4,22 @@ html, body {
   font-family: $font-family;
   background: $bg--dark--top;
   font-size: $font-size--base;
+  line-height: $font-size--base * 1.5;
 
   p {
     font-size: $font-size--base;
 
     @include themed($themes) {
       color: t($text);
+    }
+  }
+
+  @media (max-width: $screen-md-max) {
+    font-size: $font-size--base--mobile;
+    line-height: $font-size--base--mobile * 1.5;
+
+    p {
+      font-size: $font-size--base--mobile;
     }
   }
 }
@@ -24,96 +34,17 @@ html, body {
   width: 100%;
 }
 
-.header {
-  width: 100%;
-  padding: 20px 10px;
-  background: transparent;
-  border: none;
-  box-shadow: none;
-
-  .container {
-    width: 100%;
-  }
-
-  &__utility, &__links {
-    list-style: none;
-  }
-
-  &__utility {
-    text-align: left;
-  }
-
-  &__links {
-    text-align: right;
-  }
-
-  .link {
-    a {
-      padding: 5px 15px;
-      margin: 3px 5px;
-      border-radius: $rounded;
-      text-decoration: none;
-      text-transform: lowercase;
-
-      @include themed($themes) {
-        color: t($link)!important;
-      }
-    }
-
-    &:hover, &.active {
-      a {
-        text-decoration: none;
-        cursor: pointer;
-
-        @include themed($themes) {
-          background: t($hover);
-        }
-      }
-    }
-  }
-}
-
 .logo {
+  position: absolute;
+  top: $padding-top;
+  left: calc(50% - #{$logo-width / 2});;
+  height: 40px;
+  width: $logo-width;
+  background-size: $logo-width $logo-height;
+  background-repeat: no-repeat;
+  background-position: top center;
+
   @include themed($themes) {
     background-image: t($logo);
-  }
-
-  height: 85px;
-  width: auto;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.theme-toggle a {
-  &:hover {
-    &:after {
-      content: "Theme Me";
-    }
-  }
-
-  &:before {
-    font-family: FontAwesome;
-    font-size: 24px;
-    margin-right: 6px;
-    line-height: 20px;
-  }
-}
-
-.theme-light {
-  .theme-toggle a {
-    &:before {
-      content: "\f186";
-      color: $text--light;
-    }
-  }
-}
-
-.theme-dark {
-  .theme-toggle a {
-    &:before {
-      content: "\f185";
-      color: #ffdd9a;
-    }
   }
 }

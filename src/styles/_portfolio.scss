@@ -1,17 +1,22 @@
 .portfolio {
   max-width: $content-width--home;
-  margin: -70px auto 0 auto;
+  margin: 45px auto 0;
 
   &__intro {
     max-width: 500px;
     margin: 0 auto;
   }
 
+  .logo {
+    height: $logo-height;
+  }
+
   .title {
     font-size: $font-size--role;
     letter-spacing: 2.7px;
     text-transform: lowercase;
-    margin: 15px 0;
+    margin: 25px 0;
+    line-height: $font-size--role * 1.1;
 
     &__des {
       @include themed($themes) {
