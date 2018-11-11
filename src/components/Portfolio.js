@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 export default class Portfolio extends Component {
 
@@ -9,7 +10,9 @@ export default class Portfolio extends Component {
     render() {
         return (
             <div className="mx-auto text-center portfolio">
-                <div className="logo"></div>
+                <Link to='/'>
+                    <div className="logo"></div>
+                </Link>
                 <div className="title">
                     <span className="title__des">UX Designer & </span>
                     <span className="title__dev">UI Developer</span>

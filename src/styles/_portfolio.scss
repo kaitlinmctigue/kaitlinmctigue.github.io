@@ -1,9 +1,10 @@
 .portfolio {
   max-width: $content-width--home;
-  margin-top: -60px;
+  margin: -70px auto 0 auto;
 
   &__intro {
     max-width: 500px;
+    margin: 0 auto;
   }
 
   .title {

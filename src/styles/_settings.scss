@@ -18,12 +18,12 @@ $brand-red: 'brand-red';
 
 //--colors
 $brand--red--light: #BC553C;
-$brand--red--dark: lighten($brand--red--light, 5%);
+$brand--red--dark: lighten($brand--red--light, 10%);
 $brand--blue--light: #4376A3;
-$brand--blue--dark: lighten($brand--blue--light, 10%);
+$brand--blue--dark: lighten($brand--blue--light, 15%);
 $bg--light: #F5F4F3;
-$bg--dark--top: #3E425B;
-$bg--dark--bottom: #060709;
+$bg--dark--top: #3a3e56;
+$bg--dark--bottom: #15181f;
 $bg--dark: linear-gradient(180deg, $bg--dark--top 0%, $bg--dark--bottom 100%);
 $text--imp--light: #242D30;
 $text--imp--dark: #E8E4E0;

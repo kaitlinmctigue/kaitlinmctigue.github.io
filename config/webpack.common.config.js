@@ -10,7 +10,8 @@ const config = {
     },
     output: {
         filename: '[name].js',
-        path: commonPaths.outputPath
+        path: commonPaths.outputPath,
+        publicPath: '/'
     },
     module: {
         rules: [
@@ -56,6 +57,9 @@ const config = {
                 exclude: /node_modules/
             }
         ]
+    },
+    devServer: {
+        historyApiFallback: true,
     },
     optimization: {
         splitChunks: {

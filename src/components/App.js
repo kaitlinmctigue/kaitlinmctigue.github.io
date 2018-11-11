@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Contact from './Contact';
 import Resume from './Resume';
 import Portfolio from './Portfolio';
-
+import { Navbar, Nav, NavItem } from 'react-bootstrap';
 
 
 export default class App extends Component {
@@ -43,26 +43,32 @@ export default class App extends Component {
                 <div className='base'>
                     <Router>
                         <div>
-                            <div className='header d-flex flex-column flex-sm-row'>
-                                <ul className='header__utility col'>
-                                    <li>
-                                        <a className="theme-toggle link" onClick={this.changeTheme}>Toggle Colors</a>
-                                    </li>
-                                </ul>
-                                <ul className='header__links col'>
-                                    <li>
-                                        <Link className="link" to="/">Portfolio</Link>
-                                        <Link className="link" to="/resume">Resume</Link>
-                                        <Link className="link" to="/contact">Contact</Link>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className="body d-flex flex-column flex-sm-row">
-                                <div className="col">
-                                    <Route exact path="/" component={Portfolio} />
-                                    <Route path="/resume" component={Resume} />
-                                    <Route path="/contact" component={Contact} />
-                                </div>
+                            <Navbar collapseOnSelect className='header'>
+                                <Navbar.Header>
+                                    <Navbar.Toggle />
+                                </Navbar.Header>
+                                <Navbar.Collapse>
+                                    <Nav className='header__utility'>
+                                        <NavItem eventKey={1} className="theme-toggle link" onClick={this.changeTheme}></NavItem>
+                                    </Nav>
+                                    <Nav pullRight className='header__links'>
+                                        <NavItem eventKey={2} href="/" className='link'>
+                                            Portfolio
+                                        </NavItem>
+                                        <NavItem eventKey={3} href="/resume" className='link'>
+                                            Resume
+                                        </NavItem>
+                                        <NavItem eventKey={4} href="/contact" className='link'>
+                                            Contact
+                                        </NavItem>
+                                    </Nav>
+                                </Navbar.Collapse>
+                            </Navbar>
+
+                            <div className="body text-center">
+                                <Route exact path="/" component={Portfolio} />
+                                <Route path="/resume" component={Resume} />
+                                <Route path="/contact" component={Contact} />
                             </div>
                         </div>
                     </Router>

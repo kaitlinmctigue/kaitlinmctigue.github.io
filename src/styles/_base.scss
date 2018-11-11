@@ -26,7 +26,14 @@ html, body {
 
 .header {
   width: 100%;
-  padding: 15px 10px;
+  padding: 20px 10px;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+
+  .container {
+    width: 100%;
+  }
 
   &__utility, &__links {
     list-style: none;
@@ -41,21 +48,26 @@ html, body {
   }
 
   .link {
-    padding: 5px 15px;
-    margin: 3px 5px;
-    border-radius: $rounded;
-    text-decoration: none;
+    a {
+      padding: 5px 15px;
+      margin: 3px 5px;
+      border-radius: $rounded;
+      text-decoration: none;
+      text-transform: lowercase;
 
-    @include themed($themes) {
-      color: t($link)!important;
+      @include themed($themes) {
+        color: t($link)!important;
+      }
     }
 
     &:hover, &.active {
-      text-decoration: none;
-      cursor: pointer;
+      a {
+        text-decoration: none;
+        cursor: pointer;
 
-      @include themed($themes) {
-        background: t($hover);
+        @include themed($themes) {
+          background: t($hover);
+        }
       }
     }
   }
@@ -73,6 +85,35 @@ html, body {
   background-position: center center;
 }
 
-.body {
-  width: 100%;
+.theme-toggle a {
+  &:hover {
+    &:after {
+      content: "Theme Me";
+    }
+  }
+
+  &:before {
+    font-family: FontAwesome;
+    font-size: 24px;
+    margin-right: 6px;
+    line-height: 20px;
+  }
+}
+
+.theme-light {
+  .theme-toggle a {
+    &:before {
+      content: "\f186";
+      color: $text--light;
+    }
+  }
+}
+
+.theme-dark {
+  .theme-toggle a {
+    &:before {
+      content: "\f185";
+      color: #ffdd9a;
+    }
+  }
 }
