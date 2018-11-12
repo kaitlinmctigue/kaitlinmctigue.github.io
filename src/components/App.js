@@ -39,7 +39,7 @@ export default class App extends Component {
                                         <NavItem className="theme-toggle link" onClick={this.changeTheme}></NavItem>
                                     </Nav>
                                     <Nav pullRight className='header__links'>
-                                        <LinkContainer to='/portfolio'>
+                                        <LinkContainer to='/' exact>
                                             <NavItem eventKey={1} className='link'>
                                                 Portfolio
                                             </NavItem>
