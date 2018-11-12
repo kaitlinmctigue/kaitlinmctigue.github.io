@@ -15,7 +15,7 @@
     font-size: $font-size--role;
     letter-spacing: 2.7px;
     text-transform: lowercase;
-    margin: 25px 0;
+    margin: $spacer 0;
     line-height: $font-size--role * 1.1;
 
     &__des {
@@ -28,6 +28,30 @@
       @include themed($themes) {
         color: t($brand-red);
       }
+    }
+  }
+
+  &__body {
+    &__links {
+      text-align: left;
+      margin-top: $spacer;
+    }
+  }
+}
+
+.item-preview {
+  padding: $spacer/2 0 $spacer/2;
+
+  &__content {
+    @include card-shadow;
+    height: 250px;
+
+    &--des {
+      background: $bg--blue;
+    }
+
+    &--dev {
+      background: $bg--red;
     }
   }
 }

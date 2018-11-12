@@ -19,28 +19,38 @@
   &__links {}
 
   .link {
-    padding: 6px 15px;
-    border-radius: $rounded;
+    @extend .link;
+  }
+}
+
+.link {
+  padding: 6px 15px;
+  border-radius: $rounded;
+  text-decoration: none;
+  text-transform: lowercase;
+  width: auto;
+  display: inline-block;
+
+  @include themed($themes) {
+    color: t($link)!important;
+  }
+
+  a {
+    padding: 0;
+    background: transparent!important;
     text-decoration: none;
-    text-transform: lowercase;
 
-    a {
-      padding: 0;
-      background: transparent!important;
-      text-decoration: none;
-
-      @include themed($themes) {
-        color: t($link)!important;
-      }
+    @include themed($themes) {
+      color: t($link)!important;
     }
+  }
 
-    &:hover, &.active {
-      text-decoration: none;
-      cursor: pointer;
+  &:hover, &.active {
+    text-decoration: none;
+    cursor: pointer;
 
-      @include themed($themes) {
-        background: t($hover);
-      }
+    @include themed($themes) {
+      background: t($hover);
     }
   }
 }

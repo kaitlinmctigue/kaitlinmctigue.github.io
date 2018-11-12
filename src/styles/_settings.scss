@@ -6,6 +6,7 @@ $content-width: 700px;
 $padding-top: 20px;
 $logo-height: 85px;
 $logo-width: 150px;
+$spacer: 30px;
 
 $font-size--base: 18px;
 $font-size--base--mobile: 16px;
@@ -59,15 +60,17 @@ $brand-red: 'brand-red';
 $brand--red--light: #BC553C;
 $brand--red--dark: lighten($brand--red--light, 10%);
 $brand--blue--light: #4376A3;
-$brand--blue--dark: lighten($brand--blue--light, 15%);
+$brand--blue--dark: lighten($brand--blue--light, 20%);
+$bg--red: lighten($brand--red--light, 40%);
+$bg--blue: lighten($brand--blue--light, 40%);
 $bg--light: #F5F4F3;
 $bg--dark--top: #3a3e56;
-$bg--dark--bottom: #15181f;
+$bg--dark--bottom: #212631;
 $bg--dark: linear-gradient(180deg, $bg--dark--top 0%, $bg--dark--bottom 100%);
 $text--imp--light: #242D30;
 $text--imp--dark: #E8E4E0;
 $text--light: lighten($text--imp--light, 5%);
-$text--dark: darken($text--imp--dark, 10%);
+$text--dark: #cac3bc;
 $hover--light: transparentize($brand--blue--light, .9);
 $hover--dark: transparentize(#fff, .9);
 
@@ -80,7 +83,7 @@ $themes: (
                 logo: url("../images/brand/logo_vertical.svg"),
                 bg: $bg--light,
                 text: $text--light,
-                link: $text--light,
+                link: $brand--blue--light,
                 hover: $hover--light,
                 brand-red: $brand--red--light,
                 brand-blue: $brand--blue--light,
@@ -89,7 +92,7 @@ $themes: (
                 logo: url("../images/brand/logo_vertical--invert.svg"),
                 bg: $bg--dark--top,
                 text: $text--dark,
-                link: $text--dark,
+                link: $brand--blue--dark,
                 hover: $hover--dark,
                 brand-red: $brand--red--dark,
                 brand-blue: $brand--blue--dark,

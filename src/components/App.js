@@ -13,38 +13,19 @@ export default class App extends Component {
         super(props);
 
         this.state = {
-            dark: false,
-            work: true
+            dark: false
         };
 
-        this.work = [
-            {
-                'id': 0,
-                'title': 'Diverse Computing Rebrand',
-                'tags': [],
-                'img': ''
-            }
-        ];
-
         this.changeTheme = this.changeTheme.bind(this);
-        this.workOrPlay = this.workOrPlay.bind(this);
     }
 
     changeTheme() {
         this.setState({ dark: !this.state.dark });
     }
 
-    workOrPlay() {
-        this.setState({ work: !this.state.work });
-    }
-
-    onRoute() {
-
-    }
-
     render() {
         return (
-            <div className={(this.state.dark ? 'theme-dark' : 'theme-light')}>
+            <div className={'theme ' + (this.state.dark ? 'theme-dark' : 'theme-light')}>
                 <div className='base'>
                     <Router>
                         <div>
