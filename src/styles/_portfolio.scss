@@ -35,6 +35,11 @@
     &__links {
       text-align: left;
       margin-top: $spacer;
+
+      .link {
+        width: auto;
+        display: inline-block;
+      }
     }
   }
 }

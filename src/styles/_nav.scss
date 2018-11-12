@@ -28,8 +28,6 @@
   border-radius: $rounded;
   text-decoration: none;
   text-transform: lowercase;
-  width: auto;
-  display: inline-block;
 
   @include themed($themes) {
     color: t($link)!important;

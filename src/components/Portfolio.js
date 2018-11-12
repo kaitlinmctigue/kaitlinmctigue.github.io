@@ -7,10 +7,10 @@ export default class Portfolio extends Component {
         super(props);
 
         this.state = {
-            work: true
+            filter: 'work'
         };
 
-        this.workOrPlay = this.workOrPlay.bind(this);
+        this.changeModeFilter = this.changeModeFilter.bind(this);
 
         this.works = [
             {
@@ -61,11 +61,38 @@ export default class Portfolio extends Component {
         ];
     }
 
-    workOrPlay() {
-        this.setState({ work: !this.state.work });
+    changeModeFilter(test) {
+        this.setState({filter: test});
+    }
+
+    renderPreview(work) {
+        return(
+            <div className="col-xs-12 col-sm-6" key={work.id}>
+                <div className="item-preview">
+                    <div className={'item-preview__content item-preview__content--' + work.class}>
+                        <div className="item-preview__content__title">
+                            {work.title}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        );
     }
 
     render() {
+        var items;
+        if (this.state.filter == 'play') {
+            items =
+                <div className="row">
+                    {this.plays.map(this.renderPreview)}
+                </div>;
+        } else {
+            items =
+                <div className="row">
+                    {this.works.map(this.renderPreview)}
+                </div>;
+        }
+
         return (
             <div className="portfolio text-center">
                 <Link to='/' className="logo"></Link>
@@ -80,28 +107,16 @@ export default class Portfolio extends Component {
 
                 <div className="portfolio__body">
                     <div className="portfolio__body__links">
-                        <div className="link active">
+                        <div className={'link ' + (this.state.filter == 'work' ? 'active' : '')} onClick={this.changeModeFilter.bind(this, 'work')}>
                             Work
                         </div>
-                        <div className="link">
+                        <div className={'link ' + (this.state.filter == 'play' ? 'active' : '')} onClick={this.changeModeFilter.bind(this, 'play')}>
                             Play
                         </div>
                     </div>
 
                     <div className="portfolio__body__items">
-                        <div className="row">
-                            {this.works.map(work => (
-                                <div className="col-xs-12 col-sm-6" key={work.id}>
-                                    <div className="item-preview">
-                                        <div className={'item-preview__content item-preview__content--' + work.class}>
-                                            <div className="item-preview__content__title">
-                                                {work.title}
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
+                        {items}
                     </div>
                 </div>
             </div>
