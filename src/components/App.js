@@ -1,10 +1,18 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { LinkContainer } from 'react-router-bootstrap';
+import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import Contact from './Contact';
 import Resume from './Resume';
 import Portfolio from './Portfolio';
-import { Navbar, Nav, NavItem } from 'react-bootstrap';
-import { LinkContainer } from 'react-router-bootstrap';
+import DciBrand from './portfolio/items/DciBrand';
+
+const portfolioItems= [
+    {
+        path: 'dci-brand',
+        comp: DciBrand
+    }
+];
 
 
 export default class App extends Component {
@@ -59,10 +67,17 @@ export default class App extends Component {
                             </Navbar>
 
                             <div className="body text-center">
+
+                                {/*main*/}
                                 <Route exact path="/" component={Portfolio} />
-                                <Route path="/portfolio" component={Portfolio} />
+                                <Route path="/home" component={Portfolio} routes={portfolioItems} />
                                 <Route path="/resume" component={Resume} />
                                 <Route path="/contact" component={Contact} />
+
+                                {/*portfolio*/}
+                                {portfolioItems.map(item => (
+                                    <Route key={item.path} path={'/portfolio/' + item.path} component={item.comp} />
+                                ))}
                             </div>
                         </div>
                     </Router>
