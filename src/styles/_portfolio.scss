@@ -52,6 +52,10 @@
     @include card-shadow;
     @extend %hover;
 
+    @include themed($themes) {
+      background: t($card-bg);
+    }
+
     &__img {
       height: 250px;
       background-size: cover;
@@ -67,23 +71,26 @@
     }
 
     &__desc {
-      padding: 10px;
+      padding: 10px 0;
 
       &__title {
         font-size: $font-size--item-preview--title;
         @extend %title-text;
 
         &--des {
-          color: $brand--blue--light;
+          @include themed($themes) {
+            color: t($brand-blue);
+          }
         }
 
         &--dev {
-          color: $brand--red--light;
+          @include themed($themes) {
+            color: t($brand-red);
+          }
         }
       }
 
       &__desc {
-
       }
     }
   }

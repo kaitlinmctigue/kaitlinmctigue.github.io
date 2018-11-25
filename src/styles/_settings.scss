@@ -1,7 +1,7 @@
 //vars
 $font-family: 'Open Sans', 'Helvetica', 'Arial', 'sans-serif';
 
-$content-width--home: 900px;
+$content-width--home: 1000px;
 $content-width: 700px;
 $padding-top: 20px;
 $logo-height: 85px;
@@ -56,12 +56,14 @@ $screen-md-max:              ($screen-lg-min - 1);
 
 //shortcuts
 $bg: 'bg';
+$card-bg: 'card-bg';
 $text: 'text';
 $link: 'link';
 $hover: 'hover';
 $logo: 'logo';
 $brand-blue: 'brand-blue';
 $brand-red: 'brand-red';
+$border: 'border';
 
 //--colors
 $brand--red--light: #BC553C;
@@ -74,10 +76,14 @@ $bg--light: #F5F4F3;
 $bg--dark--top: #3a3e56;
 $bg--dark--bottom: #212631;
 $bg--dark: linear-gradient(180deg, $bg--dark--top 0%, $bg--dark--bottom 100%);
+$bg--card--light: lighten($bg--light, 1%);
+$bg--card--dark: #3a3e56;
 $text--imp--light: #242D30;
 $text--imp--dark: #E8E4E0;
 $text--light: lighten($text--imp--light, 5%);
 $text--dark: #cac3bc;
+$border--light: #cbcbcb;
+$border--dark: #999;
 $hover--light: transparentize($brand--blue--light, .9);
 $hover--dark: transparentize(#fff, .9);
 
@@ -89,20 +95,24 @@ $themes: (
         light: (
                 logo: url("../images/brand/logo_vertical.svg"),
                 bg: $bg--light,
+                card-bg: $bg--card--light,
                 text: $text--light,
                 link: $brand--blue--light,
                 hover: $hover--light,
                 brand-red: $brand--red--light,
                 brand-blue: $brand--blue--light,
+                border: $border--light
         ),
         dark: (
                 logo: url("../images/brand/logo_vertical--invert.svg"),
                 bg: $bg--dark--top,
+                card-bg: $bg--card--dark,
                 text: $text--dark,
                 link: $brand--blue--dark,
                 hover: $hover--dark,
                 brand-red: $brand--red--dark,
                 brand-blue: $brand--blue--dark,
+                border: $border--dark
         ),
 );
 
@@ -146,4 +156,32 @@ $themes: (
 //SHADOWS
 @mixin card-shadow {
   box-shadow: 0 1px 1px 1px rgba(0,0,0,0.16);
+}
+
+//HOVER
+%hover {
+  transition: transform .5s;
+  cursor: pointer;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 2s cubic-bezier(.165, .84, .44, 1);
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, .15), 0 6px 20px 0 rgba(0, 0, 0, .1);
+    content: '';
+    opacity: 0;
+    z-index: -1;
+  }
+
+  &:hover,
+  &:focus {
+    transform: scale3d(1.006, 1.006, 1);
+
+    &::after {
+      opacity: 1;
+    }
+  }
 }
