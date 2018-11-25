@@ -14,20 +14,6 @@ export default class Portfolio extends Component {
 
         this.works = [
             {
-                'id': 0,
-                'title': 'Diverse Computing Rebrand',
-                'tags': [],
-                'img': '',
-                'class': 'des'
-            },
-            {
-                'id': 1,
-                'title': 'Tennessee Homeland Online Records',
-                'tags': [],
-                'img': '',
-                'class': 'dev'
-            },
-            {
                 'id': 2,
                 'title': 'Playsmart RFID Toys Concept',
                 'tags': [],
@@ -37,6 +23,20 @@ export default class Portfolio extends Component {
             {
                 'id': 3,
                 'title': 'Environmental Design Research',
+                'tags': [],
+                'img': '',
+                'class': 'dev'
+            },
+            {
+                'id': 0,
+                'title': 'Diverse Computing Rebrand',
+                'tags': [],
+                'img': '',
+                'class': 'des'
+            },
+            {
+                'id': 1,
+                'title': 'Tennessee Homeland Online Records',
                 'tags': [],
                 'img': '',
                 'class': 'dev'
