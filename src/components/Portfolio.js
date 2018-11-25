@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import toy from '../images/thumbnails/toy.jpg';
+import dci from '../images/thumbnails/dci.jpg';
+import thor from '../images/thumbnails/thor.jpg';
+import hosp from '../images/thumbnails/hosp.jpg';
 
 export default class Portfolio extends Component {
 
@@ -14,31 +18,31 @@ export default class Portfolio extends Component {
 
         this.works = [
             {
-                'id': 2,
-                'title': 'Playsmart RFID Toys Concept',
-                'tags': [],
-                'img': '',
+                'id': 0,
+                'title': 'Diverse Computing Rebrand',
+                'tags': ['brand'],
+                'img': dci,
                 'class': 'des'
             },
             {
                 'id': 3,
                 'title': 'Environmental Design Research',
-                'tags': [],
-                'img': '',
+                'tags': ['research', 'dev'],
+                'img': hosp,
                 'class': 'dev'
             },
             {
-                'id': 0,
-                'title': 'Diverse Computing Rebrand',
-                'tags': [],
-                'img': '',
+                'id': 2,
+                'title': 'Playsmart RFID Toys Concept',
+                'tags': ['instructional design', 'physical computing'],
+                'img': toy,
                 'class': 'des'
             },
             {
                 'id': 1,
                 'title': 'Tennessee Homeland Online Records',
-                'tags': [],
-                'img': '',
+                'tags': ['angular2', 'dev', 'brand'],
+                'img': thor,
                 'class': 'dev'
             }
         ];
@@ -65,13 +69,31 @@ export default class Portfolio extends Component {
         this.setState({filter: test});
     }
 
+    renderTag(tag) {
+        return(
+            <span className="badge">
+                {tag}
+            </span>
+        );
+    }
+
     renderPreview(work) {
         return(
             <div className="col-xs-12 col-sm-6" key={work.id}>
                 <div className="item-preview">
                     <div className={'item-preview__content item-preview__content--' + work.class}>
-                        <div className="item-preview__content__title">
-                            {work.title}
+                        <div className={'item-preview__content__img'} style={{backgroundImage: 'url(' + work.img + ')'}}></div>
+                        <div className="item-preview__content__desc">
+                            <div className={'item-preview__content__desc__title item-preview__content__desc__title--' + work.class}>
+                                {work.title}
+                            </div>
+                            <div className="item-preview__content__desc__desc">
+                                {work.tags.map((tag) =>
+                                    <span key={tag.toString()} value={tag} className={'badge'}>
+                                        {tag}
+                                    </span>
+                                )}
+                            </div>
                         </div>
                     </div>
                 </div>

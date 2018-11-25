@@ -1,3 +1,5 @@
+@import "settings";
+
 .portfolio {
   max-width: $content-width--home;
   margin: 45px auto 0;
@@ -12,9 +14,8 @@
   }
 
   .title {
+    @extend %title-text;
     font-size: $font-size--role;
-    letter-spacing: 2.7px;
-    text-transform: lowercase;
     margin: $spacer 0;
     line-height: $font-size--role * 1.1;
 
@@ -49,14 +50,41 @@
 
   &__content {
     @include card-shadow;
-    height: 250px;
+    @extend %hover;
+
+    &__img {
+      height: 250px;
+      background-size: cover;
+      background-position: center center;
+    }
 
     &--des {
-      background: $bg--blue;
+      //background-color: $bg--blue;
     }
 
     &--dev {
-      background: $bg--red;
+      //background-color: $bg--red;
+    }
+
+    &__desc {
+      padding: 10px;
+
+      &__title {
+        font-size: $font-size--item-preview--title;
+        @extend %title-text;
+
+        &--des {
+          color: $brand--blue--light;
+        }
+
+        &--dev {
+          color: $brand--red--light;
+        }
+      }
+
+      &__desc {
+
+      }
     }
   }
 }

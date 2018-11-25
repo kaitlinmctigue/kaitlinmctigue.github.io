@@ -8,9 +8,16 @@ $logo-height: 85px;
 $logo-width: 150px;
 $spacer: 30px;
 
-$font-size--base: 18px;
+//text
+$font-size--base: 20px;
 $font-size--base--mobile: 16px;
 $font-size--role: 24px;
+$font-size--item-preview--title: 20px;
+
+%title-text {
+  letter-spacing: 2.7px;
+  text-transform: lowercase;
+}
 
 //breakpoints
 // Extra small screen / phone
