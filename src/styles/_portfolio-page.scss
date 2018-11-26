@@ -1,0 +1,57 @@
+.portfolio-page {
+  max-width: $content-width;
+  margin: 45px auto 0;
+  text-align: left;
+}
+
+.header {
+  &__title {
+    @extend %title-text;
+    font-size: $font-size--page-title;
+  }
+
+  &__tags {
+    .badge {
+      margin-top: $spacer--small;
+    }
+  }
+
+  &__splash {
+    margin-top: $spacer--default;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+.section {
+  margin-top: $spacer--default;
+}
+
+.section-header {
+  font-size: $font-size--section-header;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.section-quote {
+  font-size: $font-size--quote;
+  line-height: $line-height--title;
+}
+
+.des {
+  .header__title, .section-header, .section-quote {
+    @include themed($themes) {
+      color: t($brand-blue);
+    }
+  }
+}
+
+.dev {
+  .header__title, .section-header, .section-quote {
+    @include themed($themes) {
+      color: t($brand-red);
+    }
+  }
+}

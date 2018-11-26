@@ -4,7 +4,7 @@ html, body {
   font-family: $font-family;
   background: $bg--dark--top;
   font-size: $font-size--base;
-  line-height: $font-size--base * 1.5;
+  line-height: $line-height--base;
 
   p {
     font-size: $font-size--base;
@@ -20,6 +20,12 @@ html, body {
 
     p {
       font-size: $font-size--base--mobile;
+    }
+  }
+
+  a {
+    &:hover {
+      text-decoration: none;
     }
   }
 }
@@ -38,7 +44,7 @@ html, body {
   width: 100%;
   overflow-y: auto;
   height: 100vh;
-  padding-bottom: $spacer * 2;
+  padding-bottom: $spacer--default * 2;
 }
 
 .logo {
@@ -59,6 +65,8 @@ html, body {
 .badge {
   font-weight: normal;
   margin-right: 3px;
+  font-size: $font-size--tags;
+  padding: 4px 10px;
 
   @include themed($themes) {
     background: t($card-bg);

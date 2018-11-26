@@ -6,13 +6,23 @@ $content-width: 700px;
 $padding-top: 20px;
 $logo-height: 85px;
 $logo-width: 150px;
-$spacer: 30px;
+
+$spacer--default: 30px;
+$spacer--small: 20px;
 
 //text
 $font-size--base: 20px;
+$font-size--intro: 20px;
 $font-size--base--mobile: 16px;
 $font-size--role: 24px;
 $font-size--item-preview--title: 20px;
+$font-size--page-title: 42px;
+$font-size--tags: 16px;
+$font-size--section-header: 16px;
+$font-size--quote: 36px;
+
+$line-height--base: 160%;
+$line-height--title: 120%;
 
 %title-text {
   letter-spacing: 2.7px;

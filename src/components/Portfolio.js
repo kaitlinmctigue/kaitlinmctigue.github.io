@@ -22,28 +22,32 @@ export default class Portfolio extends Component {
                 'title': 'Diverse Computing Rebrand',
                 'tags': ['brand'],
                 'img': dci,
-                'class': 'des'
+                'class': 'des',
+                'path': 'dci-brand'
             },
             {
                 'id': 3,
                 'title': 'Environmental Design Research',
                 'tags': ['research', 'dev'],
                 'img': hosp,
-                'class': 'dev'
+                'class': 'dev',
+                'path': 'dci'
             },
             {
                 'id': 2,
                 'title': 'Playsmart RFID Toys Concept',
                 'tags': ['instructional design', 'physical computing'],
                 'img': toy,
-                'class': 'des'
+                'class': 'des',
+                'path': 'dci'
             },
             {
                 'id': 1,
                 'title': 'Tennessee Homeland Online Records',
                 'tags': ['angular2', 'dev', 'brand'],
                 'img': thor,
-                'class': 'dev'
+                'class': 'dev',
+                'path': 'dci'
             }
         ];
 
@@ -81,7 +85,7 @@ export default class Portfolio extends Component {
         return(
             <div className="col-xs-12 col-sm-6" key={work.id}>
                 <div className="item-preview">
-                    <div className={'item-preview__content item-preview__content--' + work.class}>
+                    <Link to={'/portfolio/' + work.path} className={'item-preview__content item-preview__content--' + work.class}>
                         <div className={'item-preview__content__img'} style={{backgroundImage: 'url(' + work.img + ')'}}></div>
                         <div className="item-preview__content__desc">
                             <div className={'item-preview__content__desc__title item-preview__content__desc__title--' + work.class}>
@@ -95,7 +99,7 @@ export default class Portfolio extends Component {
                                 )}
                             </div>
                         </div>
-                    </div>
+                    </Link>
                 </div>
             </div>
         );

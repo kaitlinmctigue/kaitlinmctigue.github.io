@@ -7,6 +7,7 @@
   &__intro {
     max-width: 500px;
     margin: 0 auto;
+    font-size: $font-size--intro;
   }
 
   .logo {
@@ -16,7 +17,7 @@
   .title {
     @extend %title-text;
     font-size: $font-size--role;
-    margin: $spacer 0;
+    margin: $spacer--default 0;
     line-height: $font-size--role * 1.1;
 
     &__des {
@@ -35,7 +36,7 @@
   &__body {
     &__links {
       text-align: left;
-      margin-top: $spacer;
+      margin-top: $spacer--default;
 
       .link {
         width: auto;
@@ -46,16 +47,17 @@
 }
 
 .item-preview {
-  padding: $spacer/2 0 $spacer/2;
+  padding: $spacer--default/2 0 $spacer--default/2;
 
   &__content {
+    display: block;
+
     @include card-shadow;
     @extend %hover;
 
     @include themed($themes) {
       background: t($card-bg);
     }
-
     &__img {
       height: 250px;
       background-size: cover;
