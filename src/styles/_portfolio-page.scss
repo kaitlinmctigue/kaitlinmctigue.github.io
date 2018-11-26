@@ -8,6 +8,7 @@
   &__title {
     @extend %title-text;
     font-size: $font-size--page-title;
+    line-height: $line-height--title;
   }
 
   &__tags {
@@ -31,13 +32,14 @@
 
 .section-header {
   font-size: $font-size--section-header;
+  line-height: $line-height--title;
   text-transform: uppercase;
   font-weight: bold;
 }
 
 .section-quote {
   font-size: $font-size--quote;
-  line-height: $line-height--title;
+  line-height: $line-height--quote;
 }
 
 .des {

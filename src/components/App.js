@@ -6,11 +6,16 @@ import Contact from './Contact';
 import Resume from './Resume';
 import Portfolio from './Portfolio';
 import DciBrand from './portfolio/items/DciBrand';
+import Environmental from './portfolio/items/Environmental';
 
 const portfolioItems= [
     {
         path: 'dci-brand',
         comp: DciBrand
+    },
+    {
+        path: 'environmental-design',
+        comp: Environmental
     }
 ];
 
@@ -43,10 +48,10 @@ export default class App extends Component {
                                     <Navbar.Toggle />
                                 </Navbar.Header>
                                 <Navbar.Collapse>
-                                    <Nav className='header__utility'>
+                                    <Nav pullRight className='header__utility'>
                                         <NavItem className="theme-toggle link" onClick={this.changeTheme}></NavItem>
                                     </Nav>
-                                    <Nav pullRight className='header__links'>
+                                    <Nav className='header__links'>
                                         <LinkContainer to='/' exact>
                                             <NavItem eventKey={1} className='link'>
                                                 Portfolio

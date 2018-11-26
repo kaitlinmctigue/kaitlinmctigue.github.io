@@ -18,7 +18,7 @@
     @extend %title-text;
     font-size: $font-size--role;
     margin: $spacer--default 0;
-    line-height: $font-size--role * 1.1;
+    line-height: $line-height--title;
 
     &__des {
       @include themed($themes) {

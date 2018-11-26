@@ -20,7 +20,7 @@ export default class Portfolio extends Component {
             {
                 'id': 0,
                 'title': 'Diverse Computing Rebrand',
-                'tags': ['brand'],
+                'tags': ['branding'],
                 'img': dci,
                 'class': 'des',
                 'path': 'dci-brand'
@@ -31,7 +31,7 @@ export default class Portfolio extends Component {
                 'tags': ['research', 'dev'],
                 'img': hosp,
                 'class': 'dev',
-                'path': 'dci'
+                'path': 'environmental-design'
             },
             {
                 'id': 2,

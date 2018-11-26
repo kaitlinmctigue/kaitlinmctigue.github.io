@@ -1,5 +1,11 @@
 @import "settings";
 
+//loading
+.app {
+  text-align: center;
+  color: $text--dark;
+}
+
 html, body {
   font-family: $font-family;
   background: $bg--dark--top;
@@ -67,6 +73,7 @@ html, body {
   margin-right: 3px;
   font-size: $font-size--tags;
   padding: 4px 10px;
+  text-transform: lowercase;
 
   @include themed($themes) {
     background: t($card-bg);
