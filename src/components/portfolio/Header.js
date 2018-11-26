@@ -53,7 +53,7 @@ class Header extends Component {
 Header.propTypes = {
     tags: PropTypes.array,
     title: PropTypes.string,
-    splash: PropTypes.object,
+    splash: PropTypes.string,
     problem: PropTypes.string,
     solution: PropTypes.string
 };

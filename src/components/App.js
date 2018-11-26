@@ -7,6 +7,7 @@ import Resume from './Resume';
 import Portfolio from './Portfolio';
 import DciBrand from './portfolio/items/DciBrand';
 import Environmental from './portfolio/items/Environmental';
+import resume from '../mctigue_resume.pdf';
 
 const portfolioItems= [
     {
@@ -51,23 +52,23 @@ export default class App extends Component {
                                     <Nav pullRight className='header__utility'>
                                         <NavItem className="theme-toggle link" onClick={this.changeTheme}></NavItem>
                                     </Nav>
-                                    <Nav className='header__links'>
-                                        <LinkContainer to='/' exact>
-                                            <NavItem eventKey={1} className='link'>
-                                                Portfolio
-                                            </NavItem>
-                                        </LinkContainer>
-                                        <LinkContainer to="/resume">
-                                            <NavItem eventKey={2} className='link'>
-                                                Resume
-                                            </NavItem>
-                                        </LinkContainer>
-                                        <LinkContainer to="/contact">
-                                            <NavItem eventKey={3} className='link'>
-                                                Contact
-                                            </NavItem>
-                                        </LinkContainer>
-                                    </Nav>
+                                    <div className='header__links'>
+                                        <Nav>
+                                            <LinkContainer to='/' exact>
+                                                <NavItem eventKey={1} className='link'>
+                                                    Portfolio
+                                                </NavItem>
+                                            </LinkContainer>
+                                            <LinkContainer to="/contact">
+                                                <NavItem eventKey={3} className='link'>
+                                                    Contact
+                                                </NavItem>
+                                            </LinkContainer>
+                                        </Nav>
+                                        <a href={resume} target={'_blank'} className='link'>
+                                            Resume
+                                        </a>
+                                    </div>
                                 </Navbar.Collapse>
                             </Navbar>
 

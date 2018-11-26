@@ -24,10 +24,12 @@
 }
 
 .link {
-  padding: 6px 15px;
+  padding: 8px 12px;
+  margin-right: 2px;
   border-radius: $rounded;
   text-decoration: none;
   text-transform: lowercase;
+  line-height: 1;
 
   @include themed($themes) {
     color: t($link)!important;
