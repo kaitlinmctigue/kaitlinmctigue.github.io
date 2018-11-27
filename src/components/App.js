@@ -59,15 +59,17 @@ export default class App extends Component {
                                                     Portfolio
                                                 </NavItem>
                                             </LinkContainer>
+                                            <LinkContainer to={resume}>
+                                                <NavItem eventKey={2} className='link'>
+                                                    Resume
+                                                </NavItem>
+                                            </LinkContainer>
                                             <LinkContainer to="/contact">
                                                 <NavItem eventKey={3} className='link'>
                                                     Contact
                                                 </NavItem>
                                             </LinkContainer>
                                         </Nav>
-                                        <a href={resume} target={'_blank'} className='link'>
-                                            Resume
-                                        </a>
                                     </div>
                                 </Navbar.Collapse>
                             </Navbar>
