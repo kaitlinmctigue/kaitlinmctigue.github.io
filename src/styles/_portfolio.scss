@@ -7,7 +7,10 @@
   &__intro {
     max-width: 500px;
     margin: 0 auto;
-    font-size: $font-size--intro;
+
+    p {
+      font-size: $font-size--intro;
+    }
   }
 
   .logo {
