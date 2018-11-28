@@ -12,7 +12,7 @@ import './styles/app.scss';
 
 
 ReactDOM.render(
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
         <App>
             loading
         </App>

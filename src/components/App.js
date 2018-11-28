@@ -7,7 +7,6 @@ import Resume from './Resume';
 import Portfolio from './Portfolio';
 import DciBrand from './portfolio/items/DciBrand';
 import Environmental from './portfolio/items/Environmental';
-import resume from '../mctigue_resume.pdf';
 
 const portfolioItems= [
     {
@@ -59,7 +58,7 @@ export default class App extends Component {
                                                     Portfolio
                                                 </NavItem>
                                             </LinkContainer>
-                                            <LinkContainer to={resume}>
+                                            <LinkContainer to={'/resume'}>
                                                 <NavItem eventKey={2} className='link'>
                                                     Resume
                                                 </NavItem>
