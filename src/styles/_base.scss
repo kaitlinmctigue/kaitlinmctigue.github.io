@@ -57,7 +57,7 @@ html, body {
   position: absolute;
   top: $padding-top;
   left: calc(50% - #{$logo-width / 2});;
-  height: 40px;
+  height: $logo-height - 45px;
   width: $logo-width;
   background-size: $logo-width $logo-height;
   background-repeat: no-repeat;

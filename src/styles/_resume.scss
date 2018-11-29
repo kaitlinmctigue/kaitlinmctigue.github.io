@@ -1,4 +1,27 @@
+$pdf-width: 1100px;
+
 .react-pdf__Page__canvas {
   margin: 0 auto;
   @include card-shadow;
+
+  @media (max-width: $pdf-width) {
+    width: 100%!important;
+    height: auto!important;
+  }
+}
+
+.react-pdf__Document {
+  @media (max-width: $screen-xs-max) {
+    display: none;
+  }
+}
+
+.resume__actions {
+  max-width: $pdf-width;
+  margin: 0 auto;
+
+  .link {
+    display: inline-block;
+    text-align: center;
+  }
 }
