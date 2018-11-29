@@ -2,6 +2,39 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 class Header extends Component {
+
+    problem() {
+        if (this.props.problem) {
+            return(
+                <div className={'row'}>
+                    <div className={'col-xs-12 col-sm-12 section'}>
+                        <div className={'section-header'}>
+                            The Problem
+                        </div>
+                        <p>
+                            {this.props.problem}
+                        </p>
+                    </div>
+                </div>
+            );
+        }
+    }
+
+    solution() {
+        if (this.props.solution) {
+            return(
+                <div className={'col-xs-12 col-sm-12 section'}>
+                    <div className={'section-header'}>
+                        The Solution
+                    </div>
+                    <p className={'section-quote'}>
+                        {this.props.solution}
+                    </p>
+                </div>
+            );
+        }
+    }
+
     render() {
         return (
             <div className={'header'}>
@@ -26,25 +59,9 @@ class Header extends Component {
                 <div className={'header__splash'} style={{backgroundImage: 'url(' + this.props.splash + ')'}}></div>
 
                 {/*setup*/}
-                <div className={'row'}>
-                    <div className={'col-xs-12 col-sm-12 section'}>
-                        <div className={'section-header'}>
-                            The Problem
-                        </div>
-                        <p>
-                            {this.props.problem}
-                        </p>
-                    </div>
+                {this.problem()}
 
-                    <div className={'col-xs-12 col-sm-12 section'}>
-                        <div className={'section-header'}>
-                            The Solution
-                        </div>
-                        <p className={'section-quote'}>
-                            {this.props.solution}
-                        </p>
-                    </div>
-                </div>
+                {this.solution()}
             </div>
         );
     }
