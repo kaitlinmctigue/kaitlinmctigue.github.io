@@ -18,7 +18,7 @@
     "lint:fix": "eslint . --fix; exit 0",
     "start": "npm run serve:dev",
     "test": "echo \"No tests available\"; exit 0",
-    "deploy": "gh-pages -b master -d public"
+    "deploy": "npm run build:prod && gh-pages -b master -d public"
   },
   "license": "MIT",
   "babel": {
