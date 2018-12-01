@@ -56,6 +56,11 @@ html, body {
   overflow-y: auto;
   height: 100vh;
   padding-bottom: $spacer--default * 2;
+
+  @media (max-width: $screen-md-max) {
+    overflow-x: hidden;
+    padding: 0 $spacer--default;
+  }
 }
 
 .logo {

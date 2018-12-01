@@ -16,6 +16,7 @@ import guide from '../../../images/portfolio/guide.jpg';
 import proposal1 from '../../../images/portfolio/proposal1.jpg';
 import proposal2 from '../../../images/portfolio/proposal2.jpg';
 import proposal3 from '../../../images/portfolio/proposal3.jpg';
+import Backlink from '../Backlink';
 
 const title = 'Diverse Computing Rebrand';
 const tags = ['Branding'];
@@ -23,7 +24,7 @@ const classification = 'des';
 const problem = 'Diverse Computing\u2019s flagship product, eAgent, had overshadowed its parent company. The strength of the eAgent brand made it tricky for DCI to branch out beyond the NCIC access domain, and position itself in the criminal justice community as, well, diverse.';
 const solution = 'A new identity for Diverse Computing that complements the eAgent brand and sets the foundation for a comprehensive platform of solutions form the criminal justice community.';
 const role = 'I was completely accountable for this rebrand from logo design, to website overhaul, to updating document designs and other print materials, to corporate education and enforcement.';
-const team = 'Consulting and executive decisions from senior leadership: Lester Hutt, Andrew Rawling, Dan Percy, and Tony Pun.\\r\\nSupport from interns: Christopher Hill and Brooke Winston.';
+const team = 'Consulting and executive decisions from senior leadership: Lester Hutt, Andrew Rawling, Dan Percy, and Tony Pun. Support from interns: Christopher Hill and Brooke Winston.';
 const brand = 'DCI has always positioned itself as a software company serving Law Enforcement agencies. DCI\u2019s collateral featured lots of \u201Cbadge and gun\u201D imagery, and often leveraged fear as a method of persuasion (\u201Cwill your software be there for your officers in a life-or-death situation?\u201D). Black, grey, and gold were used heavily, and both visual design and written copy were quite serious and formal.';
 
 export default class DciBrand extends Component {
@@ -54,11 +55,11 @@ export default class DciBrand extends Component {
                     </div>
                     <div className={'col-xs-12 col-sm-6 subsection'}>
                         <Title title={'Logo Before'}/>
-                        <img src={logo2} className={'img img-responsive section-img'}/>
+                        <img src={logo1} className={'img img-responsive section-img'}/>
                     </div>
                     <div className={'col-xs-12 col-sm-6 subsection'}>
                         <Title title={'Logo After'}/>
-                        <img src={logo1} className={'img img-responsive section-img'}/>
+                        <img src={logo2} className={'img img-responsive section-img'}/>
                     </div>
                 </div>
 
@@ -66,10 +67,10 @@ export default class DciBrand extends Component {
 
                 <div className={'row'}>
                     <div className={'col-xs-12 col-sm-6'}>
-                        <Section title={'Before'} quote={'a software company serving law enforcement agencies'}/>
+                        <Section title={'Before'} quote={'A software company serving law enforcement agencies'}/>
                     </div>
                     <div className={'col-xs-12 col-sm-6'}>
-                        <Section title={'After'} quote={'a services company partnering with the criminal justice community'}/>
+                        <Section title={'After'} quote={'A services company partnering with the criminal justice community'}/>
                     </div>
                 </div>
 
@@ -97,6 +98,8 @@ export default class DciBrand extends Component {
                 </div>
 
                 <Section title={'Document Design'} img={document}/>
+
+                <Backlink/>
             </div>
         );
     }

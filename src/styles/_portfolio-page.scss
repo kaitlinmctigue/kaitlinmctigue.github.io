@@ -23,6 +23,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+
+    @media (max-width: $screen-md-max) {
+      height: 300px;
+    }
   }
 }
 
@@ -47,6 +51,7 @@
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: $spacer--smallest;
+  margin-top: 0;
 }
 
 .section-quote {

@@ -20,13 +20,17 @@
 
   .link {
     @extend .link;
+
+    @media (max-width: $screen-xs-max) {
+      margin: 0 12px $spacer--small 12px!important;
+    }
   }
 }
 
 .link {
   display: flex;
   padding: 8px 12px;
-  margin: 0 15px 0 -12px;
+  margin: 0 20px 0 -12px;
   border-radius: $rounded;
   text-decoration: none;
   text-transform: lowercase;
