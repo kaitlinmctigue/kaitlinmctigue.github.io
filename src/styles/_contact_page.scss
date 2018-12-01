@@ -1,0 +1,26 @@
+.contact {
+  $img-width: 400px;
+  max-width: $content-width;
+  margin: 45px auto 0;
+
+  &__img {
+    width: 100%;
+    display: inline-block;
+
+    img {
+      width: $img-width;
+      float: right;
+      margin-right: 40px;
+    }
+  }
+
+  &__text {
+    text-align: left;
+
+    &__title {
+      margin-top: -200px;
+      text-align: left;
+      width: $img-width;
+    }
+  }
+}

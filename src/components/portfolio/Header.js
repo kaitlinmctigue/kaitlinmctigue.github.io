@@ -41,7 +41,7 @@ class Header extends Component {
                 {/*head*/}
                 <div className={'row'}>
                     <div className={'col-xs-12 col-sm-12'}>
-                        <div className={'header__title'}>
+                        <div className={'header__title title'}>
                             {this.props.title}
                         </div>
                         <div className={'header__tags'}>

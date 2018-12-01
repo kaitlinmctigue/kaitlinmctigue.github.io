@@ -9,11 +9,7 @@
 }
 
 .header {
-  &__title {
-    @extend %title-text;
-    font-size: $font-size--page-title;
-    line-height: $line-height--title;
-  }
+  &__title {}
 
   &__tags {
     .badge {
