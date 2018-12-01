@@ -13,7 +13,7 @@ class Quote extends Component {
 }
 
 Quote.propTypes = {
-    quote: PropTypes.string
+    quote: PropTypes.object
 };
 
 export default Quote;

@@ -4,10 +4,18 @@ import splashImg from '../../../images/thumbnails/dci.jpg';
 
 import Title from '../Title';
 import Section from '../Section';
+import Img from '../Img';
 import Setup from '../Setup';
 
 import logo1 from '../../../images/portfolio/logo_before.png';
 import logo2 from '../../../images/portfolio/logo_after.png';
+import banners from '../../../images/portfolio/banners.jpg';
+import brochure from '../../../images/portfolio/brochure.jpg';
+import document from '../../../images/portfolio/document.jpg';
+import guide from '../../../images/portfolio/guide.jpg';
+import proposal1 from '../../../images/portfolio/proposal1.jpg';
+import proposal2 from '../../../images/portfolio/proposal2.jpg';
+import proposal3 from '../../../images/portfolio/proposal3.jpg';
 
 const title = 'Diverse Computing Rebrand';
 const tags = ['Branding'];
@@ -64,6 +72,31 @@ export default class DciBrand extends Component {
                         <Section title={'After'} quote={'a services company partnering with the criminal justice community'}/>
                     </div>
                 </div>
+
+                <Section title={'The Former Brand'} text={brand}/>
+
+                <Section title={'7 Foot Conference Banners'} img={banners}/>
+
+                <Section title={'Marketing Collateral'} img={brochure}/>
+
+                <Section title={'guide'} img={guide}/>
+
+                <div className={'row section'}>
+                    <div className={'col-xs-12 col-sm-12'}>
+                        <Title title={'RFP Presentation'}/>
+                    </div>
+                    <div className={'col-xs-12 col-sm-4'}>
+                        <Img img={proposal1}/>
+                    </div>
+                    <div className={'col-xs-12 col-sm-4'}>
+                        <Img img={proposal2}/>
+                    </div>
+                    <div className={'col-xs-12 col-sm-4'}>
+                        <Img img={proposal3}/>
+                    </div>
+                </div>
+
+                <Section title={'Document Design'} img={document}/>
             </div>
         );
     }

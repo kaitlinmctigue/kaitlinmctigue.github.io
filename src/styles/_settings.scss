@@ -9,9 +9,10 @@ $logo-width: 150px * 1.2;
 
 $spacer--default: 30px;
 $spacer--small: ($spacer--default / 2);
+$spacer--smallest: ($spacer--small / 3);
 
 //text
-$font-size--base: 20px;
+$font-size--base: 22px;
 $font-size--secondary: 18px;
 $font-size--tertiary: 16px;
 $font-size--intro: $font-size--secondary;
@@ -23,9 +24,9 @@ $font-size--tags: $font-size--base - 4;
 $font-size--section-header: $font-size--tertiary;
 $font-size--quote: 36px;
 
-$line-height--base: 160%;
-$line-height--title: 110%;
-$line-height--quote: 130%;
+$line-height--base: 1.6;
+$line-height--title: 1.1;
+$line-height--quote: 1.3;
 
 %title-text {
   letter-spacing: 2.7px;
@@ -99,6 +100,8 @@ $border--light: #cbcbcb;
 $border--dark: #999;
 $hover--light: transparentize($brand--blue--light, .9);
 $hover--dark: transparentize(#fff, .9);
+
+$highlight-color: transparentize($brand--blue--light, .1);
 
 //--other
 $rounded: 3px;

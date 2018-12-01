@@ -5,9 +5,9 @@ class Title extends Component {
 
     render() {
         return (
-            <div className={'section-header'}>
+            <h2 className={'section-header'}>
                 {this.props.title}
-            </div>
+            </h2>
         );
     }
 }

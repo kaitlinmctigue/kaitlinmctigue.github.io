@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Title from './Title';
 import Quote from './Quote';
+import Img from './Img';
 
 class Section extends Component {
 
@@ -31,17 +32,28 @@ class Section extends Component {
         }
     }
 
+    img() {
+        if (this.props.img) {
+            return (
+                <Img img={this.props.img}></Img>
+            );
+        }
+    }
+
     render() {
         return (
             <div className={'section row'}>
-                <div className={'col-xs-12 col-sm-12'}>
+                <div className={'col-xs-12 col-sm-12 section__title'}>
                     {this.title()}
                 </div>
-                <div className={'col-xs-12 col-sm-12'}>
+                <div className={'col-xs-12 col-sm-12 section__text'}>
                     {this.text()}
                 </div>
-                <div className={'col-xs-12 col-sm-12'}>
+                <div className={'col-xs-12 col-sm-12 section__quote'}>
                     {this.quote()}
+                </div>
+                <div className={'col-xs-12 col-sm-12 section__img'}>
+                    {this.img()}
                 </div>
             </div>
         );
@@ -51,7 +63,8 @@ class Section extends Component {
 Section.propTypes = {
     title: PropTypes.string,
     text: PropTypes.string,
-    quote: PropTypes.string
+    quote: PropTypes.string,
+    img: PropTypes.string
 };
 
 export default Section;

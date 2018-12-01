@@ -33,6 +33,7 @@
 .setup {
   p {
     font-size: $font-size--tertiary;
+    line-height: $line-height--base;
   }
 }
 
@@ -49,6 +50,7 @@
   line-height: $line-height--title;
   text-transform: uppercase;
   font-weight: bold;
+  margin-bottom: $spacer--smallest;
 }
 
 .section-quote {
@@ -58,9 +60,8 @@
 
 .section-img {
   @include themed($themes) {
-    background: t($card-bg);
+    background: $bg--card--light;
     border: 1px solid t($border);
-
     padding: $spacer--small;
     margin: $spacer--small 0;
   }
