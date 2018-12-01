@@ -18,22 +18,6 @@ export default class Portfolio extends Component {
 
         this.works = [
             {
-                'id': 0,
-                'title': 'Diverse Computing Rebrand',
-                'tags': ['branding'],
-                'img': dci,
-                'class': 'des',
-                'path': 'dci-brand'
-            },
-            {
-                'id': 3,
-                'title': 'Environmental Design Research',
-                'tags': ['research', 'dev'],
-                'img': hosp,
-                'class': 'dev',
-                'path': 'environmental-design'
-            },
-            {
                 'id': 2,
                 'title': 'Playsmart RFID Toys Concept',
                 'tags': ['instructional design', 'physical computing'],
@@ -48,6 +32,22 @@ export default class Portfolio extends Component {
                 'img': thor,
                 'class': 'dev',
                 'path': 'dci'
+            },
+            {
+                'id': 0,
+                'title': 'Diverse Computing Rebrand',
+                'tags': ['branding'],
+                'img': dci,
+                'class': 'des',
+                'path': 'dci-brand'
+            },
+            {
+                'id': 3,
+                'title': 'Environmental Design Research',
+                'tags': ['research', 'dev'],
+                'img': hosp,
+                'class': 'dev',
+                'path': 'environmental-design'
             }
         ];
 
