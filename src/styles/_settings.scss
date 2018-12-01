@@ -8,17 +8,19 @@ $logo-height: 85px * 1.2;
 $logo-width: 150px * 1.2;
 
 $spacer--default: 30px;
-$spacer--small: 20px;
+$spacer--small: ($spacer--default / 2);
 
 //text
 $font-size--base: 20px;
-$font-size--intro: 18px;
-$font-size--base--mobile: 16px;
-$font-size--role: 24px;
-$font-size--item-preview--title: 20px;
-$font-size--page-title: 42px;
-$font-size--tags: 16px;
-$font-size--section-header: 16px;
+$font-size--secondary: 18px;
+$font-size--tertiary: 16px;
+$font-size--intro: $font-size--secondary;
+$font-size--base--mobile: $font-size--base - 2;
+$font-size--role: $font-size--base + 4;
+$font-size--item-preview--title: $font-size--base;
+$font-size--page-title: $font-size--base * 2;
+$font-size--tags: $font-size--base - 4;
+$font-size--section-header: $font-size--tertiary;
 $font-size--quote: 36px;
 
 $line-height--base: 160%;

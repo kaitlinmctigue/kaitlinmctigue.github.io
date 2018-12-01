@@ -2,6 +2,10 @@
   max-width: $content-width;
   margin: 45px auto 0;
   text-align: left;
+
+  .header {
+    padding: 0;
+  }
 }
 
 .header {
@@ -26,8 +30,18 @@
   }
 }
 
+.setup {
+  p {
+    font-size: $font-size--tertiary;
+  }
+}
+
 .section {
   margin-top: $spacer--default;
+}
+
+.subsection {
+  margin-top: $spacer--small;
 }
 
 .section-header {
@@ -40,6 +54,16 @@
 .section-quote {
   font-size: $font-size--quote;
   line-height: $line-height--quote;
+}
+
+.section-img {
+  @include themed($themes) {
+    background: t($card-bg);
+    border: 1px solid t($border);
+
+    padding: $spacer--small;
+    margin: $spacer--small 0;
+  }
 }
 
 .des {

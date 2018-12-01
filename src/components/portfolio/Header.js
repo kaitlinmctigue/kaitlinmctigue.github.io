@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import Title from './Title';
 
 class Header extends Component {
 
@@ -8,9 +9,7 @@ class Header extends Component {
             return(
                 <div className={'row'}>
                     <div className={'col-xs-12 col-sm-12 section'}>
-                        <div className={'section-header'}>
-                            The Problem
-                        </div>
+                        <Title title={'The Problem'} />
                         <p>
                             {this.props.problem}
                         </p>
@@ -23,13 +22,13 @@ class Header extends Component {
     solution() {
         if (this.props.solution) {
             return(
-                <div className={'col-xs-12 col-sm-12 section'}>
-                    <div className={'section-header'}>
-                        The Solution
+                <div className={'row'}>
+                    <div className={'col-xs-12 col-sm-12 section'}>
+                        <Title title={'The Solution'} />
+                        <p className={'section-quote'}>
+                            {this.props.solution}
+                        </p>
                     </div>
-                    <p className={'section-quote'}>
-                        {this.props.solution}
-                    </p>
                 </div>
             );
         }
