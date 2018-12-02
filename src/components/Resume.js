@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Document, Page } from 'react-pdf/dist/entry.webpack';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import resume from '../mctigue_resume.pdf';
 
-const resumelink = '../images/mctigue_resume.pdf';
+const resumelink = 'https://kaitlinmctigue.github.io/images/mctigue_resume.pdf';
 const linkedin = 'https://www.linkedin.com/in/katiemctigue';
 
 export default class Resume extends Component {
@@ -22,16 +23,16 @@ export default class Resume extends Component {
                 <div className={'resume__actions'}>
                     <div className={'row'}>
                         <div className={'col-xs-12 col-md-6'}>
-                            <Link to={resumelink} target={'_blank'} className={'link'}>
-                                <span className='fas fa-arrow-circle-down'></span>
+                            <a href={resumelink} target={'_blank'} className={'link'}>
+                                <FontAwesomeIcon icon={'arrow-circle-down'}/>
                                 Download PDF Resume
-                            </Link>
+                            </a>
                         </div>
                         <div className={'col-xs-12 col-md-6'}>
-                            <Link to={linkedin} className={'link'}>
-                                <span className='fas fa-arrow-circle-down'></span>
+                            <a href={linkedin} target={'_blank'}  className={'link'}>
                                 View My LinkedIn Profile
-                            </Link>
+                                <FontAwesomeIcon icon={'arrow-right'}/>
+                            </a>
                         </div>
                     </div>
                 </div>

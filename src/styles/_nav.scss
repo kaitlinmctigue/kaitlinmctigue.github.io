@@ -50,6 +50,11 @@
     }
   }
 
+  svg {
+    margin-right: $spacer--icon;
+    margin-left: $spacer--icon;
+  }
+
   &:hover, &.active {
     text-decoration: none;
     cursor: pointer;
@@ -76,49 +81,26 @@
   }
 }
 
-
-.theme-toggle {
-  &:hover {
-    a {
-      &:after {
-        content: "Color Me";
+@media (min-width: $screen-xs-max) {
+  .theme-light {
+    .theme-toggle {
+      &:hover a {
+        &:before {
+          content: "Go Dark";
+          margin-right: $spacer--icon;
+        }
       }
     }
   }
 
-  @media (max-width: $screen-xs-max) {
-    a {
-      &:after {
-        content: "Toggle Color Theme"!important;
+  .theme-dark {
+    .theme-toggle {
+      &:hover a {
+        &:before {
+          content: "Go Light";
+          margin-right: $spacer--icon;
+        }
       }
-    }
-  }
-
-  a {
-    &:before {
-      font-family: FontAwesome;
-    }
-
-    &:after {
-      margin-left: 6px;
-    }
-  }
-}
-
-.theme-light {
-  .theme-toggle a {
-    &:before {
-      content: "\f186";
-      color: $text--light;
-    }
-  }
-}
-
-.theme-dark {
-  .theme-toggle a {
-    &:before {
-      content: "\f185";
-      color: #ffdd9a;
     }
   }
 }

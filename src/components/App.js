@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import { HashRouter as Router, Route, Link } from 'react-router-dom';
 import { LinkContainer } from 'react-router-bootstrap';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMoon, faSun, faArrowCircleDown, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+library.add(faMoon, faSun, faArrowCircleDown, faArrowRight);
 import Contact from './Contact';
 import Resume from './Resume';
 import Portfolio from './Portfolio';
@@ -49,7 +53,9 @@ export default class App extends Component {
                                 </Navbar.Header>
                                 <Navbar.Collapse>
                                     <Nav pullRight className='header__utility'>
-                                        <NavItem className="theme-toggle link" onClick={this.changeTheme}></NavItem>
+                                        <NavItem className="theme-toggle link" onClick={this.changeTheme}>
+                                            <FontAwesomeIcon icon={this.state.dark ? 'sun' : 'moon'}/>
+                                        </NavItem>
                                     </Nav>
                                     <div className='header__links'>
                                         <Nav>
