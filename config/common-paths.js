@@ -4,5 +4,5 @@ module.exports = {
     outputPath: path.resolve(__dirname, '../', 'public'),
     root: path.resolve(__dirname),
     template: './src/index.html',
-    favicon: './src/favicon.ico',
+    favicon: './src/images/favicon/favicon.ico',
 };

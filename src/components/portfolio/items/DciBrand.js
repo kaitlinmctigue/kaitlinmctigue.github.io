@@ -74,7 +74,17 @@ export default class DciBrand extends Component {
                     </div>
                 </div>
 
-                <Section title={'The Former Brand'} text={brand}/>
+                <div className={'row section'}>
+                    <div className={'col-xs-12'}>
+                        <Title title={'The New Brand'}/>
+                        <p>Key selling points:</p>
+                        <ul>
+                            <li>Next-generation open-source technology.</li>
+                            <li>“By CJI professionals, for CJI professionals”: many employees with experience working as a officers.</li>
+                            <li>Expertise in CJIS compliance.</li>
+                        </ul>
+                    </div>
+                </div>
 
                 <Section title={'7 Foot Conference Banners'} img={banners}/>
 

@@ -21,7 +21,7 @@ export default class Contact extends Component {
                     </h1>
                     <div className={'contact__text__body'}>
                         <p>kaitlinmctigue at gmail dot com</p>
-                        <p><a className={'link'} href={'https://www.linkedin.com/in/katiemctigue'}>linkedin.com/in/katiemctigue</a></p>
+                        <p><a className={'link'} href={'https://www.linkedin.com/in/katiemctigue'} target={'_blank'}>linkedin.com/in/katiemctigue</a></p>
                         <SocialIcon url="https://www.linkedin.com/in/katiemctigue" />
                         <SocialIcon url="https://github.com/kaitlinmctigue" />
                         <SocialIcon url="https://medium.com/@katiemctigue" />

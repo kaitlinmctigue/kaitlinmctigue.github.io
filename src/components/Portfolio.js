@@ -28,7 +28,7 @@ export default class Portfolio extends Component {
             {
                 'id': 1,
                 'title': 'Tennessee Homeland Online Records',
-                'tags': ['angular2', 'dev', 'brand'],
+                'tags': ['angular2', 'dev', 'branding'],
                 'img': thor,
                 'class': 'dev',
                 'path': 'dci'
@@ -44,7 +44,7 @@ export default class Portfolio extends Component {
             {
                 'id': 3,
                 'title': 'Environmental Design Research',
-                'tags': ['research', 'dev'],
+                'tags': ['ux research', 'dev'],
                 'img': hosp,
                 'class': 'dev',
                 'path': 'environmental-design'
