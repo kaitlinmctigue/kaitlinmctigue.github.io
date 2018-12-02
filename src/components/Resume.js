@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import { Document, Page } from 'react-pdf/dist/entry.webpack';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import resume from '../mctigue_resume.pdf';
