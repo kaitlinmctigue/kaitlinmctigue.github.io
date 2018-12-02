@@ -73,6 +73,7 @@ $screen-md-max:              ($screen-lg-min - 1);
 $bg: 'bg';
 $card-bg: 'card-bg';
 $text: 'text';
+$text-secondary: 'text-secondary';
 $link: 'link';
 $hover: 'hover';
 $logo: 'logo';
@@ -96,7 +97,10 @@ $bg--card--dark: #464858;
 $text--imp--light: #242D30;
 $text--imp--dark: #E8E4E0;
 $text--light: lighten($text--imp--light, 5%);
+$text--light: lighten($text--imp--light, 5%);
 $text--dark: #cac3bc;
+$text--2--light: $text--imp--light;
+$text--2--dark: $text--imp--dark;
 $border--light: #cbcbcb;
 $border--dark: #999;
 $hover--light: transparentize($brand--blue--light, .9);
@@ -114,6 +118,7 @@ $themes: (
                 bg: $bg--light,
                 card-bg: $bg--card--light,
                 text: $text--light,
+                text-secondary: $text--2--light,
                 link: $brand--blue--light,
                 hover: $hover--light,
                 brand-red: $brand--red--light,
@@ -125,6 +130,7 @@ $themes: (
                 bg: $bg--dark--top,
                 card-bg: $bg--card--dark,
                 text: $text--dark,
+                text-secondary: $text--2--dark,
                 link: $brand--blue--dark,
                 hover: $hover--dark,
                 brand-red: $brand--red--dark,

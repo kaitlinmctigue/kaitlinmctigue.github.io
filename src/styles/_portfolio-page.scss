@@ -57,6 +57,10 @@
 .section-quote {
   font-size: $font-size--quote;
   line-height: $line-height--quote;
+
+  @include themed($themes) {
+    color: t($text-secondary);
+  }
 }
 
 .section-img {
@@ -69,7 +73,7 @@
 }
 
 .des {
-  .header__title, .section-header, .section-quote {
+  .header__title, .section-header {
     @include themed($themes) {
       color: t($brand-blue);
     }
@@ -77,7 +81,7 @@
 }
 
 .dev {
-  .header__title, .section-header, .section-quote {
+  .header__title, .section-header {
     @include themed($themes) {
       color: t($brand-red);
     }
