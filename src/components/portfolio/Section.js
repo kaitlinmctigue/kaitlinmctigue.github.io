@@ -43,7 +43,7 @@ class Section extends Component {
     link() {
         if (this.props.link) {
             return (
-                <a href={this.props.link} className={'link'} target={'_link'}>{this.props.link}</a>
+                <a href={this.props.link} target={'_back'} className={'link'}>{this.props.link}</a>
             );
         }
     }
