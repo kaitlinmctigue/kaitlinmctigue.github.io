@@ -13,6 +13,7 @@ import DciBrand from './portfolio/items/DciBrand';
 import Environmental from './portfolio/items/Environmental';
 import ScrollToTop from './ScrollToTop';
 import WomenDrowning from './portfolio/items/WomenDrowning';
+import StanleyHotel from './portfolio/items/StanleyHotel';
 
 const portfolioItems= [
     {
@@ -26,6 +27,10 @@ const portfolioItems= [
     {
         path: 'women-drowning',
         comp: WomenDrowning
+    },
+    {
+        path: 'shining-hotel',
+        comp: StanleyHotel
     }
 ];
 

@@ -68,7 +68,7 @@ export default class Portfolio extends Component {
                 'tags': ['dev, React, interactive art'],
                 'img': stanley,
                 'class': 'dev',
-                'path': 'stanley-hotel'
+                'path': 'shining-hotel'
             }
         ];
     }

@@ -40,6 +40,14 @@ class Section extends Component {
         }
     }
 
+    link() {
+        if (this.props.link) {
+            return (
+                <a href={this.props.link} className={'link'} target={'_link'}>{this.props.link}</a>
+            );
+        }
+    }
+
     render() {
         return (
             <div className={'section row'}>
@@ -55,6 +63,9 @@ class Section extends Component {
                 <div className={'col-xs-12 col-sm-12 section__img'}>
                     {this.img()}
                 </div>
+                <div className={'col-xs-12 col-sm-12 section__img'}>
+                    {this.link()}
+                </div>
             </div>
         );
     }
@@ -64,7 +75,8 @@ Section.propTypes = {
     title: PropTypes.string,
     text: PropTypes.string,
     quote: PropTypes.string,
-    img: PropTypes.string
+    img: PropTypes.string,
+    link: PropTypes.string
 };
 
 export default Section;
