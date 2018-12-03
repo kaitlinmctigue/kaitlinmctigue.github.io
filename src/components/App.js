@@ -12,6 +12,7 @@ import Portfolio from './Portfolio';
 import DciBrand from './portfolio/items/DciBrand';
 import Environmental from './portfolio/items/Environmental';
 import ScrollToTop from './ScrollToTop';
+import WomenDrowning from './portfolio/items/WomenDrowning';
 
 const portfolioItems= [
     {
@@ -21,6 +22,10 @@ const portfolioItems= [
     {
         path: 'environmental-design',
         comp: Environmental
+    },
+    {
+        path: 'women-drowning',
+        comp: WomenDrowning
     }
 ];
 

@@ -4,6 +4,8 @@ import toy from '../images/thumbnails/toy.jpg';
 import dci from '../images/thumbnails/dci.jpg';
 import thor from '../images/thumbnails/thor.jpg';
 import hosp from '../images/thumbnails/hosp.jpg';
+import stanley from '../images/thumbnails/stanley.png';
+import women from '../images/thumbnails/women.jpg';
 
 export default class Portfolio extends Component {
 
@@ -28,7 +30,7 @@ export default class Portfolio extends Component {
             {
                 'id': 1,
                 'title': 'Tennessee Homeland Online Records',
-                'tags': ['angular2', 'dev', 'branding'],
+                'tags': ['dev', 'angular2', 'branding'],
                 'img': thor,
                 'class': 'dev',
                 'path': ''
@@ -44,7 +46,7 @@ export default class Portfolio extends Component {
             {
                 'id': 3,
                 'title': 'Environmental Design Research',
-                'tags': ['ux research', 'dev'],
+                'tags': ['dev', 'ux research'],
                 'img': hosp,
                 'class': 'dev',
                 'path': 'environmental-design'
@@ -55,16 +57,18 @@ export default class Portfolio extends Component {
             {
                 'id': 0,
                 'title': 'Women Drowning Photo Series',
-                'tags': [],
-                'img': '',
-                'class': 'des'
+                'tags': ['Photography, Art Direction'],
+                'img': women,
+                'class': 'des',
+                'path': 'women-drowning'
             },
             {
                 'id': 1,
                 'title': 'The Shining Hotel Project',
-                'tags': [],
-                'img': '',
-                'class': 'dev'
+                'tags': ['dev, React, interactive art'],
+                'img': stanley,
+                'class': 'dev',
+                'path': 'stanley-hotel'
             }
         ];
     }
