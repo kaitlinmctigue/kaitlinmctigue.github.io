@@ -24,7 +24,7 @@ export default class StanleyHotel extends Component {
                     splash={splashImg}
                 />
 
-                <Section title={'Background'} text={'dsfsdf'}/>
+                {/*<Section title={'Background'} text={'dsfsdf'}/>*/}
 
                 <Section title={'View Project'} link={'kaitlinmctigue.github.io/stanleyhotel/'}/>
 
