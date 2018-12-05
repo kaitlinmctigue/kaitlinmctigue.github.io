@@ -40,7 +40,7 @@ class Subsection extends Component {
 
     render() {
         return (
-            <div className={'col-xs-12 col-sm-12 subsection'}>
+            <div className={'subsection'}>
                 {this.title()}
                 {this.text()}
                 {this.img()}

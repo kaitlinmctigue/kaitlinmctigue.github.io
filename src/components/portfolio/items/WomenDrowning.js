@@ -11,6 +11,7 @@ import melina from '../../../images/portfolio/womendrowning/melina.jpg';
 import mikayla from '../../../images/portfolio/womendrowning/mikayla.jpg';
 import nest from '../../../images/portfolio/womendrowning/nest.jpg';
 import sierra from '../../../images/portfolio/womendrowning/sierra.jpg';
+import Setup from '../Setup';
 
 const title = 'Women Drowning';
 const tags = ['Photography', 'Art Direction'];
@@ -30,6 +31,11 @@ export default class WomenDrowning extends Component {
                     title={title}
                     tags={tags}
                     splash={splashImg}
+                />
+
+                <Setup
+                    role={'Photographer, Art Director'}
+                    year={2016}
                 />
 
                 <Section title={'Background'} text={body}/>

@@ -4,6 +4,7 @@ import splashImg from '../../../images/thumbnails/stanley.png';
 
 import Section from '../Section';
 import Backlink from '../Backlink';
+import Setup from '../Setup';
 
 const title = 'The Shining Hotel Project';
 const tags = ['dev', 'React', 'Interactive Art'];
@@ -24,7 +25,10 @@ export default class StanleyHotel extends Component {
                     splash={splashImg}
                 />
 
-                {/*<Section title={'Background'} text={'dsfsdf'}/>*/}
+                <Setup
+                    role={'Designer, Programmer'}
+                    year={2018}
+                />
 
                 <Section title={'View Project'} link={'kaitlinmctigue.github.io/stanleyhotel/'}/>
 
