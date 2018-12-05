@@ -1,18 +1,13 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import Title from './Title';
+import Subsection from './Subsection';
 
 class Setup extends Component {
 
     client() {
         if (this.props.client) {
             return(
-                <div className={'col-xs-12 col-sm-12 subsection'}>
-                    <Title title={'Client'} />
-                    <p>
-                        {this.props.client}
-                    </p>
-                </div>
+                <Subsection title={'Client'} text={this.props.client}></Subsection>
             );
         }
     }
@@ -20,12 +15,7 @@ class Setup extends Component {
     role() {
         if (this.props.role) {
             return(
-                <div className={'col-xs-12 col-sm-12 subsection'}>
-                    <Title title={'Role'} />
-                    <p>
-                        {this.props.role}
-                    </p>
-                </div>
+                <Subsection title={'Role'} text={this.props.role}></Subsection>
             );
         }
     }
@@ -33,12 +23,7 @@ class Setup extends Component {
     team() {
         if (this.props.team) {
             return(
-                <div className={'col-xs-12 col-sm-12 subsection'}>
-                    <Title title={'Team'} />
-                    <p>
-                        {this.props.team}
-                    </p>
-                </div>
+                <Subsection title={'Team'} text={this.props.team}></Subsection>
             );
         }
     }
@@ -46,12 +31,7 @@ class Setup extends Component {
     year() {
         if (this.props.team) {
             return(
-                <div className={'col-xs-12 col-sm-12 subsection'}>
-                    <Title title={'Year'} />
-                    <p>
-                        {this.props.year}
-                    </p>
-                </div>
+                <Subsection title={'Year'} text={this.props.year}></Subsection>
             );
         }
     }

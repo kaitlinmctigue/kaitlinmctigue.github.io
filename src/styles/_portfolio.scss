@@ -20,7 +20,7 @@
   .title {
     @extend %title-text;
     font-size: $font-size--role;
-    margin: $spacer--default 0;
+    margin: $spacer--small 0;
     line-height: $line-height--title;
 
     &__des {

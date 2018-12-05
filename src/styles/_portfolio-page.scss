@@ -31,6 +31,7 @@
 }
 
 .setup {
+  margin-top: -1 * ($spacer--small);
   p {
     font-family: monospace, $font-family;
     font-size: $font-size--tertiary;
