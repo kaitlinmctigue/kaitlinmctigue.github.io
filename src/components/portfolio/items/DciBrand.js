@@ -17,6 +17,7 @@ import proposal1 from '../../../images/portfolio/proposal1.jpg';
 import proposal2 from '../../../images/portfolio/proposal2.jpg';
 import proposal3 from '../../../images/portfolio/proposal3.jpg';
 import Backlink from '../Backlink';
+import Subsection from '../Subsection';
 
 const title = 'Diverse Computing Rebrand';
 const tags = ['Branding'];
@@ -53,13 +54,9 @@ export default class DciBrand extends Component {
                             year={2016}
                         />
                     </div>
-                    <div className={'col-xs-12 col-sm-6 subsection'}>
-                        <Title title={'Logo Before'}/>
-                        <img src={logo1} className={'img img-responsive section-img'}/>
-                    </div>
-                    <div className={'col-xs-12 col-sm-6 subsection'}>
-                        <Title title={'Logo After'}/>
-                        <img src={logo2} className={'img img-responsive section-img'}/>
+                    <div className={'col-xs-12 col-sm-6 setup'}>
+                        <Subsection title={'Logo Before'} img={logo1}/>
+                        <Subsection title={'Logo After'} img={logo2}/>
                     </div>
                 </div>
 

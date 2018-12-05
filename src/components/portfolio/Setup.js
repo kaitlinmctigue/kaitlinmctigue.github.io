@@ -36,6 +36,14 @@ class Setup extends Component {
         }
     }
 
+    img() {
+        if (this.props.img) {
+            return(
+                <Subsection img={this.props.img}></Subsection>
+            );
+        }
+    }
+
     render() {
         return (
             <div className={''}>
@@ -44,6 +52,7 @@ class Setup extends Component {
                     {this.year()}
                     {this.role()}
                     {this.team()}
+                    {this.img()}
                 </div>
             </div>
         );
@@ -54,6 +63,7 @@ Setup.propTypes = {
     client: PropTypes.string,
     role: PropTypes.string,
     team: PropTypes.string,
+    img: PropTypes.string,
     year: PropTypes.number
 };
 

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Title from './Title';
-import Img from './Img';
 
 class Subsection extends Component {
 
@@ -26,7 +25,7 @@ class Subsection extends Component {
     img() {
         if (this.props.img) {
             return (
-                <Img img={this.props.img}></Img>
+                <img src={this.props.img} className={'img img-responsive section-img'}></img>
             );
         }
     }
