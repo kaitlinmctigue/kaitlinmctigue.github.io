@@ -6,7 +6,6 @@ import Title from '../Title';
 import Section from '../Section';
 import Img from '../Img';
 import Setup from '../Setup';
-import Backlink from '../Backlink';
 
 import logo1 from '../../../images/portfolio/logo_before.png';
 import logo2 from '../../../images/portfolio/logo_after.png';
@@ -17,6 +16,7 @@ import guide from '../../../images/portfolio/guide.jpg';
 import proposal1 from '../../../images/portfolio/proposal1.jpg';
 import proposal2 from '../../../images/portfolio/proposal2.jpg';
 import proposal3 from '../../../images/portfolio/proposal3.jpg';
+import Backlink from '../Backlink';
 
 const title = 'Diverse Computing Rebrand';
 const tags = ['Branding'];

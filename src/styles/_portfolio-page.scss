@@ -32,6 +32,7 @@
 
 .setup {
   p {
+    font-family: monospace, $font-family;
     font-size: $font-size--tertiary;
     line-height: $line-height--base;
   }
@@ -39,6 +40,10 @@
 
 .section {
   margin-top: $spacer--default;
+
+  &--setup {
+    margin-top: $spacer--small;
+  }
 }
 
 .subsection {
@@ -47,6 +52,7 @@
 
 .section-header {
   font-size: $font-size--section-header;
+  font-family: $font-family--title;
   line-height: $line-height--title;
   text-transform: uppercase;
   font-weight: bold;
@@ -57,6 +63,8 @@
 .section-quote {
   font-size: $font-size--quote;
   line-height: $line-height--quote;
+  font-weight: 500;
+  font-family: $font-family--title;
 
   @include themed($themes) {
     color: t($text-secondary);
@@ -73,7 +81,7 @@
 }
 
 .des {
-  .header__title, .section-header {
+  .header__title, .section-header, .section-quote {
     @include themed($themes) {
       color: t($brand-blue);
     }
@@ -81,7 +89,7 @@
 }
 
 .dev {
-  .header__title, .section-header {
+  .header__title, .section-header, .section-quote {
     @include themed($themes) {
       color: t($brand-red);
     }

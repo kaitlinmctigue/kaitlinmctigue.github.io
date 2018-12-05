@@ -1,13 +1,13 @@
 //vars
 $font-family: 'Open Sans', 'Helvetica', 'Arial', 'sans-serif';
-
+$font-family--title: 'Montserrat', $font-family;
 $content-width--home: 1000px;
 $content-width: 700px;
 $padding-top: 20px;
 $logo-height: 85px * 1.2;
 $logo-width: 150px * 1.2;
 
-$spacer--default: 30px;
+$spacer--default: 50px;
 $spacer--small: ($spacer--default / 2);
 $spacer--smallest: ($spacer--small / 3);
 $spacer--icon: 5px;
@@ -30,8 +30,10 @@ $line-height--title: 1.1;
 $line-height--quote: 1.3;
 
 %title-text {
-  letter-spacing: 2.7px;
+  //letter-spacing: 2.7px;
+  letter-spacing: 1px;
   text-transform: lowercase;
+  font-family: $font-family--title;
 }
 
 //breakpoints
