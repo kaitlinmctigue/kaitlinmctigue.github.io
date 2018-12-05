@@ -31,20 +31,12 @@ export default class Environmental extends Component {
                     solution={solution}
                 />
 
-                <div className={'row section'}>
-                    <div className={'col-xs-12 col-sm-6'}>
-                        <Setup
-                            client={'TeleTracking'}
-                            role={'UX Researcher, UI Designer, UI Developer'}
-                            team={'Jamie Slater, Jason Spector'}
-                            year={2018}
-                        />
-                    </div>
-                    <div className={'col-xs-12 col-sm-6 subsection'}>
-                        {/*<Title title={'Logo Before'}/>*/}
-                        {/*<img src={logo1} className={'img img-responsive section-img'}/>*/}
-                    </div>
-                </div>
+                <Setup
+                    client={'TeleTracking'}
+                    role={'UX Researcher, UI Designer, UI Developer'}
+                    team={'Jamie Slater, Jason Spector'}
+                    year={2018}
+                />
 
                 <Section title={'Process'} img={dtbar}/>
 

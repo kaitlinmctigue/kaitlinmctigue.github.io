@@ -25,7 +25,7 @@ export default class Portfolio extends Component {
                 'tags': ['instructional design', 'physical computing'],
                 'img': toy,
                 'class': 'des',
-                'path': ''
+                'path': 'playsmart'
             },
             {
                 'id': 1,
@@ -33,7 +33,7 @@ export default class Portfolio extends Component {
                 'tags': ['dev', 'angular2', 'branding'],
                 'img': thor,
                 'class': 'dev',
-                'path': ''
+                'path': 'thor'
             },
             {
                 'id': 0,

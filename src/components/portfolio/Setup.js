@@ -12,6 +12,14 @@ class Setup extends Component {
         }
     }
 
+    course() {
+        if (this.props.course) {
+            return(
+                <Subsection title={'Course'} text={this.props.course}></Subsection>
+            );
+        }
+    }
+
     role() {
         if (this.props.role) {
             return(
@@ -44,15 +52,38 @@ class Setup extends Component {
         }
     }
 
+    before() {
+        if (this.props.before) {
+            return(
+                <Subsection title={'Before'} img={this.props.before}></Subsection>
+            );
+        }
+    }
+
+    after() {
+        if (this.props.after) {
+            return(
+                <Subsection title={'After'} img={this.props.after}></Subsection>
+            );
+        }
+    }
+
     render() {
         return (
-            <div className={''}>
+            <div className={'section'}>
                 <div className={'row setup'}>
-                    {this.client()}
-                    {this.year()}
-                    {this.role()}
-                    {this.team()}
-                    {this.img()}
+                    <div className={'col-xs-12 col-sm-6'}>
+                        {this.client()}
+                        {this.course()}
+                        {this.year()}
+                        {this.role()}
+                        {this.team()}
+                    </div>
+                    <div className={'col-xs-12 col-sm-6'}>
+                        {this.img()}
+                        {this.before()}
+                        {this.after()}
+                    </div>
                 </div>
             </div>
         );
@@ -61,10 +92,13 @@ class Setup extends Component {
 
 Setup.propTypes = {
     client: PropTypes.string,
+    course: PropTypes.string,
     role: PropTypes.string,
     team: PropTypes.string,
+    year: PropTypes.number,
     img: PropTypes.string,
-    year: PropTypes.number
+    before: PropTypes.string,
+    after: PropTypes.string
 };
 
 export default Setup;

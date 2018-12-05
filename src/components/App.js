@@ -14,6 +14,8 @@ import Environmental from './portfolio/items/Environmental';
 import ScrollToTop from './ScrollToTop';
 import WomenDrowning from './portfolio/items/WomenDrowning';
 import StanleyHotel from './portfolio/items/StanleyHotel';
+import PlaySmart from './portfolio/items/PlaySmart';
+import THOR from './portfolio/items/THOR';
 
 const portfolioItems= [
     {
@@ -23,6 +25,14 @@ const portfolioItems= [
     {
         path: 'environmental-design',
         comp: Environmental
+    },
+    {
+        path: 'playsmart',
+        comp: PlaySmart
+    },
+    {
+        path: 'thor',
+        comp: THOR
     },
     {
         path: 'women-drowning',
