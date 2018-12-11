@@ -1,0 +1,76 @@
+//shortcuts
+$bg: 'bg';
+$card-bg: 'card-bg';
+$text: 'text';
+$text-secondary: 'text-secondary';
+$link: 'link';
+$hover: 'hover';
+$logo: 'logo';
+$brand-blue: 'brand-blue';
+$brand-red: 'brand-red';
+$border: 'border';
+
+//themes
+$themes: (
+        light: (
+                logo: url("../images/brand/logo_vertical.svg"),
+                bg: $bg--light,
+                card-bg: $bg--card--light,
+                text: $text--light,
+                text-secondary: $text--2--light,
+                link: $brand--blue--light,
+                hover: $hover--light,
+                brand-red: $brand--red--light,
+                brand-blue: $brand--blue--light,
+                border: $border--light
+        ),
+        dark: (
+                logo: url("../images/brand/logo_vertical--invert.svg"),
+                bg: $bg--dark--top,
+                card-bg: $bg--card--dark,
+                text: $text--dark,
+                text-secondary: $text--2--dark,
+                link: $brand--blue--dark,
+                hover: $hover--dark,
+                brand-red: $brand--red--dark,
+                brand-blue: $brand--blue--dark,
+                border: $border--dark
+        ),
+);
+
+@mixin themed($themes) {
+  @each $theme, $map in $themes {
+    .theme-#{$theme} & {
+      $theme-map: () !global;
+      @each $key, $submap in $map {
+        $value: map-get(map-get($themes, $theme), '#{$key}');
+        $theme-map: map-merge($theme-map, ($key: $value)) !global;
+      }
+      @content;
+      $theme-map: null !global;
+    }
+  }
+}
+
+@function t($key) {
+  @return map-get($theme-map, $key);
+}
+
+//GRADIENTS
+@mixin linear-gradient($from, $to) {
+  background: $to;
+  background: -moz-linear-gradient(top, $from 0%, $to 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$from), color-stop(100%,$to));
+  background: -webkit-linear-gradient(top, $from 0%,$to 100%);
+  background: -o-linear-gradient(top, $from 0%,$to 100%);
+  background: linear-gradient(to bottom, $from 0%,$to 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#{$from}, endColorstr=#{$to})
+}
+
+.theme-dark {
+  @include linear-gradient($bg--dark--top, $bg--dark--bottom);
+}
+
+.theme-light {
+  background: $bg--light;
+}

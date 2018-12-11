@@ -36,7 +36,7 @@ $line-height--quote: 1.3;
   font-family: $font-family--title;
 }
 
-//breakpoints
+//breakpoints from Bootstrap
 // Extra small screen / phone
 //** Deprecated `$screen-xs` as of v3.0.1
 $screen-xs:                  480px;
@@ -71,18 +71,6 @@ $screen-xs-max:              ($screen-sm-min - 1);
 $screen-sm-max:              ($screen-md-min - 1);
 $screen-md-max:              ($screen-lg-min - 1);
 
-//shortcuts
-$bg: 'bg';
-$card-bg: 'card-bg';
-$text: 'text';
-$text-secondary: 'text-secondary';
-$link: 'link';
-$hover: 'hover';
-$logo: 'logo';
-$brand-blue: 'brand-blue';
-$brand-red: 'brand-red';
-$border: 'border';
-
 //--colors
 $brand--red--light: #BC553C;
 $brand--red--dark: lighten($brand--red--light, 10%);
@@ -113,52 +101,6 @@ $highlight-color: transparentize($brand--blue--light, .1);
 //--other
 $rounded: 3px;
 
-//themes
-$themes: (
-        light: (
-                logo: url("../images/brand/logo_vertical.svg"),
-                bg: $bg--light,
-                card-bg: $bg--card--light,
-                text: $text--light,
-                text-secondary: $text--2--light,
-                link: $brand--blue--light,
-                hover: $hover--light,
-                brand-red: $brand--red--light,
-                brand-blue: $brand--blue--light,
-                border: $border--light
-        ),
-        dark: (
-                logo: url("../images/brand/logo_vertical--invert.svg"),
-                bg: $bg--dark--top,
-                card-bg: $bg--card--dark,
-                text: $text--dark,
-                text-secondary: $text--2--dark,
-                link: $brand--blue--dark,
-                hover: $hover--dark,
-                brand-red: $brand--red--dark,
-                brand-blue: $brand--blue--dark,
-                border: $border--dark
-        ),
-);
-
-@mixin themed($themes) {
-  @each $theme, $map in $themes {
-    .theme-#{$theme} & {
-      $theme-map: () !global;
-      @each $key, $submap in $map {
-        $value: map-get(map-get($themes, $theme), '#{$key}');
-        $theme-map: map-merge($theme-map, ($key: $value)) !global;
-      }
-      @content;
-      $theme-map: null !global;
-    }
-  }
-}
-
-@function t($key) {
-  @return map-get($theme-map, $key);
-}
-
 //GRADIENTS
 @mixin linear-gradient($from, $to) {
   background: $to;
@@ -168,14 +110,6 @@ $themes: (
   background: -o-linear-gradient(top, $from 0%,$to 100%);
   background: linear-gradient(to bottom, $from 0%,$to 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#{$from}, endColorstr=#{$to})
-}
-
-.theme-dark {
-  @include linear-gradient($bg--dark--top, $bg--dark--bottom);
-}
-
-.theme-light {
-  background: $bg--light;
 }
 
 //SHADOWS
