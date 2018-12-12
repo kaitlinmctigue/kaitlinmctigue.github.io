@@ -50,6 +50,7 @@ html, body {
 .base {
   @include themed($themes) {
     color: t($text);
+    background: t($bg);
   }
 
   position: fixed;
