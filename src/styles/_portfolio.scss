@@ -24,13 +24,13 @@
     line-height: $line-height--title;
 
     &__des {
-      @include themed($themes) {
+      @include themed() {
         color: t($brand-blue);
       }
     }
 
     &__dev {
-      @include themed($themes) {
+      @include themed() {
         color: t($brand-red);
       }
     }
@@ -58,7 +58,7 @@
     @include card-shadow;
     @extend %hover;
 
-    @include themed($themes) {
+    @include themed() {
       background: t($card-bg);
     }
     &__img {
@@ -83,13 +83,13 @@
         @extend %title-text;
 
         &--des {
-          @include themed($themes) {
+          @include themed() {
             color: t($brand-blue);
           }
         }
 
         &--dev {
-          @include themed($themes) {
+          @include themed() {
             color: t($brand-red);
           }
         }

@@ -37,7 +37,7 @@
   text-transform: lowercase;
   line-height: 1;
 
-  @include themed($themes) {
+  @include themed() {
     color: t($link)!important;
   }
 
@@ -46,7 +46,7 @@
     background: transparent!important;
     text-decoration: none;
 
-    @include themed($themes) {
+    @include themed() {
       color: t($link)!important;
     }
   }
@@ -60,7 +60,7 @@
     text-decoration: none;
     cursor: pointer;
 
-    @include themed($themes) {
+    @include themed() {
       background: t($hover);
     }
   }
@@ -75,7 +75,7 @@
       border-color: transparent;
       @include card-shadow;
 
-      @include themed($themes) {
+      @include themed() {
         background: t($bg);
       }
     }

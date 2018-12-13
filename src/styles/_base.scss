@@ -16,7 +16,7 @@ html, body {
   p {
     font-size: $font-size--base;
 
-    @include themed($themes) {
+    @include themed() {
       color: t($text);
     }
   }
@@ -48,7 +48,7 @@ html, body {
 }
 
 .base {
-  @include themed($themes) {
+  @include themed() {
     color: t($text);
     background: t($bg);
   }
@@ -75,7 +75,7 @@ html, body {
   background-repeat: no-repeat;
   background-position: top center;
 
-  @include themed($themes) {
+  @include themed() {
     background-image: t($logo);
   }
 }
@@ -87,7 +87,7 @@ html, body {
   padding: 4px 10px;
   text-transform: lowercase;
 
-  @include themed($themes) {
+  @include themed() {
     background: t($card-bg);
     color: t($text);
     border: 1px solid t($border);
@@ -99,7 +99,7 @@ html, body {
   font-size: $font-size--page-title;
   line-height: $line-height--title;
 
-  @include themed($themes) {
+  @include themed() {
     color: t($brand-blue);
   }
 }
