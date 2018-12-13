@@ -63,7 +63,7 @@ export default class App extends Component {
 
     render() {
         return (
-            <div className={'theme ' + (this.state.dark ? 'theme-dark' : 'theme-light')}>
+            <div className={'theme ' + (this.state.dark ? 'theme--dark' : 'theme--default')}>
                 <div className='base'>
                     <Router onUpdate={() => window.scrollTo(0, 0)}>
                         <ScrollToTop>

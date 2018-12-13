@@ -12,7 +12,7 @@ $border: 'border';
 
 //themes
 $themes: (
-        light: (
+        default: (
                 logo: url("../images/brand/logo_vertical.svg"),
                 bg: $bg--light,
                 card-bg: $bg--card--light,
@@ -40,7 +40,7 @@ $themes: (
 
 @mixin themed() {
   @each $theme, $map in $themes {
-    .theme-#{$theme} & {
+    .theme--#{$theme} & {
       $theme-map: () !global;
       @each $key, $submap in $map {
         $value: map-get(map-get($themes, $theme), '#{$key}');

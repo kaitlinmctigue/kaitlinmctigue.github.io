@@ -83,7 +83,7 @@
 }
 
 @media (min-width: $screen-xs-max) {
-  .theme-light {
+  .theme--default {
     .theme-toggle {
       &:hover a {
         &:before {
@@ -94,7 +94,7 @@
     }
   }
 
-  .theme-dark {
+  .theme--dark {
     .theme-toggle {
       &:hover a {
         &:before {
