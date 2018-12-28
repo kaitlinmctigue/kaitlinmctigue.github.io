@@ -1,6 +1,7 @@
 .header {
   width: 100%;
-  padding: $padding-top 10px;
+  overflow-x: hidden;
+  padding: $padding-top 30px;
   background: transparent;
   border: none;
   box-shadow: none;
@@ -8,6 +9,11 @@
 
   .container {
     width: 100%;
+    padding: 0;
+  }
+
+  .navbar-collapse {
+    padding: 0;
   }
 
   &__utility, &__links {
@@ -18,11 +24,61 @@
 
   &__links {}
 
-  .link {
-    @extend .link;
+  @media (max-width: $screen-xs-max) {
+    .logo {
+      display: none;
+    }
+  }
+
+  .header-link {
+    margin: 0 35px 0 0;
+    @extend .header-link;
+
 
     @media (max-width: $screen-xs-max) {
       margin: 0 12px $spacer--small 12px!important;
+    }
+  }
+}
+
+.header-link {
+  @media (min-width: $screen-sm-min) {
+    @include themed() {
+      color: t($text);
+    }
+
+    a {
+      background-color: transparent;
+      font-family: $font-family;
+      font-size: $font-size--tertiary;
+      font-weight: $font-weight--semibold;
+      text-transform: uppercase;
+      letter-spacing: 3.2px;
+      padding: 8px 0;
+
+      @include themed() {
+        color: t($text)!important;
+      }
+    }
+
+    &:hover, &.active {
+      a {
+        background-color: transparent!important;
+      }
+
+      &:before {
+        @include themed() {
+          background-color: t($text);
+        }
+        content: '';
+        height: 2px;
+        position: absolute;
+        bottom: -1px;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: width 0.3s ease-in-out;
+        width: 100%;
+      }
     }
   }
 }
@@ -31,14 +87,13 @@
   font-family: $font-family--title;
   display: flex;
   padding: 8px 12px;
-  margin: 0 20px 0 -12px;
   border-radius: $rounded;
   text-decoration: none;
   text-transform: lowercase;
   line-height: 1;
 
   @include themed() {
-    color: t($link)!important;
+    color: t($link);
   }
 
   a {
@@ -57,12 +112,12 @@
   }
 
   &:hover, &.active {
-    text-decoration: none;
+    text-decoration: underline;
     cursor: pointer;
-
-    @include themed() {
-      background: t($hover);
-    }
+    //
+    //@include themed() {
+    //  background: t($hover);
+    //}
   }
 }
 

@@ -69,14 +69,14 @@ html, body {
   position: absolute;
   top: $padding-top;
   left: calc(50% - #{$logo-width / 2});;
-  height: $logo-height - 45px;
+  height: $logo-height;
   width: $logo-width;
   background-size: $logo-width $logo-height;
   background-repeat: no-repeat;
   background-position: top center;
 
   @include themed() {
-    background-image: t($logo);
+    background-image: t($logo2);
   }
 }
 

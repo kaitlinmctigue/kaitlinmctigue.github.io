@@ -6,6 +6,7 @@ $text-secondary: 'text-secondary';
 $link: 'link';
 $hover: 'hover';
 $logo: 'logo';
+$logo2: 'logo-2';
 $brand-blue: 'brand-blue';
 $brand-red: 'brand-red';
 $border: 'border';
@@ -14,6 +15,7 @@ $border: 'border';
 $themes: (
         default: (
                 logo: url("../images/brand/logo_vertical.svg"),
+                logo-2: url("../images/brand/logo_horizontal.svg"),
                 bg: $bg--light,
                 card-bg: $bg--card--light,
                 text: $text--light,
@@ -26,7 +28,8 @@ $themes: (
         ),
         dark: (
                 logo: url("../images/brand/logo_vertical--invert.svg"),
-                bg: linear-gradient($bg--dark--top, $bg--dark--bottom),
+                logo-2: url("../images/brand/logo_horizontal--invert.svg"),
+                bg: #292c3d,
                 card-bg: $bg--card--dark,
                 text: $text--dark,
                 text-secondary: $text--2--dark,

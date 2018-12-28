@@ -4,8 +4,8 @@ $font-family--title: 'Montserrat', $font-family;
 $content-width--home: 1000px;
 $content-width: 700px;
 $padding-top: 20px;
-$logo-height: 85px * 1.2;
-$logo-width: 150px * 1.2;
+$logo-height: 35px;
+$logo-width: 250px;
 
 $spacer--default: 50px;
 $spacer--small: ($spacer--default / 2);
@@ -15,7 +15,7 @@ $spacer--icon: 5px;
 //text
 $font-size--base: 22px;
 $font-size--secondary: 18px;
-$font-size--tertiary: 16px;
+$font-size--tertiary: 15px;
 $font-size--intro: $font-size--secondary;
 $font-size--base--mobile: $font-size--base - 2;
 $font-size--role: $font-size--base + 4;
@@ -24,6 +24,9 @@ $font-size--page-title: $font-size--base * 2;
 $font-size--tags: $font-size--base - 4;
 $font-size--section-header: $font-size--tertiary;
 $font-size--quote: 36px;
+
+$font-weight--semibold: 600;
+$font-weight--bold: 700;
 
 $line-height--base: 1.6;
 $line-height--title: 1.1;

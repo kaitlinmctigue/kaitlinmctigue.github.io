@@ -82,7 +82,7 @@
 }
 
 .des {
-  .header__title, .section-header, .section-quote {
+  .header__title, .section-header, .section-quote, .link {
     @include themed() {
       color: t($brand-blue);
     }
@@ -90,7 +90,7 @@
 }
 
 .dev {
-  .header__title, .section-header, .section-quote {
+  .header__title, .section-header, .section-quote, .link {
     @include themed() {
       color: t($brand-red);
     }

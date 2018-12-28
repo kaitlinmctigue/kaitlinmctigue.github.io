@@ -75,24 +75,24 @@ export default class App extends Component {
                                     </Navbar.Header>
                                     <Navbar.Collapse>
                                         <Nav pullRight className='header__utility'>
-                                            <NavItem className="theme-toggle link" onClick={this.changeTheme}>
+                                            <NavItem className="theme-toggle header-link" onClick={this.changeTheme}>
                                                 <FontAwesomeIcon icon={this.state.dark ? 'sun' : 'moon'}/>
                                             </NavItem>
                                         </Nav>
                                         <div className='header__links'>
                                             <Nav>
                                                 <LinkContainer to='/' exact>
-                                                    <NavItem eventKey={1} className='link'>
-                                                        Portfolio
+                                                    <NavItem eventKey={1} className='header-link'>
+                                                        Home
                                                     </NavItem>
                                                 </LinkContainer>
                                                 <LinkContainer to={'/resume'}>
-                                                    <NavItem eventKey={2} className='link'>
+                                                    <NavItem eventKey={2} className='header-link'>
                                                         Resume
                                                     </NavItem>
                                                 </LinkContainer>
                                                 <LinkContainer to="/contact">
-                                                    <NavItem eventKey={3} className='link'>
+                                                    <NavItem eventKey={3} className='header-link'>
                                                         Contact
                                                     </NavItem>
                                                 </LinkContainer>
