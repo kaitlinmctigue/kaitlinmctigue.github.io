@@ -9,6 +9,7 @@
 
     img {
       width: $img-width;
+      max-width: $img-width;
       float: right;
 
       @media (max-width: $screen-xs-max) {

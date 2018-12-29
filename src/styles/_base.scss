@@ -119,7 +119,6 @@ html, body {
   padding-top: $page-padding-top;
 
   @media (max-width: $screen-md-max) {
-    //overflow-x: hidden;
-    padding: 0 $spacer--small;
+    padding: $page-padding-top $spacer--small;
   }
 }
