@@ -31,10 +31,22 @@
         margin-top: -200px;
       }
     }
+
+    &__body {
+      &__social {
+        &--bottom, &--top {
+          margin-top: $spacer--small;
+        }
+      }
+    }
+  }
+
+  .social-container {
+    background: #fff;
+    border-radius: 50%;
   }
 
   .social-icon {
-    margin-right: 8px;
-    margin-top: $spacer--small;
+    margin-left: 8px;
   }
 }
