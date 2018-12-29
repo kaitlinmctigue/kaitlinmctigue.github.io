@@ -56,11 +56,6 @@
     margin: 0 15px;
     @extend .header-link;
 
-
-    @media (max-width: $screen-xs-max) {
-      margin: 0 12px $spacer--small 12px!important;
-    }
-
     a {
       svg {
         font-size: 20px;
@@ -100,10 +95,6 @@
   &:hover, &.active {
     text-decoration: underline;
     cursor: pointer;
-    //
-    //@include themed() {
-    //  background: t($hover);
-    //}
   }
 }
 
@@ -164,6 +155,11 @@
 
   //mobile nav
   @media (max-width: $screen-xs-max) {
+    a {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+
     &:hover, &.active {
       a {
         @include themed() {
@@ -189,15 +185,29 @@
 
 @media (max-width: $screen-xs-max) {
   .header {
-    padding-bottom: 0;
-    margin-bottom: 0;
+    padding-bottom: 5px;
+    margin-bottom: $spacer--smallest;
+
+    .navbar-nav {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .navbar-toggle {
+      &:hover, &:focus {
+        @include themed() {
+          background: t($hover);
+        }
+      }
+    }
 
     .navbar-collapse {
       border-color: transparent;
+      overflow-x: hidden;
       @include card-shadow;
 
       @include themed() {
-        background: t($bg);
+        background: t($card-bg);
       }
     }
   }
