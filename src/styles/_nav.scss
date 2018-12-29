@@ -2,18 +2,40 @@
   width: 100%;
   overflow-x: hidden;
   padding: $padding-top 30px;
+  margin-bottom: 0;
   background: transparent;
   border: none;
   box-shadow: none;
   z-index: 1;
+
+  .logo {
+    @media (max-width: $screen-xs) {
+      left: $spacer--small;
+    }
+  }
 
   .container {
     width: 100%;
     padding: 0;
   }
 
+  .navbar-toggle {
+    margin-right: 0;
+    margin-top: 0;
+
+    @include themed() {
+      border-color: t($border);
+
+      span {
+        background-color: t($text);
+      }
+    }
+  }
+
   .navbar-collapse {
     padding: 0;
+    margin-bottom: 0;
+    margin-top: 0;
   }
 
   &__utility, &__links {
@@ -24,14 +46,8 @@
 
   &__links {}
 
-  @media (max-width: $screen-xs-max) {
-    .logo {
-      display: none;
-    }
-  }
-
   .header-link {
-    margin: 0 35px 0 0;
+    margin: 0 15px;
     @extend .header-link;
 
 
@@ -41,52 +57,10 @@
   }
 }
 
-.header-link {
-  @media (min-width: $screen-sm-min) {
-    @include themed() {
-      color: t($text);
-    }
-
-    a {
-      background-color: transparent;
-      font-family: $font-family;
-      font-size: $font-size--tertiary;
-      font-weight: $font-weight--semibold;
-      text-transform: uppercase;
-      letter-spacing: 3.2px;
-      padding: 8px 0;
-
-      @include themed() {
-        color: t($text)!important;
-      }
-    }
-
-    &:hover, &.active {
-      a {
-        background-color: transparent!important;
-      }
-
-      &:before {
-        @include themed() {
-          background-color: t($text);
-        }
-        content: '';
-        height: 2px;
-        position: absolute;
-        bottom: -1px;
-        left: 50%;
-        transform: translateX(-50%);
-        transition: width 0.3s ease-in-out;
-        width: 100%;
-      }
-    }
-  }
-}
-
 .link {
   font-family: $font-family--title;
   display: flex;
-  padding: 8px 12px;
+  padding: 8px 0;
   border-radius: $rounded;
   text-decoration: none;
   text-transform: lowercase;
@@ -121,6 +95,77 @@
   }
 }
 
+.header-link {
+  @include themed() {
+    color: t($text);
+  }
+
+  a {
+    background-color: transparent!important;
+    font-family: $font-family;
+    font-weight: $font-weight--semibold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    @include themed() {
+      color: t($text)!important;
+    }
+  }
+
+  //desktop nav
+  @media (min-width: $screen-sm-min) {
+    a {
+      font-size: $font-size--tertiary;
+      letter-spacing: 2px;
+      padding: 8px 0;
+
+      @include themed() {
+        color: t($text)!important;
+      }
+    }
+
+    &:hover, &.active {
+      &:before {
+        @include themed() {
+          background-color: t($text);
+        }
+        content: '';
+        height: 2px;
+        position: absolute;
+        bottom: -1px;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: width 0.3s ease-in-out;
+        width: 100%;
+      }
+    }
+  }
+
+  //mobile nav
+  @media (max-width: $screen-xs-max) {
+    &:hover, &.active {
+      a {
+        @include themed() {
+          background-color: t($hover)!important;
+        }
+      }
+
+      &:before {
+        @include themed() {
+          background-color: t($text);
+        }
+        content: '';
+        height: 100%;
+        position: absolute;
+        left: 3px;
+        transform: translateX(-50%);
+        transition: width 0.3s ease-in-out;
+        width: 6px;
+      }
+    }
+  }
+}
+
 @media (max-width: $screen-xs-max) {
   .header {
     padding-bottom: 0;
@@ -137,9 +182,9 @@
   }
 }
 
-@media (min-width: $screen-xs-max) {
-  .theme--default {
-    .theme-toggle {
+.theme--default {
+  .theme-toggle {
+    @media (min-width: $screen-sm-min) {
       &:hover a {
         &:before {
           content: "Go Dark";
@@ -147,14 +192,37 @@
         }
       }
     }
+    @media (max-width: $screen-xs-max) {
+      a {
+        margin-right: $spacer--icon;
+        &:after {
+          content: "Go Dark";
+          margin-left: $spacer--icon;
+        }
+      }
+    }
   }
+}
 
-  .theme--dark {
-    .theme-toggle {
+.theme--dark {
+  svg {
+    color: #ffd475;
+  }
+  .theme-toggle {
+    @media (min-width: $screen-sm-min) {
       &:hover a {
         &:before {
           content: "Go Light";
           margin-right: $spacer--icon;
+        }
+      }
+    }
+    @media (max-width: $screen-xs-max) {
+      a {
+        margin-right: $spacer--icon;
+        &:after {
+          content: "Go Light";
+          margin-left: $spacer--icon;
         }
       }
     }

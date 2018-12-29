@@ -61,7 +61,6 @@ html, body {
 
   @media (max-width: $screen-md-max) {
     overflow-x: hidden;
-    padding: 0 $spacer--default;
   }
 }
 
@@ -101,5 +100,12 @@ html, body {
 
   @include themed() {
     color: t($brand-blue);
+  }
+}
+
+.body {
+  @media (max-width: $screen-md-max) {
+    overflow-x: hidden;
+    padding: 0 $spacer--small;
   }
 }

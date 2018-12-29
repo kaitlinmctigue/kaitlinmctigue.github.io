@@ -74,15 +74,10 @@ export default class App extends Component {
                                         <Navbar.Toggle />
                                     </Navbar.Header>
                                     <Navbar.Collapse>
-                                        <Nav pullRight className='header__utility'>
-                                            <NavItem className="theme-toggle header-link" onClick={this.changeTheme}>
-                                                <FontAwesomeIcon icon={this.state.dark ? 'sun' : 'moon'}/>
-                                            </NavItem>
-                                        </Nav>
                                         <div className='header__links'>
                                             <Nav>
                                                 <LinkContainer to='/' exact>
-                                                    <NavItem eventKey={1} className='header-link'>
+                                                    <NavItem eventKey={1} className='hidden-sm header-link'>
                                                         Home
                                                     </NavItem>
                                                 </LinkContainer>
@@ -98,6 +93,11 @@ export default class App extends Component {
                                                 </LinkContainer>
                                             </Nav>
                                         </div>
+                                        <Nav pullRight className='header__utility'>
+                                            <NavItem className="theme-toggle header-link" onClick={this.changeTheme}>
+                                                <FontAwesomeIcon icon={this.state.dark ? 'sun' : 'moon'}/>
+                                            </NavItem>
+                                        </Nav>
                                     </Navbar.Collapse>
                                 </Navbar>
 

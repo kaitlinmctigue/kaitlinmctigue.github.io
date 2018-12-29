@@ -2,7 +2,16 @@
 
 .portfolio {
   max-width: $content-width--home;
-  margin: 60px auto 0;
+  margin: 70px auto 0;
+  text-align: center;
+
+  @media (max-width: $screen-sm-max) {
+    margin-top: 0;
+  }
+
+  @media (max-width: $screen-xs) {
+    text-align: left;
+  }
 
   &__intro {
     max-width: 500px;
@@ -21,6 +30,11 @@
     @include themed() {
       background-image: t($logo);
       background-color: t($bg);
+    }
+
+    @media (max-width: $screen-sm-max) {
+      display: none;
+      background-color: transparent;
     }
   }
 
@@ -58,6 +72,7 @@
 
 .item-preview {
   padding: $spacer--default/2 0 $spacer--default/2;
+  text-align: center;
 
   &__content {
     display: block;

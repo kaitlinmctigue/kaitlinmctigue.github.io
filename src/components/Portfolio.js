@@ -124,14 +124,14 @@ export default class Portfolio extends Component {
         }
 
         return (
-            <div className="portfolio text-center">
+            <div className="portfolio">
                 <Link to='/' className="logo"></Link>
                 <div className="title">
                     <span className="title__des">UX Designer & </span>
                     <br className='hidden-sm hidden-md hidden-lg'/>
                     <span className="title__dev">UI Developer</span>
                 </div>
-                <div className="portfolio__intro mx-auto text-center">
+                <div className="portfolio__intro mx-auto">
                     <p>Bonafide unicorn specializing in design systems and coffee consumption. Currently finishing up my Masters in HCI at Carnegie Mellon University while working as a product designer at TeleTracking.</p>
                     {/*<p> I like writing pixel-perfect css, and asking questions that other people are afraid to ask.</p>*/}
                 </div>
