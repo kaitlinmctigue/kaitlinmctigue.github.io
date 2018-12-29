@@ -44,9 +44,15 @@
   .social-container {
     background: #fff;
     border-radius: 50%;
+
+    @extend %hover;
   }
 
   .social-icon {
     margin-left: 8px;
+
+    &:hover {
+      opacity: .9;
+    }
   }
 }

@@ -6,7 +6,7 @@
   background: transparent;
   border: none;
   box-shadow: none;
-  z-index: 1;
+  z-index: 10;
 
   @include themed() {
     background: t($bg);

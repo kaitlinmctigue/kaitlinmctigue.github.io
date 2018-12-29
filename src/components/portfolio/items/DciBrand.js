@@ -19,7 +19,7 @@ import proposal3 from '../../../images/portfolio/proposal3.jpg';
 import Backlink from '../Backlink';
 
 const title = 'Diverse Computing Rebrand';
-const tags = ['Branding'];
+const tags = ['Design', 'Branding'];
 const classification = 'des';
 const problem = 'Diverse Computing\u2019s flagship product, eAgent, had overshadowed its parent company. The strength of the eAgent brand made it tricky for DCI to branch out beyond the NCIC access domain, and position itself in the criminal justice community as, well, diverse.';
 const solution = 'A new identity for Diverse Computing that complements the eAgent brand and sets the foundation for a comprehensive platform of solutions form the criminal justice community.';

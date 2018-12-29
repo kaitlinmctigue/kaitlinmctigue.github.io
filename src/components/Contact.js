@@ -20,7 +20,7 @@ export default class Contact extends Component {
                         looking for help on a project, or just a cup of coffee?
                     </h1>
                     <div className={'contact__text__body'}>
-                        <p>kaitlinmctigue at gmail dot com</p>
+                        <p>Shoot me an email at kaitlinmctigue at gmail dot com</p>
                         {/*<p><a className={'link'} href={'https://www.linkedin.com/in/katiemctigue'} target={'_blank'}>linkedin.com/in/katiemctigue</a></p>*/}
 
                         <div className={'contact__text__body__social'}>

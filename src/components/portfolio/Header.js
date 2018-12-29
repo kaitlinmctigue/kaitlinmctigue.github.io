@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Title from './Title';
+import Tag from './Tag';
 
 class Header extends Component {
 
@@ -46,9 +47,7 @@ class Header extends Component {
                         </div>
                         <div className={'header__tags'}>
                             {this.props.tags.map((tag) =>
-                                <span key={tag.toString()} value={tag} className={'badge'}>
-                                    {tag}
-                                </span>
+                                <Tag tag={tag} key={tag}></Tag>
                             )}
                         </div>
                     </div>

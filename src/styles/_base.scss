@@ -99,6 +99,26 @@ html, body {
   text-transform: lowercase;
   border-radius: 15px;
 
+  &--design {
+    &.badge {
+      @include themed() {
+        //border-color: t($brand-blue);
+        color: t($brand-blue);
+        font-weight: bold;
+      }
+    }
+  }
+
+  &--dev {
+    &.badge {
+      @include themed() {
+        //border-color: t($brand-red);
+        color: t($brand-red);
+        font-weight: bold;
+      }
+    }
+  }
+
   @include themed() {
     background: t($card-bg);
     color: t($text);

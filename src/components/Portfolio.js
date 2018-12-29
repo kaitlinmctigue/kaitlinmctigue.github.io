@@ -8,6 +8,7 @@ import stanley from '../images/thumbnails/stanley.png';
 import women from '../images/thumbnails/women.jpg';
 
 import { ButtonToolbar, ToggleButtonGroup, ToggleButton } from 'react-bootstrap';
+import Tag from './portfolio/Tag';
 
 export default class Portfolio extends Component {
 
@@ -24,7 +25,7 @@ export default class Portfolio extends Component {
             {
                 'id': 2,
                 'title': 'Playsmart RFID Toys Concept',
-                'tags': ['instructional design', 'physical computing'],
+                'tags': ['design', 'instructional design'],
                 'img': toy,
                 'class': 'des',
                 'path': 'playsmart'
@@ -40,7 +41,7 @@ export default class Portfolio extends Component {
             {
                 'id': 0,
                 'title': 'Diverse Computing Rebrand',
-                'tags': ['branding'],
+                'tags': ['design', 'branding'],
                 'img': dci,
                 'class': 'des',
                 'path': 'dci-brand'
@@ -59,7 +60,7 @@ export default class Portfolio extends Component {
             {
                 'id': 0,
                 'title': 'Women Drowning Photo Series',
-                'tags': ['Photography, Art Direction'],
+                'tags': ['design', 'Photography', 'Art Direction'],
                 'img': women,
                 'class': 'des',
                 'path': 'women-drowning'
@@ -67,7 +68,7 @@ export default class Portfolio extends Component {
             {
                 'id': 1,
                 'title': 'The Shining Hotel Project',
-                'tags': ['dev, React, interactive art'],
+                'tags': ['dev', 'react', 'interactive art'],
                 'img': stanley,
                 'class': 'dev',
                 'path': 'shining-hotel'
@@ -81,7 +82,7 @@ export default class Portfolio extends Component {
 
     renderTag(tag) {
         return(
-            <span className="badge">
+            <span className={'badge badge--' + {tag}}>
                 {tag}
             </span>
         );
@@ -99,9 +100,7 @@ export default class Portfolio extends Component {
                             </div>
                             <div className="item-preview__content__desc__desc">
                                 {work.tags.map((tag) =>
-                                    <span key={tag.toString()} value={tag} className={'badge'}>
-                                        {tag}
-                                    </span>
+                                    <Tag tag={tag} key={tag}></Tag>
                                 )}
                             </div>
                         </div>
