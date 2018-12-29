@@ -7,6 +7,8 @@ import hosp from '../images/thumbnails/hosp.jpg';
 import stanley from '../images/thumbnails/stanley.png';
 import women from '../images/thumbnails/women.jpg';
 
+import { ButtonToolbar, ToggleButtonGroup, ToggleButton } from 'react-bootstrap';
+
 export default class Portfolio extends Component {
 
     constructor(props) {
@@ -73,8 +75,8 @@ export default class Portfolio extends Component {
         ];
     }
 
-    changeModeFilter(test) {
-        this.setState({filter: test});
+    changeModeFilter(e) {
+        this.setState({ filter: e });
     }
 
     renderTag(tag) {
@@ -137,12 +139,13 @@ export default class Portfolio extends Component {
 
                 <div className="portfolio__body">
                     <div className="portfolio__body__links">
-                        <div className={'link ' + (this.state.filter == 'work' ? 'active' : '')} onClick={this.changeModeFilter.bind(this, 'work')}>
-                            Work
-                        </div>
-                        <div className={'link ' + (this.state.filter == 'play' ? 'active' : '')} onClick={this.changeModeFilter.bind(this, 'play')}>
-                            Play
-                        </div>
+                        <ButtonToolbar>
+                            <span className={'portfolio__body__links__filter pull-left'}>filter: </span>
+                            <ToggleButtonGroup type="radio" name="options" defaultValue={'work'} value={this.state.filter} onChange={this.changeModeFilter}>
+                                <ToggleButton value={'work'}>Work</ToggleButton>
+                                <ToggleButton value={'play'}>Play</ToggleButton>
+                            </ToggleButtonGroup>
+                        </ButtonToolbar>
                     </div>
 
                     <div className="portfolio__body__items">

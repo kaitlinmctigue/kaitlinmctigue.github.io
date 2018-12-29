@@ -2,6 +2,7 @@
 $bg: 'bg';
 $card-bg: 'card-bg';
 $text: 'text';
+$text-important: 'text-important';
 $text-secondary: 'text-secondary';
 $link: 'link';
 $hover: 'hover';
@@ -19,6 +20,7 @@ $themes: (
                 bg: $bg--light,
                 card-bg: $bg--card--light,
                 text: $text--light,
+                text-important: $text--imp--light,
                 text-secondary: $text--2--light,
                 link: $brand--blue--light,
                 hover: $hover--light,
@@ -32,6 +34,7 @@ $themes: (
                 bg: $bg--dark--top,
                 card-bg: $bg--card--dark,
                 text: $text--dark,
+                text-important: $text--imp--dark,
                 text-secondary: $text--2--dark,
                 link: $brand--blue--dark,
                 hover: $hover--dark,

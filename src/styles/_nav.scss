@@ -46,7 +46,9 @@
     list-style: none;
   }
 
-  &__utility {}
+  &__utility {
+
+  }
 
   &__links {}
 
@@ -57,6 +59,12 @@
 
     @media (max-width: $screen-xs-max) {
       margin: 0 12px $spacer--small 12px!important;
+    }
+
+    a {
+      svg {
+        font-size: 20px;
+      }
     }
   }
 }
@@ -104,12 +112,21 @@
     color: t($text);
   }
 
+  &:hover, &.active {
+    @include themed() {
+      color: t($text-important);
+    }
+
+    a {
+      @include themed() {
+        color: t($text-important)!important;
+      }
+    }
+  }
+
   a {
     background-color: transparent!important;
-    font-family: $font-family;
-    font-weight: $font-weight--semibold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    @extend %nav-text;
 
     @include themed() {
       color: t($text)!important;
@@ -131,7 +148,7 @@
     &:hover, &.active {
       &:before {
         @include themed() {
-          background-color: t($text);
+          background-color: t($text-important);
         }
         content: '';
         height: 2px;

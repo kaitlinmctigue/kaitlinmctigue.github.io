@@ -97,6 +97,7 @@ html, body {
   font-size: $font-size--tags;
   padding: 4px 10px;
   text-transform: lowercase;
+  border-radius: 15px;
 
   @include themed() {
     background: t($card-bg);

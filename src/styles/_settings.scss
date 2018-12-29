@@ -33,6 +33,14 @@ $line-height--base: 1.6;
 $line-height--title: 1.1;
 $line-height--quote: 1.3;
 
+%nav-text {
+  font-family: $font-family--title;
+  font-weight: $font-weight--semibold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: $font-size--tertiary;
+}
+
 %title-text {
   //letter-spacing: 2.7px;
   letter-spacing: 1px;
@@ -79,15 +87,15 @@ $screen-md-max:              ($screen-lg-min - 1);
 $brand--red--light: #BC553C;
 $brand--red--dark: lighten($brand--red--light, 10%);
 $brand--blue--light: #4376A3;
-$brand--blue--dark: lighten($brand--blue--light, 20%);
+$brand--blue--dark: lighten($brand--blue--light, 18%);
 $bg--red: lighten($brand--red--light, 40%);
 $bg--blue: lighten($brand--blue--light, 40%);
 $bg--light: #F5F4F3;
-$bg--dark--top: #363a50;
+$bg--dark--top: #333848;
 $bg--dark--bottom: #212631;
 $bg--dark: linear-gradient(180deg, $bg--dark--top 0%, $bg--dark--bottom 100%);
 $bg--card--light: lighten($bg--light, 1%);
-$bg--card--dark: #464858;
+$bg--card--dark: desaturate(lighten($bg--dark--top, 8%), 5%);
 $text--imp--light: #242D30;
 $text--imp--dark: #E8E4E0;
 $text--light: lighten($text--imp--light, 5%);

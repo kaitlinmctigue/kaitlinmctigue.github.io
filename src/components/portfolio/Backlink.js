@@ -18,8 +18,8 @@ class Backlink extends Component {
                             Back to All Projects
                         </Link>
                     </div>
-                    <div className={'col-xs-12 col-sm-6 text-right'}>
-                        <a className={'link'} onClick={this.toTop}>
+                    <div className={'col-xs-12 col-sm-6'}>
+                        <a className={'link pull-right'} onClick={this.toTop}>
                             <FontAwesomeIcon icon={'arrow-up'}/>
                             Back to Top
                         </a>

@@ -59,13 +59,78 @@
   }
 
   &__body {
-    &__links {
-      text-align: left;
-      margin-top: $spacer--default;
+    margin-top: $spacer--default;
 
-      .link {
-        width: auto;
-        display: inline-block;
+    &__links {
+      &__filter {
+        font-size: $font-size--intro;
+        font-family: $font-family;
+        text-transform: lowercase;
+        margin-right: $spacer--icon;
+
+        @include themed() {
+          color: t($text);
+        }
+      }
+
+      .btn-toolbar .btn-group {
+        @include themed() {
+          border-color: t($border);
+
+          * {
+            border-color: t($border);
+          }
+        }
+
+        label {
+          @extend %nav-text;
+
+          @include themed() {
+            background: t($card-bg);
+            background-color: t($card-bg);
+            background-image: none;
+            color: t($text);
+            border-color: t($border);
+          }
+
+          &:first-of-type {
+            &:before {
+              content: 'work';
+            }
+          }
+          &:last-of-type {
+            &:before {
+              content: 'play';
+            }
+          }
+
+          &:before {
+            @extend %nav-text;
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            padding: 5px 0;
+
+            @include themed() {
+              background-color: t($card-bg);
+              color: t($text);
+            }
+          }
+
+          &.active {
+            &:before {
+              box-shadow: inset 0px 3px 11px rgba(0, 0, 0, 0.2);
+
+              @include themed() {
+                background-color: t($bg);
+                color: t($text-important);
+              }
+            }
+          }
+        }
       }
     }
   }
