@@ -6,6 +6,7 @@ $content-width: 700px;
 $padding-top: 12px;
 $logo-height: 35px;
 $logo-width: 250px;
+$page-padding-top: 55px;
 
 $spacer--default: 50px;
 $spacer--small: ($spacer--default / 2);
@@ -82,7 +83,7 @@ $brand--blue--dark: lighten($brand--blue--light, 20%);
 $bg--red: lighten($brand--red--light, 40%);
 $bg--blue: lighten($brand--blue--light, 40%);
 $bg--light: #F5F4F3;
-$bg--dark--top: #3a3e56;
+$bg--dark--top: #363a50;
 $bg--dark--bottom: #212631;
 $bg--dark: linear-gradient(180deg, $bg--dark--top 0%, $bg--dark--bottom 100%);
 $bg--card--light: lighten($bg--light, 1%);

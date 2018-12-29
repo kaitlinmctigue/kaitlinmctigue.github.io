@@ -1,12 +1,16 @@
 .header {
   width: 100%;
   overflow-x: hidden;
-  padding: $padding-top 30px;
+  padding: 10px 30px;
   margin-bottom: 0;
   background: transparent;
   border: none;
   box-shadow: none;
   z-index: 1;
+
+  @include themed() {
+    background: t($bg);
+  }
 
   .logo {
     @media (max-width: $screen-xs) {
@@ -205,10 +209,10 @@
 }
 
 .theme--dark {
-  svg {
-    color: #ffd475;
-  }
   .theme-toggle {
+    svg {
+      color: #ffd475;
+    }
     @media (min-width: $screen-sm-min) {
       &:hover a {
         &:before {

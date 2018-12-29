@@ -29,7 +29,7 @@ $themes: (
         dark: (
                 logo: url("../images/brand/logo_vertical--invert.svg"),
                 logo-2: url("../images/brand/logo_horizontal--invert.svg"),
-                bg: #292c3d,
+                bg: $bg--dark--top,
                 card-bg: $bg--card--dark,
                 text: $text--dark,
                 text-secondary: $text--2--dark,

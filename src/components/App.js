@@ -4,8 +4,8 @@ import { LinkContainer } from 'react-router-bootstrap';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMoon, faSun, faArrowCircleDown, faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
-library.add(faMoon, faSun, faArrowCircleDown, faArrowRight, faArrowLeft);
+import { faMoon, faSun, faArrowCircleDown, faArrowRight, faArrowLeft, faArrowUp } from '@fortawesome/free-solid-svg-icons';
+library.add(faMoon, faSun, faArrowCircleDown, faArrowRight, faArrowLeft, faArrowUp);
 import Contact from './Contact';
 import Resume from './Resume';
 import Portfolio from './Portfolio';
@@ -64,11 +64,12 @@ export default class App extends Component {
     render() {
         return (
             <div className={'theme ' + (this.state.dark ? 'theme--dark' : 'theme--default')}>
+                <div id={'top'}/>
                 <div className='base'>
                     <Router onUpdate={() => window.scrollTo(0, 0)}>
                         <ScrollToTop>
                             <div>
-                                <Navbar collapseOnSelect className='header'>
+                                <Navbar collapseOnSelect className='header' fixedTop>
                                     <Link to='/' className="logo"></Link>
                                     <Navbar.Header>
                                         <Navbar.Toggle />

@@ -2,8 +2,9 @@
 
 .portfolio {
   max-width: $content-width--home;
-  margin: 70px auto 0;
+  margin: $page-padding-top auto 0;
   text-align: center;
+  padding-top: 1px;
 
   @media (max-width: $screen-sm-max) {
     margin-top: 0;

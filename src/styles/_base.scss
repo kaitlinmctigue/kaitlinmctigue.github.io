@@ -6,6 +6,11 @@
   color: $text--dark;
 }
 
+html {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
 html, body {
   font-family: $font-family;
   background: $bg--dark--top;
@@ -52,15 +57,22 @@ html, body {
     color: t($text);
     background: t($bg);
   }
-
-  position: fixed;
-  width: 100%;
-  overflow-y: auto;
-  height: 100vh;
   padding-bottom: $spacer--default * 2;
 
+  &:after {
+    content: '';
+    position: fixed;
+    width: 100%;
+    overflow-y: auto;
+    min-height: 100vh;
+
+    @include themed() {
+      background: t($bg);
+    }
+  }
+
   @media (max-width: $screen-md-max) {
-    overflow-x: hidden;
+    //overflow-x: hidden;
   }
 }
 
@@ -104,8 +116,10 @@ html, body {
 }
 
 .body {
+  padding-top: $page-padding-top;
+
   @media (max-width: $screen-md-max) {
-    overflow-x: hidden;
+    //overflow-x: hidden;
     padding: 0 $spacer--small;
   }
 }
