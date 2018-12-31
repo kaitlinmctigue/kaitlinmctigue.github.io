@@ -1,7 +1,7 @@
 .contact {
   $img-width: 400px;
   max-width: $content-width;
-  margin: 45px auto 0;
+  margin: $page-padding-top auto 0;
 
   &__img {
     width: 100%;

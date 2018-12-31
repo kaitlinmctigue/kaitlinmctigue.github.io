@@ -30,7 +30,7 @@ export default class StanleyHotel extends Component {
                     year={2018}
                 />
 
-                <Section title={'View Project'} link={'kaitlinmctigue.github.io/stanleyhotel/'}/>
+                <Section title={'View Project'} link={'https://kaitlinmctigue.github.io/stanleyhotel/'}/>
 
                 <Backlink/>
             </div>

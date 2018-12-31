@@ -137,9 +137,9 @@ html, body {
 }
 
 .body {
-  padding-top: $page-padding-top;
+  padding-top: $navbar-height;
 
   @media (max-width: $screen-md-max) {
-    padding: $page-padding-top $spacer--small;
+    padding: $navbar-height $spacer--small;
   }
 }

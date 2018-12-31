@@ -1,5 +1,9 @@
 $pdf-width: 1100px;
 
+.resume {
+  margin-top: $page-padding-top;
+}
+
 .react-pdf__Page__canvas {
   margin: 0 auto;
   @include card-shadow;
