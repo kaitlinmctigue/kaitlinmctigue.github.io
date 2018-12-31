@@ -81,6 +81,12 @@
   }
 }
 
+.caption {
+  font-size: $font-size--tertiary;
+  font-style: italic;
+  text-align: center;
+}
+
 .des {
   .header__title, .section-header, .section-quote, .link {
     @include themed() {

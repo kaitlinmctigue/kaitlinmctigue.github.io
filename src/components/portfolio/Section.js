@@ -24,6 +24,16 @@ class Section extends Component {
         }
     }
 
+    textAfterImg() {
+        if (this.props.textAfterImg) {
+            return (
+                <p>
+                    {this.props.textAfterImg}
+                </p>
+            );
+        }
+    }
+
     quote() {
         if (this.props.quote) {
             return (
@@ -36,6 +46,18 @@ class Section extends Component {
         if (this.props.img) {
             return (
                 <Img img={this.props.img}></Img>
+            );
+        }
+    }
+
+    caption() {
+        if (this.props.caption) {
+            return (
+                <p className={'caption'}>
+                    <em>
+                        {this.props.caption}
+                    </em>
+                </p>
             );
         }
     }
@@ -63,6 +85,12 @@ class Section extends Component {
                 <div className={'col-xs-12 col-sm-12 section__img'}>
                     {this.img()}
                 </div>
+                <div className={'col-xs-12 col-sm-12 section__text'}>
+                    {this.caption()}
+                </div>
+                <div className={'col-xs-12 col-sm-12 section__text'}>
+                    {this.textAfterImg()}
+                </div>
                 <div className={'col-xs-12 col-sm-12 section__img'}>
                     {this.link()}
                 </div>
@@ -74,8 +102,10 @@ class Section extends Component {
 Section.propTypes = {
     title: PropTypes.string,
     text: PropTypes.string,
+    textAfterImg: PropTypes.string,
     quote: PropTypes.string,
     img: PropTypes.string,
+    caption: PropTypes.string,
     link: PropTypes.string
 };
 

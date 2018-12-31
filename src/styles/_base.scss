@@ -19,6 +19,7 @@ html, body {
   font-weight: normal;
 
   p {
+    white-space: pre-line;
     font-size: $font-size--base;
 
     @include themed() {
