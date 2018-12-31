@@ -9,7 +9,7 @@
   z-index: 10;
 
   @include themed() {
-    background: t($bg);
+    background: transparentize(t($bg), .1);
   }
 
   .logo {
