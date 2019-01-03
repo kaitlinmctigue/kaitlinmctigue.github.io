@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Img from './portfolio/Img';
 import { SocialIcon } from 'react-social-icons';
 import headshot from '../images/headshot.jpg';
 
