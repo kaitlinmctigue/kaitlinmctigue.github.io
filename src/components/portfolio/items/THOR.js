@@ -74,7 +74,7 @@ export default class THOR extends Component {
                     <Spacer size={'small'}/>
 
                     <div className={'col-xs-12 col-sm-12'}>
-                        <Img img={login} caption={'Login page)'}/>
+                        <Img img={login} caption={'Login page'}/>
                     </div>
                 </div>
 

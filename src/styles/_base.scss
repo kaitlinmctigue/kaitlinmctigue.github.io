@@ -161,3 +161,17 @@ html, body {
     height: $spacer--small;
   }
 }
+
+.img {
+  @include themed() {
+    border: 1px solid t($border);
+  }
+
+  &--clickable {
+    cursor: pointer;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

@@ -1,7 +1,18 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+import Lightbox from 'react-image-lightbox';
+import 'react-image-lightbox/style.css';
+
 class Img extends Component {
+
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            lightboxOpen: false
+        };
+    }
 
     caption() {
         if (this.props.caption) {
@@ -19,7 +30,14 @@ class Img extends Component {
         return (
             <div className={'row'}>
                 <div className={'col-xs-12'}>
-                    <img className={'img img-responsive'} src={this.props.img}/>
+                    <img onClick={() => this.setState({ lightboxOpen: true })} className={'img img-responsive img--clickable'} src={this.props.img}/>
+                    {this.state.lightboxOpen && (
+                        <Lightbox
+                            mainSrc={this.props.img}
+                            onCloseRequest={() => this.setState({ lightboxOpen: false })}
+                            enableZoom={false}
+                        />
+                    )}
                 </div>
                 <div className={'col-xs-12'}>
                     {this.caption()}
