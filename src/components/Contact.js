@@ -13,7 +13,7 @@ export default class Contact extends Component {
         return (
             <div className={'contact'}>
                 <div className={'contact__img'}>
-                    <Img img={headshot} />
+                    <img src={headshot} className={'img img-responsive'} />
                 </div>
                 <div className={'contact__text'}>
                     <h1 className={'title contact__text__title'}>
