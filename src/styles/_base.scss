@@ -144,3 +144,20 @@ html, body {
     padding: $navbar-height $spacer--small;
   }
 }
+
+.spacer {
+  display: block;
+  width: 100%;
+
+  &--default {
+    height: $spacer--default;
+  }
+
+  &--smallest {
+    height: $spacer--smallest;
+  }
+
+  &--small {
+    height: $spacer--small;
+  }
+}

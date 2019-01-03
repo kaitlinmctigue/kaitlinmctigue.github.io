@@ -5,11 +5,13 @@ import logos from '../../../images/portfolio/thor/thor_logos.png';
 import original from '../../../images/portfolio/thor/original.jpg';
 import logo from '../../../images/portfolio/thor/logo.png';
 import loading from '../../../images/portfolio/thor/loading.gif';
+import login from '../../../images/portfolio/thor/login.png';
 
 import Setup from '../Setup';
 import Backlink from '../Backlink';
 import Section from '../Section';
 import Img from '../Img';
+import Spacer from '../Spacer';
 
 const title = 'Tennessee Homeland Online Records';
 const tags = ['dev', 'angular2', 'branding'];
@@ -59,11 +61,20 @@ export default class THOR extends Component {
 
                 <Section title={'Branding'} text={branding}/>
                 <div className={'row'}>
+
+                    <Spacer size={'small'}/>
+
                     <div className={'col-xs-12 col-sm-6'}>
-                        <Img img={logo}/>
+                        <Img img={logo} caption={'THOR logo'}/>
                     </div>
                     <div className={'col-xs-12 col-sm-6'}>
-                        <Img img={loading}/>
+                        <Img img={loading} caption={'Loading graphic (stars mark TBI headquarters)'}/>
+                    </div>
+
+                    <Spacer size={'small'}/>
+
+                    <div className={'col-xs-12 col-sm-12'}>
+                        <Img img={login} caption={'Login page)'}/>
                     </div>
                 </div>
 
