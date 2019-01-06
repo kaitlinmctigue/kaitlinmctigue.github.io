@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Title from './Title';
 import Tag from './Tag';
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Spacer from './Spacer';
 
 class Header extends Component {
 
@@ -42,6 +45,11 @@ class Header extends Component {
                 {/*head*/}
                 <div className={'row'}>
                     <div className={'col-xs-12 col-sm-12'}>
+                        <Link to={'/'} className={'link'}>
+                            <FontAwesomeIcon icon={'arrow-left'}/>
+                            Back to All Projects
+                        </Link>
+                        <Spacer/>
                         <div className={'header__title title'}>
                             {this.props.title}
                         </div>

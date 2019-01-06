@@ -30,7 +30,7 @@ class Img extends Component {
         return (
             <div className={'row'}>
                 <div className={'col-xs-12'}>
-                    <img onClick={() => this.setState({ lightboxOpen: true })} className={'img img-responsive img--clickable'} src={this.props.img}/>
+                    <img onClick={() => this.setState({ lightboxOpen: true })} className={'img img-responsive img--clickable ' + (this.props.styleClass ? this.props.styleClass : '')} src={this.props.img}/>
                     {this.state.lightboxOpen && (
                         <Lightbox
                             mainSrc={this.props.img}
@@ -50,6 +50,7 @@ class Img extends Component {
 Img.propTypes = {
     img: PropTypes.string,
     caption: PropTypes.string,
+    styleClass: PropTypes.styleClass
 };
 
 export default Img;

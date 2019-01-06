@@ -45,7 +45,15 @@ class Section extends Component {
     img() {
         if (this.props.img) {
             return (
-                <Img img={this.props.img}></Img>
+                <Img img={this.props.img} caption={this.props.caption ? this.props.caption : ''}></Img>
+            );
+        }
+    }
+
+    staticImg() {
+        if (this.props.staticImg) {
+            return (
+                <img src={this.props.staticImg} className={'img img-responsive'}></img>
             );
         }
     }
@@ -53,7 +61,7 @@ class Section extends Component {
     caption() {
         if (this.props.caption) {
             return (
-                <p className={'caption'}>
+                <p>
                     <em>
                         {this.props.caption}
                     </em>
@@ -85,6 +93,9 @@ class Section extends Component {
                 <div className={'col-xs-12 col-sm-12 section__img'}>
                     {this.img()}
                 </div>
+                <div className={'col-xs-12 col-sm-12 section__img'}>
+                    {this.staticImg()}
+                </div>
                 <div className={'col-xs-12 col-sm-12 section__text'}>
                     {this.caption()}
                 </div>
@@ -105,6 +116,7 @@ Section.propTypes = {
     textAfterImg: PropTypes.string,
     quote: PropTypes.string,
     img: PropTypes.string,
+    staticImg: PropTypes.string,
     caption: PropTypes.string,
     link: PropTypes.string
 };

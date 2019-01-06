@@ -6,13 +6,13 @@ import Section from '../Section';
 import Setup from '../Setup';
 import Backlink from '../Backlink';
 
-const title = 'Environmental Design Research & Development';
+const title = 'Environmental Design Research & Development (Complete Writeup Coming Soon)';
 const tags = ['Dev', 'UX Research'];
 const classification = 'dev';
 const problem = 'After the 2017.3 upgrade, TeleTracking customers were experiencing eye fatigue when using the IQ platform.';
 const solution = 'Using the design thinking framework, we uncovered a surprising myriad of factors contributing to this problem, and addressed each of them. Key changes included increased contrast, text rendering improvements, and a “night” color theme.';
 
-import dtbar from '../../../images/portfolio/dtbar.svg';
+import dtbar from '../../../images/portfolio/dt_bar.png';
 
 export default class Environmental extends Component {
 
@@ -38,7 +38,7 @@ export default class Environmental extends Component {
                     year={2018}
                 />
 
-                <Section title={'Process'} img={dtbar}/>
+                <Section title={'Process'} staticImg={dtbar}/>
 
                 <Backlink/>
             </div>
