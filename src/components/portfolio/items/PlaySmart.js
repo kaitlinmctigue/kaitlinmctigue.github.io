@@ -4,6 +4,7 @@ import splashImg from '../../../images/thumbnails/toy.jpg';
 
 import Setup from '../Setup';
 import Backlink from '../Backlink';
+import Section from '../Section';
 
 const title = 'Playsmart RFID Toys Concept';
 const tags = ['Design', 'instructional design', 'physical computing'];
@@ -34,6 +35,11 @@ export default class PlaySmart extends Component {
                     team={'Aishwarya Dwivedi, Anhong Guo'}
                     year={2018}
                 />
+
+                <Section title={'Pitch Video'}/>
+                <div className={'video-responsive'}>
+                    <iframe width="700" height="394" src="https://www.youtube.com/embed/5vU-OfPIf0U?rel=0&amp;showinfo=0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                </div>
 
                 <Backlink/>
             </div>

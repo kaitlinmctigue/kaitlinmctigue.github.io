@@ -97,9 +97,6 @@ class Section extends Component {
                     {this.staticImg()}
                 </div>
                 <div className={'col-xs-12 col-sm-12 section__text'}>
-                    {this.caption()}
-                </div>
-                <div className={'col-xs-12 col-sm-12 section__text'}>
                     {this.textAfterImg()}
                 </div>
                 <div className={'col-xs-12 col-sm-12 section__img'}>

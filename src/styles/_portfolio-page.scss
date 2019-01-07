@@ -11,9 +11,20 @@
 .header {
   &__title {}
 
+  &__backlink {
+    margin-bottom: $spacer--default;
+
+    @media (max-width: $screen-xs-max) {
+      margin-bottom: $spacer--small;
+    }
+  }
+
   &__tags {
+    margin-top: $spacer--small;
+
     .badge {
-      margin-top: $spacer--small;
+      margin-right: $spacer--icon;
+      margin-top: $spacer--icon;
     }
   }
 
@@ -101,6 +112,18 @@
   .header__title, .section-header, .section-quote, .link {
     @include themed() {
       color: t($brand-red);
+    }
+  }
+}
+
+.backlink {
+  &__top {
+    float: right;
+
+    @media (max-width: $screen-xs-max) {
+      text-align: left;
+      float: left;
+      margin-top: $spacer--small;
     }
   }
 }

@@ -80,8 +80,6 @@ export default class DciBrand extends Component {
 
                 <Section title={'Marketing Collateral'} img={brochure}/>
 
-                <Section title={'guide'} img={guide}/>
-
                 <div className={'row section'}>
                     <div className={'col-xs-12 col-sm-12'}>
                         <Title title={'RFP Presentation'}/>
@@ -98,6 +96,8 @@ export default class DciBrand extends Component {
                 </div>
 
                 <Section title={'Document Design'} img={document}/>
+
+                <Section title={'Guide'} img={guide}/>
 
                 <Backlink/>
             </div>

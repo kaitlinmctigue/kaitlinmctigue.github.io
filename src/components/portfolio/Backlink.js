@@ -10,16 +10,16 @@ class Backlink extends Component {
 
     render() {
         return (
-            <div className={'section'}>
+            <div className={'section backlink'}>
                 <div className={'row'}>
                     <div className={'col-xs-12 col-sm-6'}>
-                        <Link to={'/'} className={'link'}>
+                        <Link to={'/'} className={'link backlink__back'}>
                             <FontAwesomeIcon icon={'arrow-left'}/>
                             Back to All Projects
                         </Link>
                     </div>
                     <div className={'col-xs-12 col-sm-6'}>
-                        <a className={'link pull-right'} onClick={this.toTop}>
+                        <a className={'link backlink__top'} onClick={this.toTop}>
                             <FontAwesomeIcon icon={'arrow-up'}/>
                             Back to Top
                         </a>
