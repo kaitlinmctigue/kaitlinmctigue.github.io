@@ -9,6 +9,7 @@ import app from '../../../images/portfolio/playsmart/app.png';
 import box from '../../../images/portfolio/playsmart/box.png';
 import cui from '../../../images/portfolio/playsmart/cui.png';
 import sticker from '../../../images/portfolio/playsmart/sticker.png';
+import roadmap from '../../../images/portfolio/playsmart/roadmap.png';
 
 import Setup from '../Setup';
 import Backlink from '../Backlink';
@@ -79,6 +80,8 @@ export default class PlaySmart extends Component {
                 <div className={'video-responsive'}>
                     <iframe width="700" height="394" src="https://www.youtube.com/embed/5vU-OfPIf0U?rel=0&amp;showinfo=0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
+
+                <Section title={'Roadmap'} img={roadmap}/>
 
                 <Backlink/>
             </div>
