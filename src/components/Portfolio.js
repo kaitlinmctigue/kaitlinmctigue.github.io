@@ -133,7 +133,7 @@ export default class Portfolio extends Component {
                     <span className="title__dev">UI Developer</span>
                 </div>
                 <div className="portfolio__intro mx-auto">
-                    <p>I like writing pixel-perfect css, and asking questions that other people are afraid to ask. Currently finishing up my Masters in HCI at <a href={''}>Carnegie Mellon University</a> while working as a product designer at <a href={''}>TeleTracking</a>.</p>
+                    <p>I like writing pixel-perfect css, and asking questions that other people are afraid to ask. Currently finishing up my Masters in HCI at <a href={'https://hcii.cmu.edu/academics/mhci'} target={'_blank'}>Carnegie Mellon University</a> while working as a product designer at <a href={'https://www.teletracking.com/'} target={'_blank'}>TeleTracking</a>.</p>
                 </div>
 
                 <div className="portfolio__body">
