@@ -1,6 +1,7 @@
 //shortcuts
 $bg: 'bg';
 $card-bg: 'card-bg';
+$card-border: 'card-border';
 $text: 'text';
 $text-important: 'text-important';
 $text-secondary: 'text-secondary';
@@ -19,6 +20,7 @@ $themes: (
                 logo-2: url("../images/brand/logo_horizontal.svg"),
                 bg: $bg--light,
                 card-bg: $bg--card--light,
+                card-border: $card-border--light,
                 text: $text--light,
                 text-important: $text--imp--light,
                 text-secondary: $text--2--light,
@@ -33,6 +35,7 @@ $themes: (
                 logo-2: url("../images/brand/logo_horizontal--invert.svg"),
                 bg: $bg--dark--top,
                 card-bg: $bg--card--dark,
+                card-border: $card-border--dark,
                 text: $text--dark,
                 text-important: $text--imp--dark,
                 text-secondary: $text--2--dark,

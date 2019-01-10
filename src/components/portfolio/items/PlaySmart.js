@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../Header';
 import splashImg from '../../../images/thumbnails/toy.jpg';
+import logo from '../../../images/portfolio/playsmart/playsmartlogo.png';
 
 import Setup from '../Setup';
 import Backlink from '../Backlink';
@@ -34,6 +35,7 @@ export default class PlaySmart extends Component {
                     role={'Product Designer'}
                     team={'Aishwarya Dwivedi, Anhong Guo'}
                     year={2018}
+                    img={logo}
                 />
 
                 <Section title={'Pitch Video'}/>

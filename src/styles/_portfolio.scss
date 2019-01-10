@@ -20,6 +20,18 @@
 
     p {
       font-size: $font-size--intro;
+
+      a {
+        color: inherit;
+
+        @include themed() {
+          color: t($text-important);
+        }
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
     }
   }
 
@@ -148,6 +160,7 @@
 
     @include themed() {
       background: t($card-bg);
+      border: t($card-border);
     }
 
     &__img {

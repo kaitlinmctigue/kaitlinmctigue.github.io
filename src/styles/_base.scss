@@ -3,7 +3,12 @@
 //loading
 .app {
   text-align: center;
+}
+
+.loading {
   color: $text--dark;
+  margin-top: calc(50vh - 20px);
+  text-align: center;
 }
 
 html {
