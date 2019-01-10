@@ -51,10 +51,17 @@
 }
 
 .section {
-  margin-top: $spacer--default;
+  margin-top: $spacer--large;
 
-  &--setup {
-    margin-top: $spacer--small;
+  .setup {
+    .section-img {
+      @include themed() {
+        background: $bg--card--light;
+        border: 1px solid t($border);
+        padding: $spacer--small;
+        margin: $spacer--smallest 0 $spacer--small;
+      }
+    }
   }
 }
 
@@ -80,15 +87,6 @@
 
   @include themed() {
     color: t($text-secondary);
-  }
-}
-
-.section-img {
-  @include themed() {
-    background: $bg--card--light;
-    border: 1px solid t($border);
-    padding: $spacer--small;
-    margin: $spacer--smallest 0 $spacer--small;
   }
 }
 

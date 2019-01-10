@@ -22,6 +22,16 @@ class Subsection extends Component {
         }
     }
 
+    textAfterImage() {
+        if (this.props.textAfterImage) {
+            return (
+                <p>
+                    {this.props.textAfterImage}
+                </p>
+            );
+        }
+    }
+
     img() {
         if (this.props.img) {
             return (
@@ -44,6 +54,7 @@ class Subsection extends Component {
                 {this.title()}
                 {this.text()}
                 {this.img()}
+                {this.textAfterImage()}
                 {this.link()}
             </div>
         );
@@ -53,6 +64,7 @@ class Subsection extends Component {
 Subsection.propTypes = {
     title: PropTypes.string,
     text: PropTypes.string,
+    textAfterImage: PropTypes.string,
     quote: PropTypes.string,
     img: PropTypes.string,
     link: PropTypes.string
