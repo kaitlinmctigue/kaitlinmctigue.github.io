@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import toy from '../images/thumbnails/toy.jpg';
 import dci from '../images/thumbnails/dci.jpg';
 import thor from '../images/thumbnails/thor.jpg';
-import hosp from '../images/thumbnails/hosp.jpg';
+import hosp from '../images/thumbnails/environment.png';
 import stanley from '../images/thumbnails/stanley.png';
 import women from '../images/thumbnails/women.jpg';
 
@@ -23,9 +23,25 @@ export default class Portfolio extends Component {
 
         this.works = [
             {
+                'id': 0,
+                'title': 'Diverse Computing Rebrand',
+                'tags': ['design', 'branding'],
+                'img': dci,
+                'class': 'des',
+                'path': 'dci-brand'
+            },
+            {
+                'id': 3,
+                'title': 'Prototyping with Environmental Factors',
+                'tags': ['dev', 'design', 'ux research'],
+                'img': hosp,
+                'class': 'dev',
+                'path': 'environmental-design'
+            },
+            {
                 'id': 2,
                 'title': 'Playsmart RFID Toys Concept',
-                'tags': ['design', 'instructional design'],
+                'tags': ['design', 'instructional design', 'gamification'],
                 'img': toy,
                 'class': 'des',
                 'path': 'playsmart'
@@ -37,22 +53,6 @@ export default class Portfolio extends Component {
                 'img': thor,
                 'class': 'dev',
                 'path': 'thor'
-            },
-            {
-                'id': 0,
-                'title': 'Diverse Computing Rebrand',
-                'tags': ['design', 'branding'],
-                'img': dci,
-                'class': 'des',
-                'path': 'dci-brand'
-            },
-            {
-                'id': 3,
-                'title': 'Environmental Design Research',
-                'tags': ['dev', 'ux research'],
-                'img': hosp,
-                'class': 'dev',
-                'path': 'environmental-design'
             }
         ];
 

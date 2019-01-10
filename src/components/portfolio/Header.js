@@ -22,6 +22,21 @@ class Header extends Component {
         }
     }
 
+    process() {
+        if (this.props.process) {
+            return(
+                <div className={'row'}>
+                    <div className={'col-xs-12 col-sm-12 section'}>
+                        <Title title={'The Process'} />
+                        <p>
+                            {this.props.process}
+                        </p>
+                    </div>
+                </div>
+            );
+        }
+    }
+
     solution() {
         if (this.props.solution) {
             return(
@@ -65,6 +80,8 @@ class Header extends Component {
                 {/*setup*/}
                 {this.problem()}
 
+                {this.process()}
+
                 {this.solution()}
             </div>
         );
@@ -76,6 +93,7 @@ Header.propTypes = {
     title: PropTypes.string,
     splash: PropTypes.string,
     problem: PropTypes.string,
+    process: PropTypes.string,
     solution: PropTypes.string
 };
 

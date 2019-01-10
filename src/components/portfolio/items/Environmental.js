@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
 import Header from '../Header';
-import splashImg from '../../../images/thumbnails/hosp.jpg';
+import splashImg from '../../../images/thumbnails/environment.png';
 
 import Section from '../Section';
 import Setup from '../Setup';
 import Backlink from '../Backlink';
 
-const title = 'Environmental Design Research & Development (Complete Writeup Coming Soon)';
-const tags = ['Dev', 'UX Research'];
+const title = 'Prototyping with Environmental Factors';
+const tags = ['Dev', 'Design', 'UX Research'];
 const classification = 'dev';
-const problem = 'After the 2017.3 upgrade, TeleTracking customers were experiencing eye fatigue when using the IQ platform.';
-const solution = 'Using the design thinking framework, we uncovered a surprising myriad of factors contributing to this problem, and addressed each of them. Key changes included increased contrast, text rendering improvements, and a “night” color theme.';
+const problem = 'From emergency rooms, to command centers, to unit common areas, hospitals are full very very different lighting environments. Users of an interactive patient-flow dashboard were experiencing eye strain, especially during long shifts.';
+const process = 'Using the design thinking framework, we uncovered a surprising myriad of factors contributing to eye strain. We prototyped solutions in CSS, and I leveraged Internet Explorer’s accessibility tools to test stylesheets for effectiveness of alleviating eye strain.';
+const solution = 'We made changes to text, color palette, and the way we render fonts, all to improve legibility. We introduced a “night mode” for nighttime use and wallboards in dark hospital corridors. Lastly, we standardardized best practices for lighting and hardware.';
 
 import dtbar from '../../../images/portfolio/dt_bar.png';
 
@@ -28,14 +29,15 @@ export default class Environmental extends Component {
                     tags={tags}
                     splash={splashImg}
                     problem={problem}
+                    process={process}
                     solution={solution}
                 />
 
                 <Setup
-                    client={'TeleTracking'}
                     role={'UX Researcher, UI Designer, UI Developer'}
                     team={'Jamie Slater, Jason Spector'}
                     year={2018}
+                    nda={true}
                 />
 
                 <Section title={'Process'} staticImg={dtbar}/>

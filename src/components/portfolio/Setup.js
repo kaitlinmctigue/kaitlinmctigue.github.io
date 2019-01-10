@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Subsection from './Subsection';
+import Title from './Title';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Spacer from './Spacer';
 
 class Setup extends Component {
 
@@ -39,7 +42,7 @@ class Setup extends Component {
     year() {
         if (this.props.team) {
             return(
-                <Subsection title={'Year'} text={this.props.year}></Subsection>
+                <Subsection title={'Year'} text={this.props.year.toString()}></Subsection>
             );
         }
     }
@@ -68,6 +71,24 @@ class Setup extends Component {
         }
     }
 
+    requestPermission() {
+        if (this.props.nda) {
+            return(
+                <div className={'subsection'}>
+                    <Title title="There's more to this..."/>
+                    <div>
+                        I have written a lot more about this very interesting process, but I am unable to share it here. Shoot me a message and I’d be happy to tell you about it.
+                    </div>
+                    <Spacer size={'smallest'}/>
+                    <a href={'mailto:kaitlinmctigue@gmail.com'} className={'link'}>
+                        <FontAwesomeIcon icon={'envelope'}/>
+                        Email me for a copy of the case study!
+                    </a>
+                </div>
+            );
+        }
+    }
+
     render() {
         return (
             <div className={'section'}>
@@ -83,6 +104,7 @@ class Setup extends Component {
                         {this.img()}
                         {this.before()}
                         {this.after()}
+                        {this.requestPermission()}
                     </div>
                 </div>
             </div>
@@ -98,7 +120,8 @@ Setup.propTypes = {
     year: PropTypes.number,
     img: PropTypes.string,
     before: PropTypes.string,
-    after: PropTypes.string
+    after: PropTypes.string,
+    nda: PropTypes.bool
 };
 
 export default Setup;

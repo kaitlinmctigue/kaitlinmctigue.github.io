@@ -103,9 +103,8 @@ html, body {
   &--design {
     &.badge {
       @include themed() {
-        //border-color: t($brand-blue);
         color: t($brand-blue);
-        font-weight: bold;
+        @extend %title-text;
       }
     }
   }
@@ -113,9 +112,8 @@ html, body {
   &--dev {
     &.badge {
       @include themed() {
-        //border-color: t($brand-red);
         color: t($brand-red);
-        font-weight: bold;
+        @extend %title-text;
       }
     }
   }

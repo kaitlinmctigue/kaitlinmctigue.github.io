@@ -30,13 +30,13 @@ export default class Contact extends Component {
                                     <SocialIcon url="https://medium.com/@katiemctigue" />
                                     <SocialIcon url="https://github.com/kaitlinmctigue" />
                                     <SocialIcon url="https://www.instagram.com/katiemctigue/" />
+                                    <SocialIcon url="https://open.spotify.com/user/kaitlinmctigue" />
                                 </div>
 
                                 <div className={'col-xs-12 contact__text__body__social--bottom'}>
                                     Maybe one day I will update my <br/>
                                     <SocialIcon url="https://twitter.com/MctigueKatie?lang=en" />
                                     <SocialIcon url="https://dribbble.com/katiemctigue" />
-                                    <SocialIcon url="https://open.spotify.com/user/kaitlinmctigue" />
                                 </div>
                             </div>
                         </div>

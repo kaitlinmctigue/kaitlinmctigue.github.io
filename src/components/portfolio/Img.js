@@ -50,7 +50,7 @@ class Img extends Component {
 Img.propTypes = {
     img: PropTypes.string,
     caption: PropTypes.string,
-    styleClass: PropTypes.styleClass
+    styleClass: PropTypes.string
 };
 
 export default Img;
