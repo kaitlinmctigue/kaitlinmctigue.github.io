@@ -60,18 +60,18 @@ export default class PlaySmart extends Component {
 
                 <div className={'row'}>
                     <div className={'col-xs-12 col-sm-6'}>
-                        <Subsection title={'RFID Stickers'} img={sticker} textAfterImage={'RFID Owlie stickers are placed on each toy.'}/>
+                        <Subsection title={'1. RFID Stickers'} img={sticker} textAfterImage={'RFID Owlie stickers are placed on each toy.'}/>
                     </div>
                     <div className={'col-xs-12 col-sm-6'}>
-                        <Subsection title={'RFID Enabled Toy-Chest'} img={box} textAfterImage={'Surprise: toys go in the chest.'}/>
+                        <Subsection title={'2. RFID Enabled Toy-Chest'} img={box} textAfterImage={'Surprise: toys go in the chest.'}/>
                     </div>
                 </div>
                 <div className={'row'}>
                     <div className={'col-xs-12 col-sm-6'}>
-                        <Subsection title={'Conversational User Interface'} img={cui} textAfterImage={'The Playsmart mascot Owlie is the voice of the conversational interface. Owlie instructs the child to put their toys in the chest at a set time. In a future iteration, Owlie might be a cute stuffed animal instead of an Alexa-esqe hunk of plastic.'}/>
+                        <Subsection title={'3. Conversational User Interface'} img={cui} textAfterImage={'The Playsmart mascot Owlie is the voice of the conversational interface. Owlie instructs the child to put their toys in the chest at a set time. In a future iteration, Owlie might be a cute stuffed animal instead of an Alexa-esqe hunk of plastic.'}/>
                     </div>
                     <div className={'col-xs-12 col-sm-6'}>
-                        <Subsection title={'Mobile App'} img={app} textAfterImage={'The Playsmart companion app enables parents to configure Owlie and access all the data of their child’s progress.'}/>
+                        <Subsection title={'4. Mobile App'} img={app} textAfterImage={'The Playsmart companion app enables parents to configure Owlie and access all the data of their child’s progress.'}/>
                     </div>
                 </div>
 

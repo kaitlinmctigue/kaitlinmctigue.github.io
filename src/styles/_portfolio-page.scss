@@ -35,7 +35,7 @@
     background-repeat: no-repeat;
     background-position: center right;
 
-    @media (max-width: $screen-md-max) {
+    @media (max-width: $screen-xs-max) {
       height: 300px;
     }
   }
