@@ -49,7 +49,7 @@ export default class Portfolio extends Component {
             {
                 'id': 3,
                 'title': 'Prototyping with Environmental Factors',
-                'tags': ['dev', 'design', 'ux research'],
+                'tags': ['dev', 'ux research', 'environmental design'],
                 'img': hosp,
                 'class': 'dev',
                 'path': 'environmental-design'

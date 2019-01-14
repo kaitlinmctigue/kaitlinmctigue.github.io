@@ -77,12 +77,12 @@ class Setup extends Component {
                 <div className={'subsection'}>
                     <Title title="There's more to this..."/>
                     <div>
-                        I have written a lot more about this very interesting process, but I am unable to share it here. Shoot me a message and I’d be happy to tell you about it.
+                        I have written a lot more about this very interesting process, but I am unable to share it here. Shoot me a message and I’d be happy to discuss.
                     </div>
                     <Spacer size={'smallest'}/>
                     <a href={'mailto:kaitlinmctigue@gmail.com'} className={'link'}>
                         <FontAwesomeIcon icon={'envelope'}/>
-                        Email me for a copy of the case study!
+                        Shoot me an email
                     </a>
                 </div>
             );

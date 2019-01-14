@@ -7,7 +7,7 @@ import Setup from '../Setup';
 import Backlink from '../Backlink';
 
 const title = 'Prototyping with Environmental Factors';
-const tags = ['Dev', 'Design', 'UX Research'];
+const tags = ['Dev', 'UX Research', 'Environmental Design'];
 const classification = 'dev';
 const problem = 'From emergency rooms, to command centers, to unit common areas, hospitals are full of very different lighting environments. Users of an interactive patient-flow dashboard were experiencing eye strain, especially during long shifts.';
 const process = 'Using the Standford design-thinking framework, we uncovered a surprising number of factors contributing to eye strain. We prototyped solutions in CSS, and I leveraged Internet Explorer’s accessibility tools to test stylesheets for effectiveness of alleviating eye strain.';

@@ -22,7 +22,7 @@ export default class Contact extends Component {
                     <div className={'contact__text__body'}>
                         <p>
                             I spend my days at TeleTracking working towards a mission of getting people healthcare without the wait, and my evenings at Carnegie Mellon University studying Human Computer Interaction.
-                            I work full time while taking classes part time, and I expect to complete my Masters in HCI it in August 2020.
+                            I work full time while taking classes part time, and I expect to complete my Masters in HCI in August 2020.
                         </p>
                         <p>
                             Some tools I like to work with include the Adobe Suite, Sketch, HTML/CSS, SASS and LESS, React, Angular, and plain old javascript.

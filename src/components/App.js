@@ -124,7 +124,7 @@ export default class App extends Component {
                         </div>
                         <div className={'footer'}>
                             <span className={'footer__text'}>
-                                I made this website myself with &#10084; and React. © Copyright 2019.
+                                I made this website with &#10084; and React. © Copyright 2019.
                             </span>
                             <span className={'footer__divider'}>
                                 |
