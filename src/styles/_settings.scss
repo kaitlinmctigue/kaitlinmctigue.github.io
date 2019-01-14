@@ -1,14 +1,18 @@
 //vars
 $font-family: 'Open Sans', 'Helvetica', 'Arial', 'sans-serif';
 $font-family--title: 'Montserrat', $font-family;
-$content-width--home: 1000px;
+
+//layout
+$content-width--home: 1200px;
 $content-width: 700px;
 $padding-top: 12px;
 $logo-height: 35px;
 $logo-width: 250px;
 $navbar-height: 58px;
+$footer-height: 40px;
 $page-padding-top: 45px;
 
+//spacers
 $spacer--large: 65px;
 $spacer--default: 50px;
 $spacer--small: ($spacer--default / 2);
@@ -21,7 +25,7 @@ $font-size--secondary: 18px;
 $font-size--tertiary: 15px;
 $font-size--intro: $font-size--secondary;
 $font-size--base--mobile: $font-size--base - 2;
-$font-size--role: $font-size--base + 4;
+$font-size--role: $font-size--base + 8;
 $font-size--item-preview--title: $font-size--base;
 $font-size--page-title: $font-size--base * 2;
 $font-size--tags: $font-size--base - 4;

@@ -28,6 +28,16 @@
     }
   }
 
+  &__nda {
+    font-style: italic;
+    font-weight: $font-weight--bold;
+    margin-top: $spacer--smallest;
+
+    @include themed() {
+      color: t($text-important);
+    }
+  }
+
   &__splash {
     margin-top: $spacer--default;
     height: 450px;

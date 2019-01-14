@@ -63,7 +63,6 @@ html, body {
     color: t($text);
     background: t($bg);
   }
-  padding-bottom: $spacer--default * 2;
 
   &:after {
     content: '';
@@ -79,6 +78,18 @@ html, body {
 
   @media (max-width: $screen-md-max) {
     //overflow-x: hidden;
+  }
+
+  &__page {
+    min-height: 100vh;
+    margin-bottom: ($footer-height * -1);
+    padding-bottom: $spacer--default;
+
+    &:after {
+      content: "";
+      display: block;
+      height: $footer-height;
+    }
   }
 }
 
@@ -195,5 +206,24 @@ html, body {
     height:100%;
     width:100%;
     position:absolute;
+  }
+}
+
+.footer {
+  height: $footer-height;
+  font-size: $font-size--tertiary;
+  text-align: center;
+
+  &__divider {
+    margin: 0 10px;
+  }
+
+  &__social {
+    .social-icon {
+      margin: 0 0 0 $spacer--icon;
+      &:hover {
+        opacity: .9;
+      }
+    }
   }
 }

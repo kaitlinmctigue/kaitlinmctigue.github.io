@@ -27,6 +27,7 @@ export default class Environmental extends Component {
                 <Header
                     title={title}
                     tags={tags}
+                    nda={true}
                     splash={splashImg}
                     problem={problem}
                     process={process}

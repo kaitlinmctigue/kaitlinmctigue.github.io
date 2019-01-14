@@ -36,7 +36,7 @@
   }
 
   .logo {
-    height: 105px;
+    height: 120px;
     z-index: 10;
     background-size: auto;
 
@@ -145,11 +145,17 @@
         }
       }
     }
+
+    &__items {
+      &__nda {
+        font-size: $font-size--intro;
+      }
+    }
   }
 }
 
 .item-preview {
-  padding: $spacer--default/2 0 $spacer--default/2;
+  padding: $spacer--default/4 0 $spacer--default/2;
   text-align: center;
 
   &__content {

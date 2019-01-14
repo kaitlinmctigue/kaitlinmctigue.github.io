@@ -23,22 +23,6 @@ export default class Portfolio extends Component {
 
         this.works = [
             {
-                'id': 0,
-                'title': 'Diverse Computing Rebrand',
-                'tags': ['design', 'branding'],
-                'img': dci,
-                'class': 'des',
-                'path': 'dci-brand'
-            },
-            {
-                'id': 3,
-                'title': 'Prototyping with Environmental Factors',
-                'tags': ['dev', 'design', 'ux research'],
-                'img': hosp,
-                'class': 'dev',
-                'path': 'environmental-design'
-            },
-            {
                 'id': 2,
                 'title': 'Playsmart RFID Toys Concept',
                 'tags': ['design', 'instructional design', 'gamification'],
@@ -53,6 +37,22 @@ export default class Portfolio extends Component {
                 'img': thor,
                 'class': 'dev',
                 'path': 'thor'
+            },
+            {
+                'id': 0,
+                'title': 'Diverse Computing Rebrand',
+                'tags': ['design', 'branding'],
+                'img': dci,
+                'class': 'des',
+                'path': 'dci-brand'
+            },
+            {
+                'id': 3,
+                'title': 'Prototyping with Environmental Factors',
+                'tags': ['dev', 'design', 'ux research'],
+                'img': hosp,
+                'class': 'dev',
+                'path': 'environmental-design'
             }
         ];
 
@@ -149,6 +149,9 @@ export default class Portfolio extends Component {
 
                     <div className="portfolio__body__items">
                         {items}
+                        <p className={'portfolio__body__items__nda'}>
+                            Note: All of my work at TeleTracking is protected under NDA. Please feel free to reach out to discuss further.
+                        </p>
                     </div>
                 </div>
             </div>

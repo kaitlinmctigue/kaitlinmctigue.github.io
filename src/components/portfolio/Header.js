@@ -52,6 +52,16 @@ class Header extends Component {
         }
     }
 
+    nda() {
+        if (this.props.nda) {
+            return(
+                <p className={'header__nda'}>
+                    Preview of NDA-protected work
+                </p>
+            );
+        }
+    }
+
     render() {
         return (
             <div className={'header'}>
@@ -66,6 +76,7 @@ class Header extends Component {
                         <div className={'header__title title'}>
                             {this.props.title}
                         </div>
+                        {this.nda()}
                         <div className={'header__tags'}>
                             {this.props.tags.map((tag) =>
                                 <Tag tag={tag} key={tag}></Tag>
@@ -91,6 +102,7 @@ class Header extends Component {
 Header.propTypes = {
     tags: PropTypes.array,
     title: PropTypes.string,
+    nda: PropTypes.bool,
     splash: PropTypes.string,
     problem: PropTypes.string,
     process: PropTypes.string,

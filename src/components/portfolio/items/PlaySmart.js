@@ -22,7 +22,7 @@ const classification = 'des';
 const problem = 'Teaching young children to clean up after themselves is exhausting.';
 const solution = 'Using gamification techniques and some low-budget prototyping tools, we imagined a smart playkit that takes the burden of enforcing cleanup off of parents.';
 
-const goals = 'Internet of things technologies are getting cheaper and more powerful, and mobile app developers are making the most of it. We set out to think up a novel, marketable, and scalable use of IoT and mobile. The assigned deliverable for our studio course project was a pitch video in which we “wizard-of-ozz-ed” our prototype enough to gauge interest in our product from potential buyers.';
+const goals = 'Internet of things technologies are getting cheaper and more powerful, and mobile app developers are making the most of it. We set out to think up a novel, marketable, and scalable use of IoT and mobile. The assigned deliverable for our studio course project was a pitch video in which we “Wizard of Oz"-ed our prototype enough to gauge interest in our product from potential buyers.';
 const story1 = 'We went through 30+ ideas before we landed on our smart playkit idea. To judge the potential of our ideas, we quickly storyboarded them and showed them to anyone with eyes!';
 const story2 = 'Once we landed on our concept, we jumped straight into storyboarding our pitch video. Our pitch video is more or less a prototype itself, and it was through the storyboarding process that we ironed out the details of our product.';
 
