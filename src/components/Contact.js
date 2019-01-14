@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { SocialIcon } from 'react-social-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import headshot from '../images/headshot.jpg';
 
 export default class Contact extends Component {
@@ -16,11 +17,25 @@ export default class Contact extends Component {
                 </div>
                 <div className={'contact__text'}>
                     <h1 className={'title contact__text__title'}>
-                        looking for help on a project, or just a cup of coffee?
+                        A bonafide unicorn who cares about solving people problems and code problems.
                     </h1>
                     <div className={'contact__text__body'}>
-                        <p>Shoot me an email at kaitlinmctigue at gmail dot com</p>
-                        {/*<p><a className={'link'} href={'https://www.linkedin.com/in/katiemctigue'} target={'_blank'}>linkedin.com/in/katiemctigue</a></p>*/}
+                        <p>
+                            I spend my days at TeleTracking working towards a mission of getting people healthcare without the wait, and my evenings at Carnegie Mellon University studying Human Computer Interaction.
+                            I work full time while taking classes part time, and I expect to complete my Masters in HCI it in August 2020.
+                        </p>
+                        <p>
+                            Some tools I like to work with include the Adobe Suite, Sketch, HTML/CSS, SASS and LESS, React, Angular, and plain old javascript.
+                        </p>
+                        <p>
+                            In my free time, I like to shoot film photography, write songs, and play way too much Stardew Valley.
+                        </p>
+                        <p>
+                            <a className={'link'} href={'mailto:kaitlinmctigue@gmail.com'} target={'_blank'}>
+                                <FontAwesomeIcon icon={'envelope'}/>
+                                shoot me an email at kaitlinmctigue@gmail.com
+                            </a>
+                        </p>
 
                         <div className={'contact__text__body__social'}>
                             <div className={'row'}>

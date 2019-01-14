@@ -92,7 +92,7 @@ export default class App extends Component {
                                                         </LinkContainer>
                                                         <LinkContainer to="/contact">
                                                             <NavItem eventKey={3} className='header-link'>
-                                                                Contact
+                                                                Who am I?
                                                             </NavItem>
                                                         </LinkContainer>
                                                     </Nav>

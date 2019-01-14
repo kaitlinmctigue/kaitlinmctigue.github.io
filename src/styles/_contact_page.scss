@@ -26,13 +26,19 @@
     &__title {
       text-align: left;
       width: $img-width;
+      font-size: $font-size--page-title - 2px;
+
+      @extend %title-text;
 
       @media (min-width: $screen-sm-min) {
-        margin-top: -200px;
+        margin-top: -185px;
       }
     }
 
     &__body {
+      p {
+        margin-bottom: $spacer--small;
+      }
       &__social {
         &--bottom, &--top {
           margin-top: $spacer--small;
@@ -41,12 +47,16 @@
     }
   }
 
-  .social-container {
-    background: #fff;
-    border-radius: 50%;
-
-    @extend %hover;
+  .social-icon {
+    margin-left: 8px;
   }
+}
+
+.social-container {
+  background: #fff;
+  border-radius: 50%;
+
+  @extend %hover;
 
   .social-icon {
     margin-left: 8px;

@@ -83,7 +83,7 @@ html, body {
   &__page {
     min-height: 100vh;
     margin-bottom: ($footer-height * -1);
-    padding-bottom: $spacer--default;
+    padding-bottom: $spacer--large;
 
     &:after {
       content: "";

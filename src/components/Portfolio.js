@@ -90,7 +90,7 @@ export default class Portfolio extends Component {
 
     renderPreview(work) {
         return(
-            <div className="col-xs-12 col-sm-6" key={work.id}>
+            <div className="col-xs-12 col-md-6" key={work.id}>
                 <div className="item-preview">
                     <Link to={'/portfolio/' + work.path} className={'item-preview__content item-preview__content--' + work.class}>
                         <div className={'item-preview__content__img'} style={{backgroundImage: 'url(' + work.img + ')'}}></div>
@@ -150,7 +150,7 @@ export default class Portfolio extends Component {
                     <div className="portfolio__body__items">
                         {items}
                         <p className={'portfolio__body__items__nda'}>
-                            Note: All of my work at TeleTracking is protected under NDA. Please feel free to reach out to discuss further.
+                            Note: All of my work at TeleTracking is protected under an NDA. Please feel free to reach out to discuss further.
                         </p>
                     </div>
                 </div>
