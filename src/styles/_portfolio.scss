@@ -2,8 +2,7 @@
 
 .portfolio {
   max-width: $content-width--home;
-  margin: $navbar-height auto 0;
-  text-align: center;
+  //margin: $navbar-height auto 0;
   padding-top: 1px;
 
   @media (max-width: $screen-sm-max) {
@@ -16,13 +15,13 @@
 
   &__intro {
     max-width: 500px;
-    margin: 0 auto;
 
     p {
       font-size: $font-size--intro;
 
       a {
         color: inherit;
+        text-decoration: underline;
 
         @include themed() {
           color: t($text-important);
@@ -35,26 +34,10 @@
     }
   }
 
-  .logo {
-    height: 100px;
-    z-index: 10;
-    background-size: auto;
-
-    @include themed() {
-      background-image: t($logo);
-      background-color: t($bg);
-    }
-
-    @media (max-width: $screen-sm-max) {
-      display: none;
-      background-color: transparent;
-    }
-  }
-
   .title {
     @extend %title-text;
     font-size: $font-size--role;
-    margin: $spacer--small 0;
+    margin: 5px 0 $spacer--small;
     line-height: $line-height--title;
 
     &__des {
@@ -71,7 +54,7 @@
   }
 
   &__body {
-    margin-top: $spacer--default;
+    margin-top: $spacer--large;
 
     &__links {
       &__filter {
@@ -83,6 +66,10 @@
         @include themed() {
           color: t($text);
         }
+      }
+
+      .btn-toolbar {
+        margin-left: 0;
       }
 
       .btn-toolbar .btn-group {

@@ -15,6 +15,7 @@ $page-padding-top: 45px;
 //spacers
 $spacer--large: 65px;
 $spacer--default: 50px;
+$spacer--medium: ($spacer--default * .8);
 $spacer--small: ($spacer--default / 2);
 $spacer--smallest: ($spacer--small / 3);
 $spacer--icon: 5px;
@@ -43,14 +44,12 @@ $line-height--quote: 1.3;
   font-family: $font-family--title;
   font-weight: $font-weight--semibold;
   text-transform: uppercase;
-  letter-spacing: 2px;
   font-size: $font-size--tertiary;
 }
 
 %title-text {
-  text-transform: lowercase;
   font-family: $font-family--title;
-  font-weight: 500;
+  font-weight: $font-weight--bold;
 }
 
 //breakpoints from Bootstrap

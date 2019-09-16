@@ -1,4 +1,5 @@
 @import "settings";
+$page-padding-mobile: $spacer--small;
 
 //loading
 .app {
@@ -76,35 +77,27 @@ html, body {
     }
   }
 
-  @media (max-width: $screen-md-max) {
-    //overflow-x: hidden;
-  }
-
   &__page {
+    margin: 0 auto;
+    max-width: $content-width--home;
     min-height: 100vh;
     margin-bottom: ($footer-height * -1);
     padding-bottom: $spacer--large;
+    padding-top: $spacer--large;
 
     &:after {
       content: "";
       display: block;
       height: $footer-height;
     }
-  }
-}
 
-.logo {
-  position: absolute;
-  top: $padding-top;
-  left: calc(50% - #{$logo-width / 2});;
-  height: $logo-height;
-  width: $logo-width;
-  background-size: $logo-width $logo-height;
-  background-repeat: no-repeat;
-  background-position: top center;
+    @media (max-width: $screen-md-max) {
+      padding: $spacer--large;
+    }
 
-  @include themed() {
-    background-image: t($logo2);
+    @media (max-width: $screen-sm-max) {
+      padding: $spacer--medium;
+    }
   }
 }
 
@@ -152,10 +145,12 @@ html, body {
 }
 
 .body {
-  padding-top: $navbar-height;
+  margin-top: -10px;
+}
 
+.body, .navbar.header {
   @media (max-width: $screen-md-max) {
-    padding: $navbar-height $spacer--small;
+    padding: $spacer--smallest $page-padding-mobile!important;
   }
 }
 

@@ -126,14 +126,18 @@ export default class Portfolio extends Component {
 
         return (
             <div className="portfolio">
-                <Link to='/' className="logo"></Link>
                 <div className="title">
-                    <span className="title__des">UX Designer & </span>
+                    <span className="title__des">Designer & </span>
                     <br className='hidden-sm hidden-md hidden-lg'/>
-                    <span className="title__dev">UI Developer</span>
+                    <span className="title__dev">Developer</span>
                 </div>
                 <div className="portfolio__intro mx-auto">
-                    <p>I like writing pixel-perfect css, and asking questions that other people are afraid to ask. Currently finishing up my Masters in HCI at <a href={'https://hcii.cmu.edu/academics/mhci'} target={'_blank'}>Carnegie Mellon University</a> while working as a product designer at <a href={'https://www.teletracking.com/'} target={'_blank'}>TeleTracking</a>.</p>
+                    <p>
+                        Hi! I like writing pixel-perfect css, and asking questions that other people are afraid to ask.
+                    </p>
+                    <p>
+                        I’m interested in AI, consumer health, game-based UI patterns, and <a href={'/#/contact'}>lots of other stuff</a> .
+                    </p>
                 </div>
 
                 <div className="portfolio__body">

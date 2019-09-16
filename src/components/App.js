@@ -72,14 +72,18 @@ export default class App extends Component {
                             <Router onUpdate={() => window.scrollTo(0, 0)}>
                                 <ScrollToTop>
                                     <div>
-                                        <Navbar collapseOnSelect className='header' fixedTop>
-                                            <Link to='/' className="logo"></Link>
+                                        <Navbar collapseOnSelect className='header'>
                                             <Navbar.Header>
                                                 <Navbar.Toggle />
                                             </Navbar.Header>
                                             <Navbar.Collapse>
+                                                <Nav pullRight className='header__utility'>
+                                                    <NavItem className="theme-toggle header-link" onClick={this.changeTheme}>
+                                                        <FontAwesomeIcon icon={this.state.dark ? 'sun' : 'moon'}/>
+                                                    </NavItem>
+                                                </Nav>
                                                 <div className='header__links'>
-                                                    <Nav>
+                                                    <Nav pullRight>
                                                         <LinkContainer to='/' exact>
                                                             <NavItem eventKey={1} className='hidden-sm header-link'>
                                                                 Home
@@ -92,20 +96,18 @@ export default class App extends Component {
                                                         </LinkContainer>
                                                         <LinkContainer to="/contact">
                                                             <NavItem eventKey={3} className='header-link'>
-                                                                Who am I?
+                                                                About
                                                             </NavItem>
                                                         </LinkContainer>
                                                     </Nav>
                                                 </div>
-                                                <Nav pullRight className='header__utility'>
-                                                    <NavItem className="theme-toggle header-link" onClick={this.changeTheme}>
-                                                        <FontAwesomeIcon icon={this.state.dark ? 'sun' : 'moon'}/>
-                                                    </NavItem>
-                                                </Nav>
                                             </Navbar.Collapse>
+                                            <Link to='/' className="logo">
+                                                Katie McTigue
+                                            </Link>
                                         </Navbar>
 
-                                        <div className="body text-center">
+                                        <div className="body">
 
                                             {/*main*/}
                                             <Route exact path="/" component={Portfolio} />

@@ -1,12 +1,15 @@
-.header {
-  width: 100%;
+.header.navbar {
+  position: sticky;
+  top: 0;
+  margin: 0 auto;
+  width: calc(100% + 10px);
   overflow-x: hidden;
-  padding: 10px 30px;
-  margin-bottom: 0;
+  padding: 10px 0;
   background: transparent;
   border: none;
   box-shadow: none;
   z-index: 10;
+  border-radius: 0;
 
   @include themed() {
     background: transparentize(t($bg), .1);
@@ -21,6 +24,7 @@
   .container {
     width: 100%;
     padding: 0;
+    margin: 0 -15px;
   }
 
   .navbar-toggle {
@@ -40,6 +44,12 @@
     padding: 0;
     margin-bottom: 0;
     margin-top: 0;
+    width: auto;
+    float: right;
+
+    .header__links {
+      float: left;
+    }
   }
 
   &__utility, &__links {
@@ -50,7 +60,15 @@
 
   }
 
-  &__links {}
+  .logo {
+    @extend %title-text;
+    font-size: $font-size--role;
+    padding: 0 15px;
+
+    @include themed() {
+      color: t($text);
+    }
+  }
 
   .header-link {
     margin: 0 15px;
@@ -128,7 +146,6 @@
   @media (min-width: $screen-sm-min) {
     a {
       font-size: $font-size--tertiary;
-      letter-spacing: 2px;
       padding: 8px 0;
 
       @include themed() {
@@ -184,8 +201,8 @@
 }
 
 @media (max-width: $screen-xs-max) {
-  .header {
-    padding-bottom: 5px;
+  .header.navbar {
+    padding: 0 $page-padding-mobile 5px $page-padding-mobile;
     margin-bottom: $spacer--smallest;
 
     .navbar-nav {
@@ -204,7 +221,13 @@
     .navbar-collapse {
       border-color: transparent;
       overflow-x: hidden;
+      width: 100%;
+      margin-bottom: $spacer--small;
       @include card-shadow;
+
+      .header__links {
+        float: none;
+      }
 
       @include themed() {
         background: t($card-bg);
@@ -213,26 +236,39 @@
   }
 }
 
-.theme--default {
-  .theme-toggle {
-    @media (min-width: $screen-sm-min) {
-      &:hover a {
-        &:before {
-          content: "Go Dark";
-          margin-right: $spacer--icon;
-        }
-      }
-    }
-    @media (max-width: $screen-xs-max) {
-      a {
-        margin-right: $spacer--icon;
-        &:after {
-          content: "Go Dark";
-          margin-left: $spacer--icon;
-        }
-      }
+.theme-toggle {
+  margin-left: $spacer--medium!important;
+
+  &:hover {
+    opacity: .8;
+
+    &:before {
+      display: none;
+      content: none;
     }
   }
+}
+
+.theme--default {
+  //.theme-toggle {
+  //  @media (min-width: $screen-sm-min) {
+  //    &:hover a {
+  //      &:before {
+  //        content: "Go Dark";
+  //        margin-right: $spacer--icon;
+  //      }
+  //    }
+  //  }
+  //  @media (max-width: $screen-xs-max) {
+  //    a {
+  //      margin-right: $spacer--icon;
+  //      &:after {
+  //        content: "Go Dark";
+  //        margin-left: $spacer--icon;
+  //      }
+  //    }
+  //  }
+  //}
 }
 
 .theme--dark {
@@ -240,22 +276,22 @@
     svg {
       color: #ffd475;
     }
-    @media (min-width: $screen-sm-min) {
-      &:hover a {
-        &:before {
-          content: "Go Light";
-          margin-right: $spacer--icon;
-        }
-      }
-    }
-    @media (max-width: $screen-xs-max) {
-      a {
-        margin-right: $spacer--icon;
-        &:after {
-          content: "Go Light";
-          margin-left: $spacer--icon;
-        }
-      }
-    }
+    //@media (min-width: $screen-sm-min) {
+    //  &:hover a {
+    //    &:before {
+    //      content: "Go Light";
+    //      margin-right: $spacer--icon;
+    //    }
+    //  }
+    //}
+    //@media (max-width: $screen-xs-max) {
+    //  a {
+    //    margin-right: $spacer--icon;
+    //    &:after {
+    //      content: "Go Light";
+    //      margin-left: $spacer--icon;
+    //    }
+    //  }
+    //}
   }
 }
