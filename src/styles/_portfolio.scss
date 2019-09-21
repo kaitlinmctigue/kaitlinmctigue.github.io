@@ -36,17 +36,20 @@
 
   .title {
     @extend %title-text;
-    font-size: $font-size--role;
-    margin: 5px 0 $spacer--small;
+    margin: -10px 0 $spacer--small;
     line-height: $line-height--title;
 
     &__des {
+      font-size: $font-size--role;
+      font-weight: $font-weight--semibold;
       @include themed() {
         color: t($brand-blue);
       }
     }
 
     &__dev {
+      font-size: $font-size--role;
+      font-weight: $font-weight--semibold;
       @include themed() {
         color: t($brand-red);
       }

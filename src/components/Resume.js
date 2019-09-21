@@ -27,7 +27,7 @@ export default class Resume extends Component {
                                 Download PDF Resume
                             </a>
                         </div>
-                        <div className={'col-xs-12 col-md-6'}>
+                        <div className={'col-xs-12 col-md-6 text-right'}>
                             <a href={linkedin} target={'_blank'}  className={'link'}>
                                 View My LinkedIn Profile
                                 <FontAwesomeIcon icon={'arrow-right'}/>

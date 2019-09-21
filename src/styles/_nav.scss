@@ -62,11 +62,11 @@
 
   .logo {
     @extend %title-text;
-    font-size: $font-size--role;
+    font-size: $font-size--role + 3;
     padding: 0 15px;
 
     @include themed() {
-      color: t($text);
+      color: t($text-important);
     }
   }
 

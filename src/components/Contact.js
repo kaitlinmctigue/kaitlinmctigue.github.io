@@ -12,13 +12,13 @@ export default class Contact extends Component {
     render() {
         return (
             <div className={'contact'}>
+                <h1 className={'title contact__title'}>
+                    A bonafide unicorn who cares about solving people problems and code problems.
+                </h1>
                 <div className={'contact__img'}>
                     <img src={headshot} className={'img img-responsive'} />
                 </div>
                 <div className={'contact__text'}>
-                    <h1 className={'title contact__text__title'}>
-                        A bonafide unicorn who cares about solving people problems and code problems.
-                    </h1>
                     <div className={'contact__text__body'}>
                         <p>
                             I spend my days at TeleTracking working towards a mission of getting people healthcare without the wait, and my evenings at Carnegie Mellon University studying Human Computer Interaction.

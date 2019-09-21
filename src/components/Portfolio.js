@@ -133,10 +133,7 @@ export default class Portfolio extends Component {
                 </div>
                 <div className="portfolio__intro mx-auto">
                     <p>
-                        Hi! I like writing pixel-perfect css, and asking questions that other people are afraid to ask.
-                    </p>
-                    <p>
-                        I’m interested in AI, consumer health, game-based UI patterns, and <a href={'/#/contact'}>lots of other stuff</a> .
+                        Hi! I like writing pixel-perfect css, and asking questions that other people are afraid to ask. I’m interested in AI, consumer health, game-based UI patterns, and <a href={'/#/contact'}>lots of other stuff</a>.
                     </p>
                 </div>
 

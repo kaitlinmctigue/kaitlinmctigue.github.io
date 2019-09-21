@@ -140,11 +140,12 @@ html, body {
   line-height: $line-height--title;
 
   @include themed() {
-    color: t($brand-blue);
+    color: t($text-important);
   }
 }
 
 .body {
+  display: flex;
   margin-top: -10px;
 }
 

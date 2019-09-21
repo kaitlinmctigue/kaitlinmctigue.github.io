@@ -1,16 +1,32 @@
 .contact {
-  $img-width: 400px;
+  $img-width: 330px;
   max-width: $content-width;
   margin: $page-padding-top auto 0;
+
+  &__title {
+    position: relative;
+    text-align: left;
+    width: $img-width;
+    font-size: $font-size--page-title - 2px;
+    float: right;
+    z-index: 10;
+
+    @extend %title-text;
+
+    @media (min-width: $screen-sm-min) {
+      margin-bottom: -185px;
+    }
+  }
 
   &__img {
     width: 100%;
     display: inline-block;
+    z-index: 0;
 
     img {
       width: $img-width;
       max-width: $img-width;
-      float: right;
+      float: left;
 
       @media (max-width: $screen-xs-max) {
         float: none;
@@ -22,18 +38,8 @@
 
   &__text {
     text-align: left;
-
-    &__title {
-      text-align: left;
-      width: $img-width;
-      font-size: $font-size--page-title - 2px;
-
-      @extend %title-text;
-
-      @media (min-width: $screen-sm-min) {
-        margin-top: -185px;
-      }
-    }
+    display: inline-block;
+    margin-top: $spacer--medium;
 
     &__body {
       p {
