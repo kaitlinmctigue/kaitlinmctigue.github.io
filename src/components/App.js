@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import { HashRouter as Router, Route, Link } from 'react-router-dom';
 import { LinkContainer } from 'react-router-bootstrap';
+
+import ReactGA from 'react-ga';
+
+
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -46,6 +50,11 @@ const portfolioItems= [
     }
 ];
 
+function initializeReactGA() {
+    ReactGA.initialize('UA-149504089-1');
+    ReactGA.pageview('/homepage');
+}
+
 
 export default class App extends Component {
 
@@ -57,6 +66,8 @@ export default class App extends Component {
         };
 
         this.changeTheme = this.changeTheme.bind(this);
+
+        initializeReactGA();
     }
 
     changeTheme() {
