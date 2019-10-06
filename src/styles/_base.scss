@@ -83,7 +83,7 @@ html, body {
     min-height: 100vh;
     margin-bottom: ($footer-height * -1);
     padding-bottom: $spacer--large;
-    padding-top: $spacer--large;
+    padding-top: $spacer--small;
 
     &:after {
       content: "";
@@ -98,6 +98,18 @@ html, body {
     @media (max-width: $screen-sm-max) {
       padding: $spacer--medium;
     }
+  }
+}
+
+.text--blue {
+  @include themed() {
+    color: t($brand-blue);
+  }
+}
+
+.text--red {
+  @include themed() {
+    color: t($brand-red);
   }
 }
 
@@ -140,7 +152,7 @@ html, body {
   line-height: $line-height--title;
 
   @include themed() {
-    color: t($text-important);
+    color: t($text);
   }
 }
 

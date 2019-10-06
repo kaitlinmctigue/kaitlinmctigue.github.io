@@ -8,7 +8,7 @@
   background: transparent;
   border: none;
   box-shadow: none;
-  z-index: 10;
+  z-index: 100;
   border-radius: 0;
 
   @include themed() {
@@ -62,11 +62,16 @@
 
   .logo {
     @extend %title-text;
-    font-size: $font-size--role + 3;
+    font-size: $font-size--role + 5;
     padding: 0 15px;
 
     @include themed() {
       color: t($text-important);
+    }
+
+    &:hover, &:focus {
+      text-underline: none;
+      text-decoration: none;
     }
   }
 
@@ -118,17 +123,17 @@
 
 .header-link {
   @include themed() {
-    color: t($text);
+    color: t($text-secondary);
   }
 
   &:hover, &.active {
     @include themed() {
-      color: t($text-important);
+      color: t($text-secondary);
     }
 
     a {
       @include themed() {
-        color: t($text-important)!important;
+        color: t($text-secondary)!important;
       }
     }
   }
@@ -154,6 +159,11 @@
     }
 
     &:hover, &.active {
+      @include themed() {
+        color: t($text-important);
+        font-weight: $font-weight--bold;
+      }
+
       &:before {
         @include themed() {
           background-color: t($text-important);

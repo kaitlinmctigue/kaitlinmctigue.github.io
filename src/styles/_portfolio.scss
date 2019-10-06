@@ -1,8 +1,8 @@
 @import "settings";
 
 .portfolio {
+  width: 100%;
   max-width: $content-width--home;
-  //margin: $navbar-height auto 0;
   padding-top: 1px;
 
   @media (max-width: $screen-sm-max) {
@@ -14,10 +14,14 @@
   }
 
   &__intro {
-    max-width: 500px;
+    max-width: 700px;
+    margin: 80px auto;
+    text-align: center;
 
     p {
-      font-size: $font-size--intro;
+      @extend %title-text;
+      font-size: 28px;
+      line-height: 1.4;
 
       a {
         color: inherit;
@@ -36,8 +40,9 @@
 
   .title {
     @extend %title-text;
-    margin: -10px 0 $spacer--small;
-    line-height: $line-height--title;
+    margin: 0 0 $spacer--small;
+    line-height: .6;
+    margin-top: 0px;
 
     &__des {
       font-size: $font-size--role;
