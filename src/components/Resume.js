@@ -1,15 +1,29 @@
 import React, { Component } from 'react';
 import { Document, Page } from 'react-pdf/dist/entry.webpack';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import resume from '../mctigue_resume.pdf';
 
+import ReactGA from 'react-ga';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import resume from '../mctigue_resume.pdf';
 const resumelink = 'https://kaitlinmctigue.github.io/images/mctigue_resume.pdf';
 const linkedin = 'https://www.linkedin.com/in/katiemctigue';
+
+function initializeReactGA() {
+    ReactGA.initialize('UA-149504089-1');
+    ReactGA.pageview('/resume');
+    ReactGA.event({
+        category: 'Page Views',
+        action: 'View Resume Page'
+    });
+}
 
 export default class Resume extends Component {
 
     constructor() {
         super();
+
+        initializeReactGA();
     }
 
     render() {

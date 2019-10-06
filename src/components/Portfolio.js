@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+
+import ReactGA from 'react-ga';
+
 import toy from '../images/thumbnails/toy.jpg';
 import dci from '../images/thumbnails/dci.jpg';
 import thor from '../images/thumbnails/thor.jpg';
@@ -9,6 +12,22 @@ import women from '../images/thumbnails/women.jpg';
 
 import { ButtonToolbar, ToggleButtonGroup, ToggleButton } from 'react-bootstrap';
 import Tag from './portfolio/Tag';
+
+//Google Analytics
+function initializeReactGA() {
+    ReactGA.initialize('UA-149504089-1');
+    ReactGA.event({
+        category: 'Page Views',
+        action: 'View Portfolio Page'
+    });
+}
+
+function toggleFilter() {
+    ReactGA.event({
+        category: 'Portfolio Actions',
+        action: 'Toggle Work/Play'
+    });
+}
 
 export default class Portfolio extends Component {
 
@@ -74,10 +93,14 @@ export default class Portfolio extends Component {
                 'path': 'shining-hotel'
             }
         ];
+
+        initializeReactGA();
     }
 
     changeModeFilter(e) {
         this.setState({ filter: e });
+
+        toggleFilter();
     }
 
     renderTag(tag) {

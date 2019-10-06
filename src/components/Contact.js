@@ -1,12 +1,27 @@
 import React, { Component } from 'react';
+
+import ReactGA from 'react-ga';
+
 import { SocialIcon } from 'react-social-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import headshot from '../images/headshot.jpg';
+
+function initializeReactGA() {
+    ReactGA.initialize('UA-149504089-1');
+    ReactGA.pageview('/about');
+    ReactGA.event({
+        category: 'Page Views',
+        action: 'View About Page'
+    });
+}
 
 export default class Contact extends Component {
 
     constructor() {
         super();
+
+        initializeReactGA();
     }
 
     render() {
