@@ -5,6 +5,7 @@ $card-border: 'card-border';
 $text: 'text';
 $text-important: 'text-important';
 $text-secondary: 'text-secondary';
+$text-badge: 'text-badge';
 $link: 'link';
 $hover: 'hover';
 $logo: 'logo';
@@ -24,6 +25,7 @@ $themes: (
                 text: $text--light,
                 text-important: $text--imp--light,
                 text-secondary: $text--2--light,
+                text-badge: $text--3--light,
                 link: $brand--blue--light,
                 hover: $hover--light,
                 brand-red: $brand--red--light,
@@ -39,6 +41,7 @@ $themes: (
                 text: $text--dark,
                 text-important: $text--imp--dark,
                 text-secondary: $text--2--dark,
+                text-badge: $text--3--dark,
                 link: $brand--blue--dark,
                 hover: $hover--dark,
                 brand-red: $brand--red--dark,

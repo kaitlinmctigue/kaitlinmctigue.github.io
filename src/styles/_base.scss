@@ -114,6 +114,7 @@ html, body {
 }
 
 .badge {
+  background: transparent;
   font-weight: normal;
   margin-right: 3px;
   font-size: $font-size--tags;
@@ -121,11 +122,15 @@ html, body {
   text-transform: lowercase;
   border-radius: 15px;
 
+  &:before {
+    content: '#';
+  }
+
   &--design {
     &.badge {
       @include themed() {
         color: t($brand-blue);
-        @extend %title-text;
+        //@extend %title-text;
       }
     }
   }
@@ -134,14 +139,13 @@ html, body {
     &.badge {
       @include themed() {
         color: t($brand-red);
-        @extend %title-text;
+        //@extend %title-text;
       }
     }
   }
 
   @include themed() {
-    background: t($card-bg);
-    color: t($text);
+    color: t($text-badge);
     border: 1px solid t($border);
   }
 }

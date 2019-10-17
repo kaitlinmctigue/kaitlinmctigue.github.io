@@ -111,8 +111,10 @@ $text--light: lighten($text--imp--light, 5%);
 $text--dark: #cac3bc;
 $text--2--light: $text--imp--light;
 $text--2--dark: $text--imp--dark;
-$border--light: #cbcbcb;
-$border--dark: #999;
+$text--3--light: lighten($text--light, 20%);
+$text--3--dark: darken($text--dark, 20%);
+$border--light: darken($bg--card--light, 10%);
+$border--dark: lighten($bg--card--dark, 10%);
 $hover--light: transparentize($brand--blue--light, .9);
 $hover--dark: transparentize(#fff, .9);
 
