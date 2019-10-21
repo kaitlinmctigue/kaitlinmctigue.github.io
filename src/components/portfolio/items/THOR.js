@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import ReactGA from 'react-ga';
+
 import Header from '../Header';
 import splashImg from '../../../images/thumbnails/thor.jpg';
 import logos from '../../../images/portfolio/thor/thor_logos.png';
@@ -41,6 +43,13 @@ export default class THOR extends Component {
 
     constructor() {
         super();
+
+        //Google Analytics
+        ReactGA.initialize('UA-149504089-1');
+        ReactGA.event({
+            category: 'Project Page Views',
+            action: 'View Project: THOR'
+        });
     }
 
     render() {
