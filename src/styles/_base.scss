@@ -79,11 +79,9 @@ html, body {
 
   &__page {
     margin: 0 auto;
-    max-width: $content-width--home;
     min-height: 100vh;
     margin-bottom: ($footer-height * -1);
-    padding-bottom: $spacer--large;
-    padding-top: $spacer--small;
+    padding: $spacer--small $spacer--default $spacer--large;
 
     &:after {
       content: "";

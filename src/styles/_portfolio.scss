@@ -2,7 +2,6 @@
 
 .portfolio {
   width: 100%;
-  max-width: $content-width--home;
   padding-top: 1px;
 
   @media (max-width: $screen-sm-max) {
@@ -62,7 +61,8 @@
   }
 
   &__body {
-    margin-top: $spacer--large;
+    margin: $spacer--large auto 0;
+    max-width: $content-width--home;
 
     &__links {
       &__filter {
