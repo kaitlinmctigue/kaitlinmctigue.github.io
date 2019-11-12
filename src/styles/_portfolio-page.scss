@@ -22,6 +22,15 @@
   &__tags {
     margin-top: $spacer--small;
 
+    &__icon {
+      @include themed() {
+        color: t($text-badge);
+      }
+      font-size: $font-size--secondary - 4px;
+      margin-right: 8px;
+      opacity: .5;
+    }
+
     .badge {
       margin-right: $spacer--icon;
       margin-top: $spacer--icon;

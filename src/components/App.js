@@ -8,8 +8,9 @@ import ReactGA from 'react-ga';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMoon, faSun, faArrowCircleDown, faArrowRight, faArrowLeft, faArrowUp, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-library.add(faMoon, faSun, faArrowCircleDown, faArrowRight, faArrowLeft, faArrowUp, faEnvelope);
+import { faMoon, faSun, faArrowCircleDown, faArrowRight, faArrowLeft, faArrowUp, faEnvelope, faTag } from '@fortawesome/free-solid-svg-icons';
+library.add(faMoon, faSun, faArrowCircleDown, faArrowRight, faArrowLeft, faArrowUp, faEnvelope, faTag);
+
 import { SocialIcon } from 'react-social-icons';
 
 import Contact from './Contact';

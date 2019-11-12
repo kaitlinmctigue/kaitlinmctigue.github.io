@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 import ReactGA from 'react-ga';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import toy from '../images/thumbnails/toy.jpg';
 import dci from '../images/thumbnails/dci.jpg';
@@ -12,6 +13,7 @@ import women from '../images/thumbnails/women.jpg';
 
 import { ButtonToolbar, ToggleButtonGroup, ToggleButton } from 'react-bootstrap';
 import Tag from './portfolio/Tag';
+// import Tag from './portfolio/Tag';
 
 //Google Analytics
 function initializeReactGA() {
@@ -45,6 +47,7 @@ export default class Portfolio extends Component {
                 'id': 2,
                 'title': 'Playsmart RFID Toys Concept',
                 'tags': ['design', 'instructional design', 'gamification'],
+                'desc': 'Leveraging the power of play to teach kids to clean up their toys.',
                 'img': toy,
                 'class': 'des',
                 'path': 'playsmart'
@@ -53,6 +56,7 @@ export default class Portfolio extends Component {
                 'id': 1,
                 'title': 'Tennessee Homeland Online Records',
                 'tags': ['dev', 'angular2', 'branding'],
+                'desc': 'Empowering officers to access criminal records on the go, as quickly and safely as possible.',
                 'img': thor,
                 'class': 'dev',
                 'path': 'thor'
@@ -61,6 +65,7 @@ export default class Portfolio extends Component {
                 'id': 0,
                 'title': 'Diverse Computing Rebrand',
                 'tags': ['design', 'branding'],
+                'desc': 'Leveraging the power of play to teach kids to clean up their toys.',
                 'img': dci,
                 'class': 'des',
                 'path': 'dci-brand'
@@ -69,6 +74,7 @@ export default class Portfolio extends Component {
                 'id': 3,
                 'title': 'Prototyping with Environmental Factors',
                 'tags': ['dev', 'ux research', 'environmental design'],
+                'desc': 'Leveraging the power of play to teach kids to clean up their toys.',
                 'img': hosp,
                 'class': 'dev',
                 'path': 'environmental-design'
@@ -80,6 +86,7 @@ export default class Portfolio extends Component {
                 'id': 0,
                 'title': 'Women Drowning Photo Series',
                 'tags': ['design', 'Photography', 'Art Direction'],
+                'desc': 'Leveraging the power of play to teach kids to clean up their toys.',
                 'img': women,
                 'class': 'des',
                 'path': 'women-drowning'
@@ -87,6 +94,7 @@ export default class Portfolio extends Component {
             {
                 'id': 1,
                 'title': 'The Shining Hotel Project',
+                'desc': 'Leveraging the power of play to teach kids to clean up their toys.',
                 'tags': ['dev', 'react', 'interactive art'],
                 'img': stanley,
                 'class': 'dev',
@@ -121,9 +129,13 @@ export default class Portfolio extends Component {
                             <div className={'item-preview__content__desc__title item-preview__content__desc__title--' + work.class}>
                                 {work.title}
                             </div>
-                            <div className="item-preview__content__desc__desc">
-                                {work.tags.map((tag) =>
-                                    <Tag tag={tag} key={tag}></Tag>
+                            <div className={'item-preview__content__desc__text'}>
+                                {work.desc}
+                            </div>
+                            <div className="item-preview__content__desc__tags">
+                                <FontAwesomeIcon icon={'tag'} className={'item-preview__content__desc__tags__icon'}/>
+                                {work.tags.map((tag, index, last) =>
+                                    <Tag key={index} tag={tag + (((index + 1) != last.length) ? ', ' : '')}/>
                                 )}
                             </div>
                         </div>

@@ -5,7 +5,7 @@ class Tag extends Component {
 
     render() {
         return (
-            <span key={this.props.tag.toString()} value={this.props.tag} className={'badge badge--' + (this.props.tag.toString().toLowerCase())}>
+            <span key={this.props.tag.toString()} value={this.props.tag} className={'badge badge--' + (this.props.tag.toString().toLowerCase().replace(/,/g, ''))}>
                 {this.props.tag}
             </span>
         );

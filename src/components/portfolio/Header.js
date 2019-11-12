@@ -78,8 +78,9 @@ class Header extends Component {
                         </div>
                         {this.nda()}
                         <div className={'header__tags'}>
-                            {this.props.tags.map((tag) =>
-                                <Tag tag={tag} key={tag}></Tag>
+                            <FontAwesomeIcon icon={'tag'} className={'header__tags__icon'}/>
+                            {this.props.tags.map((tag, index, last) =>
+                                <Tag key={index} tag={tag + (((index + 1) != last.length) ? ', ' : '')}/>
                             )}
                         </div>
                     </div>

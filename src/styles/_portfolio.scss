@@ -168,6 +168,12 @@
       border: t($card-border);
     }
 
+    &:hover {
+      &__desc__title {
+        text-decoration: underline;
+      }
+    }
+
     &__img {
       height: 230px;
       background-size: cover;
@@ -202,8 +208,33 @@
         }
       }
 
-      &__desc {
+      &__tags {
+        * {
+          font-size: $font-size--tertiary;
+          @include themed() {
+            color: t($text-badge);
+          }
+        }
 
+        &__icon {
+          @include themed() {
+            color: t($text-badge);
+            opacity: .5;
+            margin-right: 8px;
+            font-size: $font-size--tertiary - 2px;
+          }
+        }
+      }
+
+      &__text {
+        @include themed() {
+          color: t($text-secondary);
+        }
+
+        $size: $font-size--tertiary;
+        font-size: $size;
+        padding: 3px 0;
+        min-height: $size * 4;
       }
     }
   }
