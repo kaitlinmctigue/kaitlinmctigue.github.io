@@ -9,10 +9,12 @@ $padding-top: 12px;
 $logo-height: 35px;
 $logo-width: 250px;
 $navbar-height: 58px;
+$navbar-max-width: 1600px;
 $footer-height: 60px;
 $page-padding-top: 45px;
 
 //spacers
+$spacer--largest: 120px;
 $spacer--large: 65px;
 $spacer--default: 50px;
 $spacer--medium: ($spacer--default * .8);

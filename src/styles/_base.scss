@@ -81,7 +81,7 @@ html, body {
     margin: 0 auto;
     min-height: 100vh;
     margin-bottom: ($footer-height * -1);
-    padding: $spacer--small $spacer--default $spacer--large;
+    padding: $spacer--default (120px) $spacer--large;
 
     &:after {
       content: "";

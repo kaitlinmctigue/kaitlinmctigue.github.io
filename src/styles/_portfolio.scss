@@ -13,14 +13,17 @@
   }
 
   &__intro {
-    max-width: 700px;
-    margin: 80px auto;
-    text-align: center;
+    //max-width: 700px;
+    //margin: 80px auto;
+    //text-align: center;
+    max-width: $navbar-max-width;
+    text-align: left;
+    margin: 0 auto;
 
     p {
-      @extend %title-text;
-      font-size: 28px;
-      line-height: 1.4;
+      font-size: $font-size--secondary;
+      line-height: 1.6;
+      max-width: 475px;
 
       a {
         color: inherit;
@@ -39,9 +42,9 @@
 
   .title {
     @extend %title-text;
-    margin: 0 0 $spacer--small;
+    margin: 0 auto $spacer--small;
     line-height: .6;
-    margin-top: 0px;
+    max-width: $navbar-max-width;
 
     &__des {
       font-size: $font-size--role;
@@ -61,7 +64,7 @@
   }
 
   &__body {
-    margin: $spacer--large auto 0;
+    margin: $spacer--largest auto 0;
     max-width: $content-width--home;
 
     &__links {
@@ -152,6 +155,7 @@
 .item-preview {
   padding: $spacer--default/4 0 $spacer--default/2;
   text-align: center;
+  margin: 8px;
 
   &__content {
     display: block;
@@ -165,7 +169,7 @@
     }
 
     &__img {
-      height: 300px;
+      height: 230px;
       background-size: cover;
       background-position: center center;
     }
@@ -182,7 +186,7 @@
       padding: 10px 0;
 
       &__title {
-        font-size: $font-size--item-preview--title;
+        font-size: $font-size--item-preview--title - 2;
         @extend %title-text;
 
         &--des {

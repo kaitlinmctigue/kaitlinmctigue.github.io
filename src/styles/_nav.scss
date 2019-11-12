@@ -3,6 +3,7 @@
   top: 0;
   margin: 0 auto;
   width: calc(100% + 10px);
+  max-width: $navbar-max-width;
   overflow-x: hidden;
   padding: 10px 0;
   background: transparent;

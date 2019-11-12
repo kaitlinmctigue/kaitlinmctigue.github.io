@@ -1,7 +1,7 @@
 $pdf-width: 1100px;
 
 .resume {
-  margin-top: $page-padding-top;
+  margin: $page-padding-top auto;
 }
 
 .react-pdf__Page__canvas {
