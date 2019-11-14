@@ -178,6 +178,10 @@
       height: 230px;
       background-size: cover;
       background-position: center center;
+
+      @media (max-width: $screen-xs-max) {
+        height: 120px;
+      }
     }
 
     &--des {
