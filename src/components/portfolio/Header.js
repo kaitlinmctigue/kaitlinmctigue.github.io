@@ -56,7 +56,7 @@ class Header extends Component {
         if (this.props.nda) {
             return(
                 <p className={'header__nda'}>
-                    Preview of NDA-protected work
+                    Public overview of NDA-protected work
                 </p>
             );
         }

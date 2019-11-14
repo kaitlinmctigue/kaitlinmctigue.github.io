@@ -47,7 +47,7 @@ export default class Portfolio extends Component {
                 'id': 2,
                 'title': 'Playsmart RFID Toys Concept',
                 'tags': ['design', 'instructional design', 'gamification'],
-                'desc': 'Leveraging the power of play to teach kids to clean up their toys.',
+                'desc': 'Leveraging the power of play to teach kids to clean up.',
                 'img': toy,
                 'class': 'des',
                 'path': 'playsmart'
@@ -65,7 +65,7 @@ export default class Portfolio extends Component {
                 'id': 0,
                 'title': 'Diverse Computing Rebrand',
                 'tags': ['design', 'branding'],
-                'desc': 'Leveraging the power of play to teach kids to clean up their toys.',
+                'desc': 'Reimagining a brand that had been overshadowed by its flagship product to reach new markets.',
                 'img': dci,
                 'class': 'des',
                 'path': 'dci-brand'
@@ -74,7 +74,7 @@ export default class Portfolio extends Component {
                 'id': 3,
                 'title': 'Prototyping with Environmental Factors',
                 'tags': ['dev', 'ux research', 'environmental design'],
-                'desc': 'Leveraging the power of play to teach kids to clean up their toys.',
+                'desc': 'Helping hospital employees beat eye-strain during long shifts, with code changes and environmental changes.',
                 'img': hosp,
                 'class': 'dev',
                 'path': 'environmental-design'
@@ -86,7 +86,7 @@ export default class Portfolio extends Component {
                 'id': 0,
                 'title': 'Women Drowning Photo Series',
                 'tags': ['design', 'Photography', 'Art Direction'],
-                'desc': 'Leveraging the power of play to teach kids to clean up their toys.',
+                'desc': 'Exploring concepts of power, longing, loss, and femininity, on film and digital.',
                 'img': women,
                 'class': 'des',
                 'path': 'women-drowning'
@@ -94,7 +94,7 @@ export default class Portfolio extends Component {
             {
                 'id': 1,
                 'title': 'The Shining Hotel Project',
-                'desc': 'Leveraging the power of play to teach kids to clean up their toys.',
+                'desc': 'Imagining what the hotel that inspired The Shining looked like through the eyes of Stephen King in 1977.',
                 'tags': ['dev', 'react', 'interactive art'],
                 'img': stanley,
                 'class': 'dev',
