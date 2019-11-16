@@ -28,7 +28,7 @@ export default class Contact extends Component {
         return (
             <div className={'contact'}>
                 <h1 className={'title contact__title'}>
-                    A bonafide unicorn who cares about solving people problems and code problems.
+                    I like writing pixel-perfect <span className={'text--red'}>css</span> and asking <span className={'text--blue'}>questions</span> that other people are afraid to ask.
                 </h1>
                 <div className={'contact__img'}>
                     <img src={headshot} className={'img img-responsive'} />
