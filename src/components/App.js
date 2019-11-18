@@ -23,6 +23,7 @@ import WomenDrowning from './portfolio/items/WomenDrowning';
 import StanleyHotel from './portfolio/items/StanleyHotel';
 import PlaySmart from './portfolio/items/PlaySmart';
 import THOR from './portfolio/items/THOR';
+import InteractivePrinciples from './portfolio/items/InteractivePrinciples';
 
 const portfolioItems= [
     {
@@ -40,6 +41,10 @@ const portfolioItems= [
     {
         path: 'thor',
         comp: THOR
+    },
+    {
+        path: 'interactive-principles',
+        comp: InteractivePrinciples
     },
     {
         path: 'women-drowning',

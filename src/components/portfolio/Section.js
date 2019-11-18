@@ -61,7 +61,7 @@ class Section extends Component {
     caption() {
         if (this.props.caption) {
             return (
-                <p>
+                <p className={'caption'}>
                     <em>
                         {this.props.caption}
                     </em>
@@ -95,6 +95,9 @@ class Section extends Component {
                 </div>
                 <div className={'col-xs-12 col-sm-12 section__img'}>
                     {this.staticImg()}
+                </div>
+                <div className={'col-xs-12 col-sm-12 section__text'}>
+                    {this.caption()}
                 </div>
                 <div className={'col-xs-12 col-sm-12 section__text'}>
                     {this.textAfterImg()}

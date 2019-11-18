@@ -10,6 +10,7 @@ import thor from '../images/thumbnails/thor.jpg';
 import hosp from '../images/thumbnails/environment.png';
 import stanley from '../images/thumbnails/stanley.png';
 import women from '../images/thumbnails/women.jpg';
+import cards from '../images/thumbnails/cards.jpg';
 
 import { ButtonToolbar, ToggleButtonGroup, ToggleButton } from 'react-bootstrap';
 import Tag from './portfolio/Tag';
@@ -46,7 +47,7 @@ export default class Portfolio extends Component {
             {
                 'id': 2,
                 'title': 'Playsmart RFID Toys Concept',
-                'tags': ['design', 'instructional design', 'gamification'],
+                'tags': ['design', 'instructional design', 'game design'],
                 'desc': 'Leveraging the power of play to teach kids to clean up.',
                 'img': toy,
                 'class': 'des',
@@ -78,6 +79,15 @@ export default class Portfolio extends Component {
                 'img': hosp,
                 'class': 'dev',
                 'path': 'environmental-design'
+            },
+            {
+                'id': 4,
+                'title': 'Interactive Principles Project',
+                'tags': ['dev', 'research', 'instructional design', 'game design'],
+                'desc': 'Making learning science principles more accessible to game designers with a virtual deck of cards.',
+                'img': cards,
+                'class': 'dev',
+                'path': 'interactive-principles'
             }
         ];
 

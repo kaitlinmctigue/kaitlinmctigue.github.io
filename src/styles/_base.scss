@@ -187,6 +187,8 @@ html, body {
 }
 
 .img {
+  background-color: $bg--card--light;
+
   @include themed() {
     border: 1px solid t($border);
   }
