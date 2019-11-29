@@ -1,5 +1,5 @@
 @import "settings";
-$page-padding-mobile: $spacer--small;
+$page-padding-mobile: 10px;
 
 //loading
 .app {
@@ -93,8 +93,8 @@ html, body {
       padding: $spacer--large;
     }
 
-    @media (max-width: $screen-sm-max) {
-      padding: $spacer--medium;
+    @media (max-width: $screen-xs-max) {
+      padding: 0 $spacer--medium $spacer--medium;
     }
   }
 }
@@ -165,7 +165,7 @@ html, body {
 
 .body, .navbar.header {
   @media (max-width: $screen-md-max) {
-    padding: $spacer--smallest $page-padding-mobile!important;
+    padding: $spacer--smallest 0;
   }
 }
 

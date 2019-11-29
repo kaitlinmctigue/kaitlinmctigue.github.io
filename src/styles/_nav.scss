@@ -1,11 +1,12 @@
 .header.navbar {
+  $padding: $page-padding-mobile + 5;
   position: sticky;
-  top: 0;
+  top: $padding;
   margin: 0 auto;
   width: calc(100% + 10px);
   max-width: $navbar-max-width;
   overflow-x: hidden;
-  padding: 10px 0;
+  padding: $padding 0;
   background: transparent;
   border: none;
   box-shadow: none;
@@ -222,11 +223,20 @@
     }
 
     .navbar-toggle {
+      margin-top: 30px;
+
       &:hover, &:focus {
         @include themed() {
           background: t($hover);
         }
       }
+    }
+
+    .logo {
+      position: absolute;
+      top: 40px;
+      left: 0;
+      padding: 0 $page-padding-mobile;
     }
 
     .navbar-collapse {
