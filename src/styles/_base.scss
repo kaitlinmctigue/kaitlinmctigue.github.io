@@ -186,7 +186,7 @@ html, body {
   }
 }
 
-.img {
+.img, .ril__image, .ril__imagePrev, .ril__imageNext {
   background-color: $bg--card--light;
 
   @include themed() {

@@ -15,9 +15,18 @@ const problem = 'There are dozens of reputable sets of learning science principl
     '\n' +
     'In the Design of Educational Games course at Carnegie Mellon University, Dr. Erik Harpstead uses the set of 30 principles from Koedinger, Booth, and Klahr’s 2013 article Instructional Complexity and the Science to Constrain It. Students are expected to more or less memorize the list, a daunting task that often leads to misconceptions about some of the principles.\n';
 const solution = 'We make research backed principles from the learning sciences more accessible to designers and students by providing examples and contextualizing the design questions that can have pedagogical impacts. Each principle is represented in the form of a card, making up an interactive deck.\n';
+const ideationtext = 'I set out with the very meta challenge of designing a game experience that used the learning science principles to teach the learning science principles.\n' +
+    '\n' +
+    'Our earliest concept was one big game in which the player could turn the principle off and on to feel it’s absence.\n' +
+    '\n' +
+    'Another idea I paper-prototyped was a “choose your own adventure” style experience in which the player was tasked to teach an alien to make a peanut butter and jelly sandwich by making choices that best utilize the principles. This approach piggybacked on both the Quizzing principle and the Application principle by teaching through repeated exposure, similar to how Duolingo teaches vocabulary.\n';
 
 import logo from '../../../images/portfolio/ixprinciples/cmulogos.png';
 import trans from '../../../images/portfolio/ixprinciples/transformational.png';
+import principlesresearch from '../../../images/portfolio/ixprinciples/principlesresearch.png';
+import operation from '../../../images/portfolio/ixprinciples/operation.jpg';
+import cards1 from '../../../images/portfolio/ixprinciples/cards1.jpg';
+import cards2 from '../../../images/portfolio/ixprinciples/cards2.jpg';
 
 export default class InteractivePrinciples extends Component {
 
@@ -53,7 +62,23 @@ export default class InteractivePrinciples extends Component {
                     img={logo}
                 />
 
-                <Section title={'Process'} staticImg={trans} caption={'The Transformational Framework by Sabrina Culyba guided my research process'} />
+                <Section title={'Process'} img={trans} caption={'The Transformational Framework by Sabrina Culyba guided my research process'} />
+
+                <Section title={'Learning Science Background Research'} img={principlesresearch}
+                    text={'Dr. Harpstead uses Koedinger’s consolidated set of 30 learning science principles for his course. To get a deep understanding of what the principles meant, I spent some time with each of the papers that Koedinger referenced in his set. I began sketching concepts for how we could make players of our solution feel the presence or absence of each principle in a visual way.'}
+                />
+
+                <Section title={'Playing Lots of Games (I mean, more research)'}
+                    text={'Another thing I did in this exploratory background research phase was play a LOT of games to find examples of games that leveraged learning science principles. Dr. Harpstead had discovered in his teaching that students were better able to understand learning science principles and less likely to fall into common misconceptions when they were able to experience the principles through play.\n'}
+                    img={operation}
+                    caption={'Operation is a perfect example of the Immediate Feedback Timing principle, which students often misunderstand. In operation the player knows their mistake as soon as they touch the metal edge of the body (game board).\n'}
+                />
+
+                <Section title={'Ideation and First Concepts'}
+                    text={ideationtext}
+                    img={cards2}
+                    img2={cards1}
+                />
 
                 <Section title={'View Project'} text={'View the live website:'} link={'http://www.edugames.design/principles'}/>
 
