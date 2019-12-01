@@ -9,7 +9,9 @@ class Section extends Component {
     title() {
         if (this.props.title) {
             return (
-                <Title title={this.props.title} />
+                <div className={'col-xs-12 col-sm-12 section__title'}>
+                    <Title title={this.props.title} />
+                </div>
             );
         }
     }
@@ -17,9 +19,11 @@ class Section extends Component {
     text() {
         if (this.props.text) {
             return (
-                <p>
-                    {this.props.text}
-                </p>
+                <div className={'col-xs-12 col-sm-12 section__text'}>
+                    <p>
+                        {this.props.text}
+                    </p>
+                </div>
             );
         }
     }
@@ -27,9 +31,11 @@ class Section extends Component {
     textAfterImg() {
         if (this.props.textAfterImg) {
             return (
-                <p>
-                    {this.props.textAfterImg}
-                </p>
+                <div className={'col-xs-12 col-sm-12 section__text'}>
+                    <p>
+                        {this.props.textAfterImg}
+                    </p>
+                </div>
             );
         }
     }
@@ -37,7 +43,9 @@ class Section extends Component {
     quote() {
         if (this.props.quote) {
             return (
-                <Quote quote={this.props.quote}></Quote>
+                <div className={'col-xs-12 col-sm-12 section__quote'}>
+                    <Quote quote={this.props.quote}></Quote>
+                </div>
             );
         }
     }
@@ -46,7 +54,9 @@ class Section extends Component {
         if (this.props.img) {
             console.log(this.props);
             return (
-                <Img img={this.props.img} caption={this.props.caption ? this.props.caption : ''}></Img>
+                <div className={'col-xs-12 col-sm-12 section__img'}>
+                    <Img img={this.props.img} caption={this.props.caption ? this.props.caption : ''}></Img>
+                </div>
             );
         }
     }
@@ -55,7 +65,9 @@ class Section extends Component {
         if (this.props.img2) {
             console.log(this.props);
             return (
-                <Img img={this.props.img2}></Img>
+                <div className={'col-xs-12 col-sm-12 section__img'}>
+                    <Img img={this.props.img2}></Img>
+                </div>
             );
         }
     }
@@ -63,7 +75,9 @@ class Section extends Component {
     staticImg() {
         if (this.props.staticImg) {
             return (
-                <img src={this.props.staticImg} className={'img img-responsive'}></img>
+                <div className={'col-xs-12 col-sm-12 section__img'}>
+                    <img src={this.props.staticImg} className={'img img-responsive'}></img>
+                </div>
             );
         }
     }
@@ -71,7 +85,9 @@ class Section extends Component {
     link() {
         if (this.props.link) {
             return (
-                <a href={this.props.link} target={'_blank'} className={'link'}>{this.props.link}</a>
+                <div className={'col-xs-12 col-sm-12 section__link'}>
+                    <a href={this.props.link} target={'_blank'} className={'link'}>{this.props.link}</a>
+                </div>
             );
         }
     }
@@ -79,30 +95,14 @@ class Section extends Component {
     render() {
         return (
             <div className={'section row'}>
-                <div className={'col-xs-12 col-sm-12 section__title'}>
-                    {this.title()}
-                </div>
-                <div className={'col-xs-12 col-sm-12 section__text'}>
-                    {this.text()}
-                </div>
-                <div className={'col-xs-12 col-sm-12 section__quote'}>
-                    {this.quote()}
-                </div>
-                <div className={'col-xs-12 col-sm-12 section__img'}>
-                    {this.img()}
-                </div>
-                <div className={'col-xs-12 col-sm-12 section__img'}>
-                    {this.staticImg()}
-                </div>
-                <div className={'col-xs-12 col-sm-12 section__text'}>
-                    {this.textAfterImg()}
-                </div>
-                <div className={'col-xs-12 col-sm-12 section__img'}>
-                    {this.img2()}
-                </div>
-                <div className={'col-xs-12 col-sm-12 section__img'}>
-                    {this.link()}
-                </div>
+                {this.title()}
+                {this.text()}
+                {this.quote()}
+                {this.img()}
+                {this.staticImg()}
+                {this.textAfterImg()}
+                {this.img2()}
+                {this.link()}
             </div>
         );
     }

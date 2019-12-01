@@ -26,7 +26,7 @@ class Setup extends Component {
     role() {
         if (this.props.role) {
             return(
-                <Subsection title={'Role'} text={this.props.role}></Subsection>
+                <Subsection title={'My Role'} text={this.props.role}></Subsection>
             );
         }
     }

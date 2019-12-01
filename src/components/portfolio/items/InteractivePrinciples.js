@@ -80,6 +80,8 @@ export default class InteractivePrinciples extends Component {
                     img2={cards1}
                 />
 
+                <Section title={'Deck of Cards Concept'}/>
+
                 <Section title={'View Project'} text={'View the live website:'} link={'http://www.edugames.design/principles'}/>
 
                 <Section title={'View the Source Code'} text={'View the project source code on Github:'} link={'https://github.com/eharpste/interactive-principles'}/>
