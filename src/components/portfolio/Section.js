@@ -52,7 +52,6 @@ class Section extends Component {
 
     img() {
         if (this.props.img) {
-            console.log(this.props);
             return (
                 <div className={'col-xs-12 col-sm-12 section__img'}>
                     <Img img={this.props.img} caption={this.props.caption ? this.props.caption : ''}></Img>
@@ -63,10 +62,9 @@ class Section extends Component {
 
     img2() {
         if (this.props.img2) {
-            console.log(this.props);
             return (
                 <div className={'col-xs-12 col-sm-12 section__img'}>
-                    <Img img={this.props.img2}></Img>
+                    <Img img={this.props.img2} caption={this.props.caption2 ? this.props.caption2 : ''}></Img>
                 </div>
             );
         }
@@ -100,8 +98,8 @@ class Section extends Component {
                 {this.quote()}
                 {this.img()}
                 {this.staticImg()}
-                {this.textAfterImg()}
                 {this.img2()}
+                {this.textAfterImg()}
                 {this.link()}
             </div>
         );
@@ -117,6 +115,7 @@ Section.propTypes = {
     staticImg: PropTypes.string,
     img2: PropTypes.string,
     caption: PropTypes.string,
+    caption2: PropTypes.string,
     link: PropTypes.string
 };
 

@@ -27,6 +27,9 @@ import principlesresearch from '../../../images/portfolio/ixprinciples/principle
 import operation from '../../../images/portfolio/ixprinciples/operation.jpg';
 import cards1 from '../../../images/portfolio/ixprinciples/cards1.jpg';
 import cards2 from '../../../images/portfolio/ixprinciples/cards2.jpg';
+import inspo from '../../../images/portfolio/ixprinciples/inspo.png';
+import screens from '../../../images/portfolio/ixprinciples/screens.png';
+import carddesign from '../../../images/portfolio/ixprinciples/carddesign.png';
 
 export default class InteractivePrinciples extends Component {
 
@@ -80,13 +83,36 @@ export default class InteractivePrinciples extends Component {
                     img2={cards1}
                 />
 
-                <Section title={'Deck of Cards Concept'}/>
+                <Section title={'Deck of Cards Concept'}
+                    img={inspo}
+                    text={'After playtesting our initial paper prototypes we began to realize the need to view all principles in one place so that students could start from an overview and have control over the level of depth of knowledge they wanted.\n' +
+                    '\n' +
+                    'The deck of cards concept was born from inspiration from Jesse Schell’s deck of lenses for game design. We envisioned an interactive deck of cards that players could use to learn at their own pace through reading, viewing visual representations, and playing games.'}
+                    caption={'Inspiration (left to right, top to bottom): The Art of Game Design: A Book of Lenses, Ideation Decks, Tinycards by Duolingo, Coglode, Laws of UX, GAPBIT (Game Design Patterns for Behavioral Therapy)'}
+                />
+
+                <Section title={'Prototyping'} img={carddesign} caption={'Card design concepts'} img2={screens} caption2={'An early iteration of the website design'}
+                    textAfterImg={'In order to test our card prototype we really needed to completely build out content for each principle so that we could test information retention and what content was most important to users.\n' +
+                    '\n' +
+                    'I chose to build the prototype in React for the ease of working with JSON data. We maintained the master file of data in Google Sheets and periodically exported it to JSON using some custom javascript.\n'}/>
+
+
+                <Section title={'Usability Testing and Iteration'}
+                    text={'We conducted usability testing with CMU students and faculty as well as game design professionals. We used thinkaloud protocol and task analysis to get feedback on the prototype. We then asked participants to play a short educational game (Coding for Carrots by Google) and identify principles they felt the game utilized.\n' +
+                '\n' +
+                'We received very positive feedback on the visual design and usability of the prototype. We identified some problem areas in the illustrations and also in the information hierarchy of the card design.\n' +
+                '\n' +
+                'We received a very positive response from faculty on the prototype, who expressed gratitude that we were making learning science more accessible. One scholar from the OHLab even called our project “potentially groundbreaking.”\n'}
+                />
+
+                <Section title={'Assessment and Outcomes'}
+                    text={'I made many changes based on our testing sessions, and as of the time of this writing the Interactive Principles website is live and ready to be used in the graduate Educational Game Design course next semester. Future OHLab interns will continue to iterate on the website as students use it and provide additional feedback.'}/>
 
                 <Section title={'View Project'} text={'View the live website:'} link={'http://www.edugames.design/principles'}/>
 
                 <Section title={'View the Source Code'} text={'View the project source code on Github:'} link={'https://github.com/eharpste/interactive-principles'}/>
 
-                <Section title={'Pitch Video'}/>
+                <Section title={'Final Product Video'}/>
                 <div className={'video-responsive'}>
                     <iframe width="700" height="394" src="https://www.youtube.com/embed/RwJ3SbDKNDc?rel=0&amp;showinfo=0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
