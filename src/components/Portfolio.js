@@ -54,13 +54,13 @@ export default class Portfolio extends Component {
                 'path': 'playsmart'
             },
             {
-                'id': 1,
-                'title': 'Tennessee Homeland Online Records',
-                'tags': ['dev', 'angular2', 'branding'],
-                'desc': 'Empowering officers to access criminal records on the go, as quickly and safely as possible.',
-                'img': thor,
+                'id': 4,
+                'title': 'Interactive Principles Project',
+                'tags': ['dev', 'research', 'instructional design', 'game design'],
+                'desc': 'Making learning science principles more accessible to game designers with a virtual deck of cards.',
+                'img': cards,
                 'class': 'dev',
-                'path': 'thor'
+                'path': 'interactive-principles'
             },
             {
                 'id': 0,
@@ -81,13 +81,13 @@ export default class Portfolio extends Component {
                 'path': 'environmental-design'
             },
             {
-                'id': 4,
-                'title': 'Interactive Principles Project',
-                'tags': ['dev', 'research', 'instructional design', 'game design'],
-                'desc': 'Making learning science principles more accessible to game designers with a virtual deck of cards.',
-                'img': cards,
+                'id': 1,
+                'title': 'Tennessee Homeland Online Records',
+                'tags': ['dev', 'angular2', 'branding'],
+                'desc': 'Empowering officers to access criminal records on the go, as quickly and safely as possible.',
+                'img': thor,
                 'class': 'dev',
-                'path': 'interactive-principles'
+                'path': 'thor'
             }
         ];
 
