@@ -94,9 +94,9 @@ class Setup extends Component {
             <div className={'section'}>
                 <div className={'row setup'}>
                     <div className={'col-xs-12 col-sm-6'}>
+                        {this.year()}
                         {this.client()}
                         {this.course()}
-                        {this.year()}
                         {this.role()}
                         {this.team()}
                     </div>

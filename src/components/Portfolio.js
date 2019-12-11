@@ -11,6 +11,7 @@ import hosp from '../images/thumbnails/environment.png';
 import stanley from '../images/thumbnails/stanley.png';
 import women from '../images/thumbnails/women.jpg';
 import cards from '../images/thumbnails/cards.jpg';
+import ucre from '../images/thumbnails/ucre.jpg';
 
 import { ButtonToolbar, ToggleButtonGroup, ToggleButton } from 'react-bootstrap';
 import Tag from './portfolio/Tag';
@@ -63,13 +64,13 @@ export default class Portfolio extends Component {
                 'path': 'interactive-principles'
             },
             {
-                'id': 0,
-                'title': 'Diverse Computing Rebrand',
-                'tags': ['design', 'branding'],
-                'desc': 'Reimagining a brand that had been overshadowed by its flagship product to reach new markets.',
-                'img': dci,
+                'id': 6,
+                'title': 'The Art + Human Circuit',
+                'tags': ['design', 'ux research', 'ux design'],
+                'desc': 'Breaking the stigma of public art being “boring sculptures” to engage citizens and build community.',
+                'img': ucre,
                 'class': 'des',
-                'path': 'dci-brand'
+                'path': 'art-circuit'
             },
             {
                 'id': 3,
@@ -79,6 +80,15 @@ export default class Portfolio extends Component {
                 'img': hosp,
                 'class': 'dev',
                 'path': 'environmental-design'
+            },
+            {
+                'id': 0,
+                'title': 'Diverse Computing Rebrand',
+                'tags': ['design', 'branding'],
+                'desc': 'Reimagining a brand that had been overshadowed by its flagship product to reach new markets.',
+                'img': dci,
+                'class': 'des',
+                'path': 'dci-brand'
             },
             {
                 'id': 1,
