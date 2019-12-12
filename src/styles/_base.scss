@@ -221,6 +221,21 @@ html, body {
   }
 }
 
+.tableau-viz {
+  > div {
+    background-color: $bg--card--light;
+
+    @include themed() {
+      border: 1px solid t($border);
+    }
+
+    iframe {
+      width: 100%;
+      min-width: 100%;
+    }
+  }
+}
+
 .footer {
   height: $footer-height;
   font-size: $font-size--tertiary;
