@@ -26,6 +26,7 @@ const execsummary = 'We used various research methods to understand the current 
     'The need for social interaction was one of the strongest experiences that resonated with our participants.\n' +
     '\n' +
     'The Art + Human Circuit is a highly interactive and collaborative art experience that entices people to engage with art and with other people. This solution speaks to people’s desire to receive information in a more engaging way, and to share art experiences with others.\n';
+const generative = 'We began our exploratory phase with extensive background research on public art in Pittsburgh, and arts organizations and existing solutions. We used contextual inquiry to understand how and why people interact with public art, and identify areas to improve. We also conducted thinkaloud protocol with an existing public art website. We talked to 8 unique participants total.\n';
 
 export default class UCRE extends Component {
 
@@ -69,14 +70,21 @@ export default class UCRE extends Component {
                 {/*<TableauViz url={'https://public.tableau.com/shared/5KK7YB2CD?:display_count=y&:origin=viz_share_link'}/>*/}
 
                 <Section title={'Exploratory & Generative Research Methods'}
-                    text={''}
+                    text={generative}
                     img={interview}
                     img2={affinity}
+                />
+
+                <Section title={'Participant Quote:'}
+                    quote={'"I\'ve never gone inside a place of art without other people… I just like to be with people… I like to share with them."'}
                 />
 
                 <Section title={'Key Insights'}/>
                 <div className={'row'}>
                     <div className={'col-xs-12'}>
+                        <p>
+                            When we synthesized our research we uncovered some key insights.
+                        </p>
                         <ol>
                             <li>People would rather interact with art than passively read a plaque.</li>
                             <li>People preferred to share art experiences with their friends and family rather than going alone.</li>
@@ -89,11 +97,13 @@ export default class UCRE extends Component {
 
                 <Section
                     title={'Evaluative Research Methods'}
+                    text={'We used storyboards and speed dating to validate the needs we had identified. We tested 5 needs total, but found that participants had the strongest reaction to the social interaction scenarios.\n'}
                     img={storyboard}
                     img2={testing}
+                    textAfterImg={'Our storyboarding results guided our first experience prototype, which we tested on the streets of Oakland, Pittsburgh.'}
                 />
 
-                <Section title={'Experience Prototype Feedback'}
+                <Section title={'Participant Quote:'}
                     quote={'"It is a collaboration for 2 people, or a puzzle for 1 person!"'}
                 />
 
@@ -106,6 +116,12 @@ export default class UCRE extends Component {
                 />
 
                 <Section title={'Final Poster'} img={poster}/>
+
+                <Section
+                    title={'My Role and Learning Experience'}
+                    text={'Each of our team members wore many different hats throughout this process, with all of us sharing the responsibilities of UX research and UX design. I personally took on project management and visual design work, and played a key role in ideation. I loved working with this very committed, hardworking, and creative group of people with different skills and backgrounds.'}
+                />
+
                 <Backlink/>
             </div>
         );
