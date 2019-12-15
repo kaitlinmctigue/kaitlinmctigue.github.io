@@ -1,7 +1,7 @@
 .header.navbar {
   $padding: $page-padding-mobile + 5;
   position: sticky;
-  top: $padding;
+  top: 0;
   margin: 0 auto;
   width: calc(100% + 10px);
   max-width: $navbar-max-width;
@@ -214,6 +214,7 @@
 
 @media (max-width: $screen-xs-max) {
   .header.navbar {
+    top: 0;
     padding: 0 $page-padding-mobile 5px $page-padding-mobile;
     margin-bottom: $spacer--smallest;
 
@@ -236,7 +237,7 @@
       position: absolute;
       top: 40px;
       left: 0;
-      padding: 0 $page-padding-mobile;
+      padding: 0;
     }
 
     .navbar-collapse {

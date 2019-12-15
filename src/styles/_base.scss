@@ -161,6 +161,8 @@ html, body {
 .body {
   display: flex;
   margin-top: -10px;
+  overflow: hidden;
+  word-break: break-word;
 }
 
 .body, .navbar.header {
