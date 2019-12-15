@@ -24,6 +24,7 @@ import StanleyHotel from './portfolio/items/StanleyHotel';
 import PlaySmart from './portfolio/items/PlaySmart';
 import THOR from './portfolio/items/THOR';
 import InteractivePrinciples from './portfolio/items/InteractivePrinciples';
+import UCRE from './portfolio/items/UCRE';
 
 const portfolioItems= [
     {
@@ -53,6 +54,10 @@ const portfolioItems= [
     {
         path: 'shining-hotel',
         comp: StanleyHotel
+    },
+    {
+        path: 'art-circuit',
+        comp: UCRE
     }
 ];
 

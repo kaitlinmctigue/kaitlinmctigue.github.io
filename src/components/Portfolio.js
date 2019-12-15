@@ -11,6 +11,7 @@ import hosp from '../images/thumbnails/environment.png';
 import stanley from '../images/thumbnails/stanley.png';
 import women from '../images/thumbnails/women.jpg';
 import cards from '../images/thumbnails/cards.jpg';
+import ucre from '../images/thumbnails/ucre.jpg';
 
 import { ButtonToolbar, ToggleButtonGroup, ToggleButton } from 'react-bootstrap';
 import Tag from './portfolio/Tag';
@@ -54,22 +55,22 @@ export default class Portfolio extends Component {
                 'path': 'playsmart'
             },
             {
-                'id': 1,
-                'title': 'Tennessee Homeland Online Records',
-                'tags': ['dev', 'angular2', 'branding'],
-                'desc': 'Empowering officers to access criminal records on the go, as quickly and safely as possible.',
-                'img': thor,
+                'id': 4,
+                'title': 'Interactive Principles Project',
+                'tags': ['dev', 'research', 'instructional design', 'game design'],
+                'desc': 'Making learning science principles more accessible to game designers with a virtual deck of cards.',
+                'img': cards,
                 'class': 'dev',
-                'path': 'thor'
+                'path': 'interactive-principles'
             },
             {
-                'id': 0,
-                'title': 'Diverse Computing Rebrand',
-                'tags': ['design', 'branding'],
-                'desc': 'Reimagining a brand that had been overshadowed by its flagship product to reach new markets.',
-                'img': dci,
+                'id': 6,
+                'title': 'The Art + Human Circuit',
+                'tags': ['design', 'ux research', 'ux design'],
+                'desc': 'Breaking the stigma of public art being “boring sculptures” to engage citizens and build community.',
+                'img': ucre,
                 'class': 'des',
-                'path': 'dci-brand'
+                'path': 'art-circuit'
             },
             {
                 'id': 3,
@@ -81,13 +82,22 @@ export default class Portfolio extends Component {
                 'path': 'environmental-design'
             },
             {
-                'id': 4,
-                'title': 'Interactive Principles Project',
-                'tags': ['dev', 'research', 'instructional design', 'game design'],
-                'desc': 'Making learning science principles more accessible to game designers with a virtual deck of cards.',
-                'img': cards,
+                'id': 0,
+                'title': 'Diverse Computing Rebrand',
+                'tags': ['design', 'branding'],
+                'desc': 'Reimagining a brand that had been overshadowed by its flagship product to reach new markets.',
+                'img': dci,
+                'class': 'des',
+                'path': 'dci-brand'
+            },
+            {
+                'id': 1,
+                'title': 'Tennessee Homeland Online Records',
+                'tags': ['dev', 'angular2', 'branding'],
+                'desc': 'Empowering officers to access criminal records on the go, as quickly and safely as possible.',
+                'img': thor,
                 'class': 'dev',
-                'path': 'interactive-principles'
+                'path': 'thor'
             }
         ];
 
