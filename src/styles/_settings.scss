@@ -1,6 +1,6 @@
 //vars
 $font-family: 'Open Sans', 'Helvetica', 'Arial', 'sans-serif';
-$font-family--title: 'Montserrat', $font-family;
+$font-family--title: 'Montserrat-SemiBold', 'Montserrat', $font-family;
 
 //layout
 $content-width--home: 1000px;
@@ -38,7 +38,7 @@ $font-size--quote: 36px;
 
 $font-weight--regular: 400;
 $font-weight--semibold: 500;
-$font-weight--bold: 600;
+$font-weight--bold: 700;
 
 $line-height--base: 1.6;
 $line-height--title: 1.1;
@@ -46,14 +46,14 @@ $line-height--quote: 1.3;
 
 %nav-text {
   font-family: $font-family--title;
-  font-weight: $font-weight--semibold;
+  font-weight: $font-weight--bold;
   text-transform: uppercase;
   font-size: $font-size--tertiary;
 }
 
 %title-text {
   font-family: $font-family--title;
-  font-weight: $font-weight--semibold;
+  font-weight: $font-weight--bold;
 }
 
 //breakpoints from Bootstrap

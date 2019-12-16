@@ -97,6 +97,7 @@
   text-decoration: none;
   text-transform: lowercase;
   line-height: 1;
+  font-weight: $font-weight--bold;
 
   @include themed() {
     color: t($link);

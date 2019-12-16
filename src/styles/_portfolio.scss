@@ -48,7 +48,6 @@
 
     &__des {
       font-size: $font-size--role;
-      font-weight: $font-weight--semibold;
       @include themed() {
         color: t($brand-blue);
       }
@@ -56,7 +55,6 @@
 
     &__dev {
       font-size: $font-size--role;
-      font-weight: $font-weight--semibold;
       @include themed() {
         color: t($brand-red);
       }

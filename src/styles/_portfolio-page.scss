@@ -107,7 +107,7 @@
   font-family: $font-family--title;
   line-height: $line-height--title;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: $font-weight--bold;
   margin-bottom: $spacer--smallest;
   margin-top: 0;
 }
@@ -115,7 +115,7 @@
 .section-quote {
   font-size: $font-size--quote;
   line-height: $line-height--quote;
-  font-weight: 500;
+  font-weight: $font-weight--bold;
   font-family: $font-family--title;
 
   @include themed() {
