@@ -116,11 +116,15 @@ export default class App extends Component {
                                                                 Resume
                                                             </NavItem>
                                                         </LinkContainer>
-                                                        <LinkContainer to="/contact">
+                                                        <LinkContainer to='/contact'>
                                                             <NavItem eventKey={3} className='header-link'>
                                                                 About
                                                             </NavItem>
                                                         </LinkContainer>
+                                                        <li
+                                                            className='header-link'>
+                                                            <a href='https://medium.com/@katiemctigue'>Blog</a>
+                                                        </li>
                                                     </Nav>
                                                 </div>
                                             </Navbar.Collapse>

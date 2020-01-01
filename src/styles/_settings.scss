@@ -47,7 +47,7 @@ $line-height--quote: 1.3;
 %nav-text {
   font-family: $font-family--title;
   font-weight: $font-weight--bold;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: $font-size--tertiary;
 }
 

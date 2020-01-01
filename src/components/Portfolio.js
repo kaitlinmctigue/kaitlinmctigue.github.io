@@ -188,7 +188,7 @@ export default class Portfolio extends Component {
                 </div>
                 <div className="portfolio__intro mx-auto">
                     <p>
-                        Hi! I’m a product <span className={'text--blue'}>designer</span> who likes to <span className={'text--red'}>code</span>. <br/>
+                        Hi! I’m a product designer who likes to code. <br/>
                         I’m interested in AI, consumer health, game-based UI patterns, and <a href={'/#/contact'}>lots of other stuff</a>.
                     </p>
                 </div>
