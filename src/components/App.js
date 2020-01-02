@@ -8,8 +8,8 @@ import ReactGA from 'react-ga';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMoon, faSun, faArrowCircleDown, faArrowRight, faArrowLeft, faArrowUp, faEnvelope, faTag } from '@fortawesome/free-solid-svg-icons';
-library.add(faMoon, faSun, faArrowCircleDown, faArrowRight, faArrowLeft, faArrowUp, faEnvelope, faTag);
+import { faMoon, faSun, faArrowCircleDown, faArrowRight, faArrowLeft, faArrowUp, faEnvelope, faTag, faUser } from '@fortawesome/free-solid-svg-icons';
+library.add(faMoon, faSun, faArrowCircleDown, faArrowRight, faArrowLeft, faArrowUp, faEnvelope, faTag, faUser);
 
 import { SocialIcon } from 'react-social-icons';
 
@@ -108,7 +108,7 @@ export default class App extends Component {
                                                     <Nav pullRight>
                                                         <LinkContainer to='/' exact>
                                                             <NavItem eventKey={1} className='hidden-sm header-link'>
-                                                                Home
+                                                                Portfolio
                                                             </NavItem>
                                                         </LinkContainer>
                                                         <LinkContainer to={'/resume'}>

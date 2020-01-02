@@ -48,7 +48,7 @@ export default class Portfolio extends Component {
             {
                 'id': 2,
                 'title': 'Playsmart RFID Toys Concept',
-                'tags': ['design', 'instructional design', 'game design'],
+                'tags': ['instructional design', 'game design'],
                 'desc': 'Leveraging the power of play to teach kids to clean up.',
                 'img': toy,
                 'class': 'des',
@@ -57,7 +57,7 @@ export default class Portfolio extends Component {
             {
                 'id': 4,
                 'title': 'Interactive Principles Project',
-                'tags': ['dev', 'research', 'instructional design', 'game design'],
+                'tags': ['research', 'instructional design', 'game design'],
                 'desc': 'Making learning science principles more accessible to game designers with a virtual deck of cards.',
                 'img': cards,
                 'class': 'dev',
@@ -66,7 +66,7 @@ export default class Portfolio extends Component {
             {
                 'id': 6,
                 'title': 'The Art + Human Circuit',
-                'tags': ['design', 'ux research', 'ux design'],
+                'tags': ['ux research', 'ux design'],
                 'desc': 'Breaking the stigma of public art being “boring sculptures” to engage citizens and build community.',
                 'img': ucre,
                 'class': 'des',
@@ -75,7 +75,7 @@ export default class Portfolio extends Component {
             {
                 'id': 3,
                 'title': 'Prototyping with Environmental Factors',
-                'tags': ['dev', 'ux research', 'environmental design'],
+                'tags': ['ux research', 'environmental design'],
                 'desc': 'Helping hospital employees beat eye-strain during long shifts, with code changes and environmental changes.',
                 'img': hosp,
                 'class': 'dev',
@@ -84,7 +84,7 @@ export default class Portfolio extends Component {
             {
                 'id': 0,
                 'title': 'Diverse Computing Rebrand',
-                'tags': ['design', 'branding'],
+                'tags': ['branding'],
                 'desc': 'Reimagining a brand that had been overshadowed by its flagship product to reach new markets.',
                 'img': dci,
                 'class': 'des',
@@ -93,7 +93,7 @@ export default class Portfolio extends Component {
             {
                 'id': 1,
                 'title': 'Tennessee Homeland Online Records',
-                'tags': ['dev', 'angular2', 'branding'],
+                'tags': ['angular2', 'branding'],
                 'desc': 'Empowering officers to access criminal records on the go, as quickly and safely as possible.',
                 'img': thor,
                 'class': 'dev',
@@ -105,7 +105,7 @@ export default class Portfolio extends Component {
             {
                 'id': 0,
                 'title': 'Women Drowning Photo Series',
-                'tags': ['design', 'Photography', 'Art Direction'],
+                'tags': ['Photography', 'Art Direction'],
                 'desc': 'Exploring concepts of power, longing, loss, and femininity, on film and digital.',
                 'img': women,
                 'class': 'des',
@@ -115,7 +115,7 @@ export default class Portfolio extends Component {
                 'id': 1,
                 'title': 'The Shining Hotel Project',
                 'desc': 'Imagining what the hotel that inspired The Shining looked like through the eyes of Stephen King in 1977.',
-                'tags': ['dev', 'react', 'interactive art'],
+                'tags': ['react', 'interactive art'],
                 'img': stanley,
                 'class': 'dev',
                 'path': 'shining-hotel'
@@ -146,17 +146,31 @@ export default class Portfolio extends Component {
                     <Link to={'/portfolio/' + work.path} className={'item-preview__content item-preview__content--' + work.class}>
                         <div className={'item-preview__content__img'} style={{backgroundImage: 'url(' + work.img + ')'}}></div>
                         <div className="item-preview__content__desc">
-                            <div className={'item-preview__content__desc__title item-preview__content__desc__title--' + work.class}>
-                                {work.title}
-                            </div>
-                            <div className={'item-preview__content__desc__text'}>
+                            <div className={'item-preview__content__desc__title'}>
                                 {work.desc}
                             </div>
-                            <div className="item-preview__content__desc__tags">
+                            {/*<div className={'item-preview__content__desc__text'}>*/}
+                            {/*{work.desc}*/}
+                            {/*</div>*/}
+                            <div className='item-preview__content__desc__role'>
+                                <FontAwesomeIcon icon={'user'} className={'item-preview__content__desc__tags__icon'}/>
+                                <span className={'item-preview__content__desc__role__title'}>
+                                    primary role:
+                                </span>
+                                <span className={'item-preview__content__desc__role__text item-preview__content__desc__role__text--' + ((work.class == 'des') ? 'des' : 'dev')}>
+                                    {(work.class == 'des') ? 'designer' : 'developer'}
+                                </span>
+                            </div>
+                            <div className='item-preview__content__desc__tags'>
                                 <FontAwesomeIcon icon={'tag'} className={'item-preview__content__desc__tags__icon'}/>
-                                {work.tags.map((tag, index, last) =>
-                                    <Tag key={index} tag={tag + (((index + 1) != last.length) ? ', ' : '')}/>
-                                )}
+                                <span className={'item-preview__content__desc__tags__title'}>
+                                    skills:
+                                </span>
+                                <span className={'item-preview__content__desc__tags__text'}>
+                                    {work.tags.map((tag, index, last) =>
+                                        <Tag key={index} tag={tag + (((index + 1) != last.length) ? ', ' : '')}/>
+                                    )}
+                                </span>
                             </div>
                         </div>
                     </Link>

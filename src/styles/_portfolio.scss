@@ -153,7 +153,7 @@
 
 .item-preview {
   padding: $spacer--default/4 0 $spacer--default/2;
-  text-align: center;
+  text-align: left;
   margin: 8px;
 
   &__content {
@@ -192,31 +192,33 @@
     }
 
     &__desc {
-      padding: 10px 0;
+      padding: 10px 20px;
 
       &__title {
-        font-size: $font-size--item-preview--title - 2;
+        $font-size: $font-size--item-preview--title - 2;
+        font-size: $font-size;
+        line-height: 1.4;
+        min-height: $font-size * 3 * 1.4;
         @extend %title-text;
-
-        &--des {
-          @include themed() {
-            color: t($brand-blue);
-          }
-        }
-
-        &--dev {
-          @include themed() {
-            color: t($brand-red);
-          }
+        @include themed() {
+          color: t($text);
         }
       }
 
-      &__tags {
+      &__tags, &__role {
+        text-align: left;
+
+        &__title {
+          margin-right: 5px;
+          min-width: 40px;
+          display: inline-block;
+          @include themed() {
+            color: transparentize(t($text-secondary), 25%);
+          }
+        }
+
         * {
           font-size: $font-size--tertiary;
-          @include themed() {
-            color: t($text-badge);
-          }
         }
 
         &__icon {
@@ -229,6 +231,36 @@
         }
       }
 
+      &__tags {
+        * {
+          font-size: $font-size--tertiary;
+        }
+
+        &__icon {
+          @include themed() {
+            color: t($text-badge);
+            opacity: .5;
+            margin-right: 8px;
+            font-size: $font-size--tertiary - 2px;
+          }
+        }
+      }
+
+      &__role__text {
+        @extend %title-text;
+
+        &--des {
+          @include themed() {
+            color: t($brand-blue);
+          }
+        }
+        &--dev {
+          @include themed() {
+            color: t($brand-red);
+          }
+        }
+      }
+
       &__text {
         @include themed() {
           color: t($text-secondary);
@@ -237,7 +269,7 @@
         $size: $font-size--tertiary;
         font-size: $size;
         line-height: 1.5;
-        padding: 3px 10px;
+        padding: 3px 0;
         min-height: $size * 4;
       }
     }
