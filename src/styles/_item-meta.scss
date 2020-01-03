@@ -1,0 +1,65 @@
+.item-meta {
+  &__tags, &__role {
+    @include themed() {
+      color: t($text-secondary);
+    }
+
+    $size: $font-size--tertiary;
+    text-align: left;
+    font-size: $size;
+    line-height: 1.5;
+    padding: 0 0 8px 0;
+
+    &__title {
+      margin-right: 8px;
+      min-width: 40px;
+      display: inline-block;
+      @include themed() {
+        color: transparentize(t($text-secondary), .35);
+      }
+    }
+
+    * {
+      font-size: $font-size--tertiary;
+    }
+
+    &__icon {
+      @include themed() {
+        color: t($text-badge);
+        opacity: .5;
+        margin-right: 8px;
+        font-size: $font-size--tertiary - 2px;
+      }
+    }
+  }
+
+  &__tags {
+    * {
+      font-size: $font-size--tertiary;
+    }
+
+    &__icon {
+      @include themed() {
+        color: t($text-badge);
+        opacity: .5;
+        margin-right: 8px;
+        font-size: $font-size--tertiary - 2px;
+      }
+    }
+  }
+
+  &__role__text {
+    @extend %title-text;
+
+    &--des {
+      @include themed() {
+        color: t($brand-blue);
+      }
+    }
+    &--dev {
+      @include themed() {
+        color: t($brand-red);
+      }
+    }
+  }
+}

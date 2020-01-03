@@ -154,7 +154,7 @@ html, body {
   line-height: $line-height--title;
 
   @include themed() {
-    color: t($text);
+    color: t($text-important);
   }
 }
 

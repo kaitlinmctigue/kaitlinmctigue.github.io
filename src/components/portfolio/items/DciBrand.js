@@ -22,7 +22,7 @@ import proposal3 from '../../../images/portfolio/proposal3.jpg';
 import Backlink from '../Backlink';
 
 const title = 'Diverse Computing Rebrand';
-const tags = ['Design', 'Branding'];
+const tags = ['Branding'];
 const classification = 'des';
 const problem = 'Diverse Computing’s flagship product, eAgent, had overshadowed its parent company. The strength of the eAgent brand made it tricky for DCI to branch out beyond the NCIC (National Crime Information Center database) access domain, and position itself in the criminal justice community as, well, diverse.';
 const solution = 'A new identity for Diverse Computing that complements the eAgent brand and sets the foundation for a comprehensive platform of solutions for the criminal justice community.';
@@ -52,6 +52,7 @@ export default class DciBrand extends Component {
                     splash={splashImg}
                     problem={problem}
                     solution={solution}
+                    classification={classification}
                 />
 
                 <Setup

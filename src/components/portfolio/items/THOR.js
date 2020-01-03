@@ -26,7 +26,7 @@ import Img from '../Img';
 import Spacer from '../Spacer';
 
 const title = 'Tennessee Homeland Online Records (THOR)';
-const tags = ['dev', 'angular2', 'branding'];
+const tags = ['angular2', 'branding'];
 const classification = 'dev';
 const problem = 'Imagine it’s 2 am. An officer pulls over a person, and then calls in to the Tennessee Fusion Center to have an agent run that person’s history. Every minute that officer waits, she is potentially in danger.\n' +
     '\n' +
@@ -61,6 +61,7 @@ export default class THOR extends Component {
                     splash={splashImg}
                     problem={problem}
                     solution={solution}
+                    classification={classification}
                 />
 
                 <Setup

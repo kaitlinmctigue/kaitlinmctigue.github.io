@@ -198,79 +198,12 @@
         $font-size: $font-size--item-preview--title - 2;
         font-size: $font-size;
         line-height: 1.4;
-        min-height: $font-size * 3 * 1.4;
+        min-height: 98px;
+        padding: 10px 0;
         @extend %title-text;
         @include themed() {
-          color: t($text);
+          color: t($text-important);
         }
-      }
-
-      &__tags, &__role {
-        text-align: left;
-
-        &__title {
-          margin-right: 5px;
-          min-width: 40px;
-          display: inline-block;
-          @include themed() {
-            color: transparentize(t($text-secondary), 25%);
-          }
-        }
-
-        * {
-          font-size: $font-size--tertiary;
-        }
-
-        &__icon {
-          @include themed() {
-            color: t($text-badge);
-            opacity: .5;
-            margin-right: 8px;
-            font-size: $font-size--tertiary - 2px;
-          }
-        }
-      }
-
-      &__tags {
-        * {
-          font-size: $font-size--tertiary;
-        }
-
-        &__icon {
-          @include themed() {
-            color: t($text-badge);
-            opacity: .5;
-            margin-right: 8px;
-            font-size: $font-size--tertiary - 2px;
-          }
-        }
-      }
-
-      &__role__text {
-        @extend %title-text;
-
-        &--des {
-          @include themed() {
-            color: t($brand-blue);
-          }
-        }
-        &--dev {
-          @include themed() {
-            color: t($brand-red);
-          }
-        }
-      }
-
-      &__text {
-        @include themed() {
-          color: t($text-secondary);
-        }
-
-        $size: $font-size--tertiary;
-        font-size: $size;
-        line-height: 1.5;
-        padding: 3px 0;
-        min-height: $size * 4;
       }
     }
   }

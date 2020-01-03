@@ -16,11 +16,13 @@
       font-size: $font-size--page-title--mobile!important;
     }
   }
+
+  .item-meta {
+    margin-top: $spacer--small;
+  }
 }
 
 .header {
-  &__title {}
-
   &__backlink {
     margin-bottom: $spacer--default;
 
@@ -132,7 +134,7 @@
 }
 
 .des {
-  .header__title, .section-header, .section-quote, .link {
+  .section-header, .section-quote, .link {
     @include themed() {
       color: t($brand-blue);
     }
@@ -140,7 +142,7 @@
 }
 
 .dev {
-  .header__title, .section-header, .section-quote, .link {
+  .section-header, .section-quote, .link {
     @include themed() {
       color: t($brand-red);
     }

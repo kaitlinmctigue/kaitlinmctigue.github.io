@@ -17,7 +17,7 @@ import Setup from '../Setup';
 import TableauViz from '../TableauViz';
 
 const title = 'The Art + Human Circuit';
-const tags = ['design', 'UX Research', 'UX Design'];
+const tags = ['UX Research', 'UX Design'];
 const classification = 'des';
 const problem = 'Citizens of Pittsburgh are not as interested in public art as we would like them to be considering the costs. They become numb to it when it is a part of their daily life, and they are not willing to read long plaques.';
 const solution = 'The Art + Human Circuit is an interactive life-size “circuit” that empowers citizens to connect with public art and each other.';
@@ -50,6 +50,7 @@ export default class UCRE extends Component {
                     splash={splashImg}
                     problem={problem}
                     solution={solution}
+                    classification={classification}
                 />
 
                 <Setup

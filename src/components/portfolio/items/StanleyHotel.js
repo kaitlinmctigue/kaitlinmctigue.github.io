@@ -9,7 +9,7 @@ import Backlink from '../Backlink';
 import Setup from '../Setup';
 
 const title = 'The Shining Hotel Project';
-const tags = ['dev', 'React', 'Interactive Art'];
+const tags = ['React', 'Interactive Art'];
 const classification = 'dev';
 
 export default class StanleyHotel extends Component {
@@ -32,6 +32,7 @@ export default class StanleyHotel extends Component {
                     title={title}
                     tags={tags}
                     splash={splashImg}
+                    classification={classification}
                 />
 
                 <Setup

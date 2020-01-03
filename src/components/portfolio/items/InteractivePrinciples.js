@@ -9,7 +9,7 @@ import Setup from '../Setup';
 import Backlink from '../Backlink';
 
 const title = 'Interactive Learning Science Principles Project';
-const tags = ['dev', 'research', 'instructional design', 'game design', 'learning science'];
+const tags = ['research', 'instructional design', 'game design', 'learning science'];
 const classification = 'dev';
 const problem = 'There are dozens of reputable sets of learning science principles, with hundreds of actual principles. These principles are core to the work of designers of instructional technologies, and especially designers of educational games. However, learning the principles can be a challenge. \n' +
     '\n' +
@@ -54,6 +54,7 @@ export default class InteractivePrinciples extends Component {
                     splash={splashImg}
                     problem={problem}
                     solution={solution}
+                    classification={classification}
                 />
 
                 <Setup

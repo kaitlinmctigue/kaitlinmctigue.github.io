@@ -16,7 +16,7 @@ import sierra from '../../../images/portfolio/womendrowning/sierra.jpg';
 import Setup from '../Setup';
 
 const title = 'Women Drowning';
-const tags = ['Design', 'Photography', 'Art Direction'];
+const tags = ['Photography', 'Art Direction'];
 const classification = 'des';
 const body = 'This collection of images showcases my artistic development learning to work with models. I photographed each of these images in 2015, some on a 35mm film camera and some on my Nikon DSLR. It was my intention to represent that to a certain extent each woman is “drowning” within the narrative of the photo that contains her.';
 
@@ -40,6 +40,7 @@ export default class WomenDrowning extends Component {
                     title={title}
                     tags={tags}
                     splash={splashImg}
+                    classification={classification}
                 />
 
                 <Setup

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Title from './Title';
-import Tag from './Tag';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import TagsAndRole from './TagsAndRole';
 
 class Header extends Component {
 
@@ -77,12 +77,15 @@ class Header extends Component {
                             {this.props.title}
                         </div>
                         {this.nda()}
-                        <div className={'header__tags'}>
-                            <FontAwesomeIcon icon={'tag'} className={'header__tags__icon'}/>
-                            {this.props.tags.map((tag, index, last) =>
-                                <Tag key={index} tag={tag + (((index + 1) != last.length) ? ', ' : '')}/>
-                            )}
-                        </div>
+
+                        <TagsAndRole class={this.props.classification} role={this.props.classification} tags={this.props.tags}/>
+
+                        {/*<div className={'header__tags'}>*/}
+                        {/*<FontAwesomeIcon icon={'tag'} className={'header__tags__icon'}/>*/}
+                        {/*{this.props.tags.map((tag, index, last) =>*/}
+                        {/*<Tag key={index} tag={tag + (((index + 1) != last.length) ? ', ' : '')}/>*/}
+                        {/*)}*/}
+                        {/*</div>*/}
                     </div>
                 </div>
 
@@ -102,6 +105,8 @@ class Header extends Component {
 
 Header.propTypes = {
     tags: PropTypes.array,
+    classification: PropTypes.string,
+    role: PropTypes.string,
     title: PropTypes.string,
     nda: PropTypes.bool,
     splash: PropTypes.string,

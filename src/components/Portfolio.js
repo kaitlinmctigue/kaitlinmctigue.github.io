@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 import ReactGA from 'react-ga';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import toy from '../images/thumbnails/toy.jpg';
 import dci from '../images/thumbnails/dci.jpg';
@@ -14,8 +13,7 @@ import cards from '../images/thumbnails/cards.jpg';
 import ucre from '../images/thumbnails/ucre.jpg';
 
 import { ButtonToolbar, ToggleButtonGroup, ToggleButton } from 'react-bootstrap';
-import Tag from './portfolio/Tag';
-// import Tag from './portfolio/Tag';
+import TagsAndRole from './portfolio/TagsAndRole';
 
 //Google Analytics
 function initializeReactGA() {
@@ -149,29 +147,9 @@ export default class Portfolio extends Component {
                             <div className={'item-preview__content__desc__title'}>
                                 {work.desc}
                             </div>
-                            {/*<div className={'item-preview__content__desc__text'}>*/}
-                            {/*{work.desc}*/}
-                            {/*</div>*/}
-                            <div className='item-preview__content__desc__role'>
-                                <FontAwesomeIcon icon={'user'} className={'item-preview__content__desc__tags__icon'}/>
-                                <span className={'item-preview__content__desc__role__title'}>
-                                    primary role:
-                                </span>
-                                <span className={'item-preview__content__desc__role__text item-preview__content__desc__role__text--' + ((work.class == 'des') ? 'des' : 'dev')}>
-                                    {(work.class == 'des') ? 'designer' : 'developer'}
-                                </span>
-                            </div>
-                            <div className='item-preview__content__desc__tags'>
-                                <FontAwesomeIcon icon={'tag'} className={'item-preview__content__desc__tags__icon'}/>
-                                <span className={'item-preview__content__desc__tags__title'}>
-                                    skills:
-                                </span>
-                                <span className={'item-preview__content__desc__tags__text'}>
-                                    {work.tags.map((tag, index, last) =>
-                                        <Tag key={index} tag={tag + (((index + 1) != last.length) ? ', ' : '')}/>
-                                    )}
-                                </span>
-                            </div>
+
+                            <TagsAndRole class={work.class} role={work.role} tags={work.tags}/>
+
                         </div>
                     </Link>
                 </div>
