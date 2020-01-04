@@ -75,9 +75,13 @@
 .setup {
   margin-top: -1 * ($spacer--small);
   p {
-    font-family: monospace, $font-family;
+    font-family: $font-family;
     font-size: $font-size--tertiary;
     line-height: $line-height--base;
+
+    @include themed() {
+      color: t($text-secondary);
+    }
   }
 }
 
