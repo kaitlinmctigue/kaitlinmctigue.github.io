@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import Title from './Title';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import TagsAndRole from './TagsAndRole';
 
 class Header extends Component {
 
@@ -78,14 +77,7 @@ class Header extends Component {
                         </div>
                         {this.nda()}
 
-                        <TagsAndRole class={this.props.classification} role={this.props.classification} tags={this.props.tags}/>
-
-                        {/*<div className={'header__tags'}>*/}
-                        {/*<FontAwesomeIcon icon={'tag'} className={'header__tags__icon'}/>*/}
-                        {/*{this.props.tags.map((tag, index, last) =>*/}
-                        {/*<Tag key={index} tag={tag + (((index + 1) != last.length) ? ', ' : '')}/>*/}
-                        {/*)}*/}
-                        {/*</div>*/}
+                        {/*<TagsAndRole class={this.props.classification} role={this.props.classification} tags={this.props.tags}/>*/}
                     </div>
                 </div>
 
