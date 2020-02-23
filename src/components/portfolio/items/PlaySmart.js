@@ -79,7 +79,7 @@ export default class PlaySmart extends Component {
                 </div>
                 <div className={'row'}>
                     <div className={'col-xs-12 col-sm-6'}>
-                        <Subsection title={'3. Conversational User Interface'} img={cui} textAfterImage={'The Playsmart mascot Owlie is the voice of the conversational interface. Owlie instructs the child to put their toys in the chest at a set time. In a future iteration, Owlie might be a cute stuffed animal instead of an Alexa-esqe hunk of plastic.'}/>
+                        <Subsection title={'3. Conversational User Interface'} img={cui} textAfterImage={'The Playsmart mascot Owlie is the voice of the conversational interface. Owlie instructs the child to put their toys in the chest at a set time. In a future iteration, Owlie might be a cute stuffed animal instead of a hunk of plastic.'}/>
                     </div>
                     <div className={'col-xs-12 col-sm-6'}>
                         <Subsection title={'4. Mobile App'} img={app} textAfterImage={'The Playsmart companion app enables parents to configure Owlie and access all the data of their child’s progress.'}/>
@@ -92,6 +92,8 @@ export default class PlaySmart extends Component {
                 </div>
 
                 <Section title={'Roadmap'} img={roadmap}/>
+
+                <Section title={'Outcomes'} text={'Playsmart was just an exercise, but we received positive feedback on our solution design and marketing pitch in our class presentation. More interestingly, we received overwhelmingly strong responses to our storyboards from parents. It is evident that the problem Playsmart aims to solve is pervasive, and that people would be willing to pay to solve it. Teaching young children to clean up after themselves is exhausting.\n'}/>
 
                 <Backlink/>
             </div>

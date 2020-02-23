@@ -12,9 +12,10 @@
   box-shadow: none;
   z-index: 100;
   border-radius: 0;
+  backdrop-filter: saturate(180%) blur(8px);
 
   @include themed() {
-    background: transparentize(t($bg), .1);
+    background: transparentize(t($bg), .3);
   }
 
   .logo {
