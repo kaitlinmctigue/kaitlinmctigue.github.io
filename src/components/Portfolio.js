@@ -46,7 +46,7 @@ export default class Portfolio extends Component {
             {
                 'id': 2,
                 'title': 'Playsmart RFID Toys Concept',
-                'tags': ['instructional design', 'game design'],
+                'tags': ['transformational design', 'conversation design'],
                 'desc': 'Leveraging the power of play to teach kids to clean up.',
                 'img': toy,
                 'class': 'des',
