@@ -82,7 +82,7 @@ export default class Portfolio extends Component {
             {
                 'id': 0,
                 'title': 'Diverse Computing Rebrand',
-                'tags': ['branding'],
+                'tags': ['branding, Visual Design'],
                 'desc': 'Reimagining a brand that had been overshadowed by its flagship product to reach new markets.',
                 'img': dci,
                 'class': 'des',

@@ -16,16 +16,11 @@ import Backlink from '../Backlink';
 import Setup from '../Setup';
 import TableauViz from '../TableauViz';
 
-const title = 'The Art + Human Circuit';
+const title = 'Breaking the stigma of public art being “boring sculptures” to engage citizens and build community.';
 const tags = ['UX Research', 'UX Design'];
 const classification = 'des';
 const problem = 'Citizens of Pittsburgh are not as interested in public art as we would like them to be considering the costs. They become numb to it when it is a part of their daily life, and they are not willing to read long plaques.';
-const solution = 'The Art + Human Circuit is an interactive life-size “circuit” that empowers citizens to connect with public art and each other.';
-const execsummary = 'We used various research methods to understand the current landscape of public art through a lens of engagement and memorability. \n' +
-    '\n' +
-    'The need for social interaction was one of the strongest experiences that resonated with our participants.\n' +
-    '\n' +
-    'The Art + Human Circuit is a highly interactive and collaborative art experience that entices people to engage with art and with other people. This solution speaks to people’s desire to receive information in a more engaging way, and to share art experiences with others.\n';
+const solution = 'An interactive life-size “circuit” that empowers citizens to connect with public art and each other.';
 const generative = 'We began our exploratory phase with extensive background research on public art in Pittsburgh, and arts organizations and existing solutions. We used contextual inquiry to understand how and why people interact with public art, and identify areas to improve. We also conducted thinkaloud protocol with an existing public art website. We talked to 8 unique participants total.\n';
 
 export default class UCRE extends Component {
@@ -62,7 +57,7 @@ export default class UCRE extends Component {
                     client={'Metro21: Smart Cities Institute'}
                 />
 
-                <Section title={'Executive Summary'} text={execsummary}/>
+                {/*<Section title={'Executive Summary'} text={execsummary}/>*/}
 
                 <Section title={'Metro21 Engagement Data'}
                     link={'https://public.tableau.com/profile/katie.mctigue#!/'}

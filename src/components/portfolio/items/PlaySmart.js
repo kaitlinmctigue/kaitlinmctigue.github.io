@@ -18,7 +18,7 @@ import Backlink from '../Backlink';
 import Section from '../Section';
 import Subsection from '../Subsection';
 
-const title = 'Playsmart RFID Toys Concept';
+const title = 'Leveraging the power of play to teach kids to clean up.';
 const tags = ['transformational design', 'conversation design', 'physical computing'];
 const classification = 'des';
 const problem = 'Teaching young children to clean up after themselves is exhausting.';

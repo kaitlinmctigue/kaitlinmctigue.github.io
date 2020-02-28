@@ -8,13 +8,15 @@ import Section from '../Section';
 import Setup from '../Setup';
 import Backlink from '../Backlink';
 
-const title = 'Interactive Learning Science Principles Project';
+const title = 'Making learning science principles more accessible to game designers with a virtual deck of cards.';
 const tags = ['research', 'instructional design', 'game design', 'learning science'];
 const classification = 'dev';
-const problem = 'There are dozens of reputable sets of learning science principles, with hundreds of actual principles. These principles are core to the work of designers of instructional technologies, and especially designers of educational games. However, learning the principles can be a challenge. \n' +
+const problem =
+    'Memorizing lists is boring.\n' + '\n' +
+    'There are dozens of reputable sets of learning science principles, with hundreds of actual principles. These principles are core to the work of designers of instructional technologies, and especially designers of educational games.\n' +
     '\n' +
     'In the Design of Educational Games course at Carnegie Mellon University, Dr. Erik Harpstead uses the set of 30 principles from Koedinger, Booth, and Klahr’s 2013 article Instructional Complexity and the Science to Constrain It. Students are expected to more or less memorize the list, a daunting task that often leads to misconceptions about some of the principles.\n';
-const solution = 'We make research backed principles from the learning sciences more accessible to designers and students by providing examples and contextualizing the design questions that can have pedagogical impacts. Each principle is represented in the form of a card, making up an interactive deck.\n';
+const solution = 'An interactive deck of virtual cards that provide concrete examples and contextualize the design questions that can have pedagogical impacts.\n';
 const ideationtext = 'I set out with the very meta challenge of designing a game experience that used the learning science principles to teach the learning science principles.\n' +
     '\n' +
     'Our earliest concept was one big game in which the player could turn the principle off and on to feel it’s absence.\n' +
@@ -30,6 +32,7 @@ import cards2 from '../../../images/portfolio/ixprinciples/cards2.jpg';
 import inspo from '../../../images/portfolio/ixprinciples/inspo.png';
 import screens from '../../../images/portfolio/ixprinciples/screens.png';
 import carddesign from '../../../images/portfolio/ixprinciples/carddesign.png';
+import cardsfinal from '../../../images/portfolio/ixprinciples/cardsfinal.png';
 
 export default class InteractivePrinciples extends Component {
 
@@ -113,7 +116,8 @@ export default class InteractivePrinciples extends Component {
 
                 <Section title={'View the Source Code'} text={'View the project source code on Github:'} link={'https://github.com/eharpste/interactive-principles'}/>
 
-                <Section title={'Final Product Video'}/>
+                <Section title={'Final Product'}
+                    img={cardsfinal}/>
                 <div className={'video-responsive'}>
                     <iframe width="700" height="394" src="https://www.youtube.com/embed/RwJ3SbDKNDc?rel=0&amp;showinfo=0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>

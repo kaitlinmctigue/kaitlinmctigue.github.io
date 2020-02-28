@@ -8,7 +8,7 @@ import Section from '../Section';
 import Backlink from '../Backlink';
 import Setup from '../Setup';
 
-const title = 'The Shining Hotel Project';
+const title = 'Imagining what the hotel that inspired The Shining looked like through the eyes of Stephen King in 1977.';
 const tags = ['React', 'Interactive Art'];
 const classification = 'dev';
 
