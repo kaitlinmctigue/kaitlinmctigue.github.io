@@ -1,12 +1,12 @@
 .contact {
-  $img-width: 330px;
+  $img-width: 300px;
   max-width: $content-width;
   margin: $page-padding-top auto 0;
 
   &__title {
     position: relative;
     text-align: left;
-    width: $img-width;
+    width: 350px;
     font-size: $font-size--page-title - 2px;
     float: right;
     z-index: 10;
@@ -15,6 +15,7 @@
 
     @media (min-width: $screen-sm-min) {
       margin-bottom: -185px;
+      top: 25px;
     }
   }
 
@@ -47,7 +48,7 @@
       }
       &__social {
         background: #ebebeb;
-        padding: 0px 30px 20px;
+        padding: 0 30px 20px;
         border-radius: 12px;
         margin-top: $spacer--medium;
 
@@ -65,6 +66,8 @@
 
   .social-icon {
     margin: 0 8px;
+    height: 45px!important;
+    width: 45px!important;
 
     &:hover {
       opacity: .9;

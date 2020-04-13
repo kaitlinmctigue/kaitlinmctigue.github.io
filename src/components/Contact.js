@@ -28,7 +28,7 @@ export default class Contact extends Component {
         return (
             <div className={'contact'}>
                 <h1 className={'title contact__title'}>
-                    I like writing pixel-perfect <span className={'text--red'}>css</span> and asking <span className={'text--blue'}>questions</span> that other people are afraid to ask.
+                    I’m a <span className={'text--blue'}>big picture</span> thinker but I’m never afraid to get my hands <span className={'text--red'}>dirty</span>.
                 </h1>
                 <div className={'contact__img'}>
                     <img src={headshot} className={'img img-responsive'} />
@@ -36,19 +36,16 @@ export default class Contact extends Component {
                 <div className={'contact__text'}>
                     <div className={'contact__text__body'}>
                         <p>
-                            I’m a big picture thinker, but I’m never afraid to get my hands dirty.
+                            I love seeing projects through from research (to ideation to design to more research) to launch.
                         </p>
                         <p>
-                            I’ve found that I can make a big impact when I serve as translator between engineers and product folks.
+                            I’ve found that I can make a big impact when I serve as translator between engineers and product folks. I like writing pixel-perfect css and asking dumb questions that people are afraid to ask.
                         </p>
                         <p>
                             I like playing games, and thinking about ways that game-based patterns can delight people and motivate them to change their behavior.
                         </p>
                         <p>
                             I used to be afraid of UX research, until I realized that research is really just asking questions and then being strategic about the methods you use to get answers. I’m obsessed with data, but I try not to let that suck the humanity out of everything.
-                        </p>
-                        <p>
-                            I love telling stories.
                         </p>
                         <p>
                             <a className={'link'} href={'mailto:kaitlinmctigue@gmail.com'} target={'_blank'}>
