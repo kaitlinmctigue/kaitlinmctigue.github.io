@@ -36,14 +36,19 @@ export default class Contact extends Component {
                 <div className={'contact__text'}>
                     <div className={'contact__text__body'}>
                         <p>
-                            I spend my days at TeleTracking working towards a mission of getting people healthcare without the wait, and my evenings at Carnegie Mellon University studying Human Computer Interaction.
-                            I work full time while taking classes part time, and I expect to complete my Masters in HCI in August 2020.
+                            I’m a big picture thinker, but I’m never afraid to get my hands dirty.
                         </p>
                         <p>
-                            Some tools I like to work with include the Adobe Suite, Sketch, HTML/CSS, SASS and LESS, React, Angular, and plain old javascript.
+                            I’ve found that I can make a big impact when I serve as translator between engineers and product folks.
                         </p>
                         <p>
-                            In my free time, I like to shoot film photography, write songs, and play way too much Stardew Valley.
+                            I like playing games, and thinking about ways that game-based patterns can delight people and motivate them to change their behavior.
+                        </p>
+                        <p>
+                            I used to be afraid of UX research, until I realized that research is really just asking questions and then being strategic about the methods you use to get answers. I’m obsessed with data, but I try not to let that suck the humanity out of everything.
+                        </p>
+                        <p>
+                            I love telling stories.
                         </p>
                         <p>
                             <a className={'link'} href={'mailto:kaitlinmctigue@gmail.com'} target={'_blank'}>
@@ -54,19 +59,24 @@ export default class Contact extends Component {
 
                         <div className={'contact__text__body__social'}>
                             <div className={'row'}>
+                                <div className={'col-xs-12 contact__text__body__social--bottom'}>
+                                    I’m currently working on the 100 day #dailyui challenge on<SocialIcon url="https://dribbble.com/katiemctigue" />
+                                </div>
+
                                 <div className={'col-xs-12 contact__text__body__social--top'}>
-                                    I actively do stuff on <br/>
-                                    <SocialIcon url="https://www.linkedin.com/in/katiemctigue" />
-                                    <SocialIcon url="https://medium.com/@katiemctigue" />
-                                    <SocialIcon url="https://github.com/kaitlinmctigue" />
-                                    <SocialIcon url="https://www.instagram.com/katiemctigue/" />
-                                    <SocialIcon url="https://open.spotify.com/user/kaitlinmctigue" />
+                                    I enjoy dumping my ideas out into the world on<SocialIcon url="https://medium.com/@katiemctigue" />and<SocialIcon url="https://github.com/kaitlinmctigue" />
                                 </div>
 
                                 <div className={'col-xs-12 contact__text__body__social--bottom'}>
-                                    Maybe one day I will update my <br/>
-                                    <SocialIcon url="https://twitter.com/MctigueKatie?lang=en" />
-                                    <SocialIcon url="https://dribbble.com/katiemctigue" />
+                                    I pretend to be an adult on<SocialIcon url="https://www.linkedin.com/in/katiemctigue" />and<SocialIcon url="https://twitter.com/MctigueKatie?lang=en" />
+                                </div>
+
+                                <div className={'col-xs-12 contact__text__body__social--bottom'}>
+                                    But mostly I just post photos of my cats on<SocialIcon url="https://www.instagram.com/katiemctigue/" />
+                                </div>
+
+                                <div className={'col-xs-12 contact__text__body__social--bottom'}>
+                                    I write songs about my cats and other things on<SocialIcon url="https://open.spotify.com/artist/7mJOp9EcXEdAH6TL36flXw?si=lSyRjb79QlKhm9VcYZV7zA" />and<SocialIcon url="https://soundcloud.com/pacingmusic" />
                                 </div>
                             </div>
                         </div>
