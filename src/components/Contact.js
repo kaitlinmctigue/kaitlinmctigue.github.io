@@ -56,11 +56,11 @@ export default class Contact extends Component {
 
                         <div className={'contact__text__body__social'}>
                             <div className={'row'}>
-                                <div className={'col-xs-12 contact__text__body__social--bottom'}>
+                                <div className={'col-xs-12 contact__text__body__social--top'}>
                                     I’m currently working on the 100 day #dailyui challenge on<SocialIcon url="https://dribbble.com/katiemctigue" />
                                 </div>
 
-                                <div className={'col-xs-12 contact__text__body__social--top'}>
+                                <div className={'col-xs-12 contact__text__body__social--bottom'}>
                                     I enjoy dumping my ideas out into the world on<SocialIcon url="https://medium.com/@katiemctigue" />and<SocialIcon url="https://github.com/kaitlinmctigue" />
                                 </div>
 

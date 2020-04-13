@@ -40,7 +40,7 @@
   &__text {
     text-align: left;
     display: inline-block;
-    margin-top: $spacer--medium;
+    margin-top: $spacer--default;
 
     &__body {
       p {
@@ -65,9 +65,10 @@
   }
 
   .social-icon {
+    $size: 40px;
     margin: 0 8px;
-    height: 45px!important;
-    width: 45px!important;
+    height: $size!important;
+    width: $size!important;
 
     &:hover {
       opacity: .9;
