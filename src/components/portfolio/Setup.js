@@ -40,7 +40,7 @@ class Setup extends Component {
     }
 
     year() {
-        if (this.props.team) {
+        if (this.props.year) {
             return(
                 <Subsection title={'Year'} text={this.props.year.toString()}></Subsection>
             );

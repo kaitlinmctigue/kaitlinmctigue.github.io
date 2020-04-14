@@ -50,7 +50,7 @@
         background: #ebebeb;
         padding: 0 30px 20px;
         border-radius: 12px;
-        margin-top: $spacer--medium;
+        margin-top: $spacer--default;
 
         @include themed() {
           background-color: darken(t($bg), 3%);

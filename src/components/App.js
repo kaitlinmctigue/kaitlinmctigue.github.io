@@ -25,6 +25,7 @@ import PlaySmart from './portfolio/items/PlaySmart';
 import THOR from './portfolio/items/THOR';
 import InteractivePrinciples from './portfolio/items/InteractivePrinciples';
 import UCRE from './portfolio/items/UCRE';
+import DailyUI from './portfolio/items/DailyUI';
 
 const portfolioItems= [
     {
@@ -50,6 +51,10 @@ const portfolioItems= [
     {
         path: 'women-drowning',
         comp: WomenDrowning
+    },
+    {
+        path: 'daily-ui',
+        comp: DailyUI
     },
     {
         path: 'shining-hotel',
@@ -152,7 +157,7 @@ export default class App extends Component {
                         </div>
                         <div className={'footer'}>
                             <span className={'footer__text'}>
-                                I made this website with &#10084; and React. © Copyright 2019.
+                                I made this website with &#10084; and React. © Copyright 2020.
                             </span>
                             <span className={'footer__divider'}>
                                 |
@@ -161,8 +166,8 @@ export default class App extends Component {
                                 <SocialIcon url="mailto:kaitlinmctigue@gmail.com" style={{ height: 25, width: 25 }} />
                                 <SocialIcon url="https://www.linkedin.com/in/katiemctigue" style={{ height: 25, width: 25 }} />
                                 <SocialIcon url="https://medium.com/@katiemctigue" style={{ height: 25, width: 25 }} />
+                                <SocialIcon url="https://dribbble.com/katiemctigue" style={{ height: 25, width: 25 }} />
                                 <SocialIcon url="https://github.com/kaitlinmctigue" style={{ height: 25, width: 25 }} />
-                                <SocialIcon url="https://www.instagram.com/katiemctigue/" style={{ height: 25, width: 25 }} />
                             </span>
                         </div>
                     </div>

@@ -8,6 +8,7 @@ import dci from '../images/thumbnails/dci.jpg';
 import thor from '../images/thumbnails/thor.jpg';
 import hosp from '../images/thumbnails/environment.png';
 import stanley from '../images/thumbnails/stanley.png';
+import dailyui from '../images/thumbnails/dailyui.png';
 import women from '../images/thumbnails/women.jpg';
 import cards from '../images/thumbnails/cards.jpg';
 import ucre from '../images/thumbnails/ucre.jpg';
@@ -108,6 +109,15 @@ export default class Portfolio extends Component {
                 'img': women,
                 'class': 'des',
                 'path': 'women-drowning'
+            },
+            {
+                'id': 2,
+                'title': 'Daily UI Challenge',
+                'tags': ['Visual Design', 'UI Design', 'Illustration'],
+                'desc': 'Designing something new every day of quarantine, even if sometimes it totally sucks.',
+                'img': dailyui,
+                'class': 'des',
+                'path': 'daily-ui'
             },
             {
                 'id': 1,
