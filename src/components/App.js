@@ -26,6 +26,7 @@ import THOR from './portfolio/items/THOR';
 import InteractivePrinciples from './portfolio/items/InteractivePrinciples';
 import UCRE from './portfolio/items/UCRE';
 import DailyUI from './portfolio/items/DailyUI';
+import GameJam from './portfolio/items/GameJam';
 
 const portfolioItems= [
     {
@@ -55,6 +56,10 @@ const portfolioItems= [
     {
         path: 'daily-ui',
         comp: DailyUI
+    },
+    {
+        path: 'end-of-our-exploring',
+        comp: GameJam
     },
     {
         path: 'shining-hotel',

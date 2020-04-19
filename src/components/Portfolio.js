@@ -12,6 +12,7 @@ import dailyui from '../images/thumbnails/dailyui.png';
 import women from '../images/thumbnails/women.jpg';
 import cards from '../images/thumbnails/cards.jpg';
 import ucre from '../images/thumbnails/ucre.jpg';
+import exploring from '../images/thumbnails/gamejam.jpg';
 
 import { ButtonToolbar, ToggleButtonGroup, ToggleButton } from 'react-bootstrap';
 import TagsAndRole from './portfolio/TagsAndRole';
@@ -102,15 +103,6 @@ export default class Portfolio extends Component {
 
         this.plays = [
             {
-                'id': 0,
-                'title': 'Women Drowning Photo Series',
-                'tags': ['Photography', 'Art Direction'],
-                'desc': 'Exploring concepts of power, longing, loss, and femininity, on film and digital.',
-                'img': women,
-                'class': 'des',
-                'path': 'women-drowning'
-            },
-            {
                 'id': 2,
                 'title': 'Daily UI Challenge',
                 'tags': ['Visual Design', 'UI Design', 'Illustration'],
@@ -118,6 +110,24 @@ export default class Portfolio extends Component {
                 'img': dailyui,
                 'class': 'des',
                 'path': 'daily-ui'
+            },
+            {
+                'id': 3,
+                'title': 'The End of Our Exploring',
+                'tags': ['Game Design', 'Transformational Design'],
+                'desc': 'Prompting players to think about how cultural values change with new experiences.',
+                'img': exploring,
+                'class': 'des',
+                'path': 'end-of-our-exploring'
+            },
+            {
+                'id': 0,
+                'title': 'Women Drowning Photo Series',
+                'tags': ['Photography', 'Art Direction'],
+                'desc': 'Exploring concepts of power, longing, loss, and femininity, on film and digital.',
+                'img': women,
+                'class': 'des',
+                'path': 'women-drowning'
             },
             {
                 'id': 1,
