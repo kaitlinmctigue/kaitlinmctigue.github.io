@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ReactGA from 'react-ga';
 
 import Header from '../Header';
-import splashImg from '../../../images/thumbnails/thor.jpg';
+import splashImg from '../../../images/thumbnails/thor.png';
 import logos from '../../../images/portfolio/thor/thor_logos.png';
 import original from '../../../images/portfolio/thor/original.jpg';
 import logo from '../../../images/portfolio/thor/logo.png';

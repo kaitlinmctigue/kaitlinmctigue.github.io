@@ -25,6 +25,12 @@
       line-height: 1.6;
       max-width: 475px;
 
+      @media (max-width: $screen-xs-max) {
+        br {
+          display: none;
+        }
+      }
+
       a {
         color: inherit;
         text-decoration: underline;

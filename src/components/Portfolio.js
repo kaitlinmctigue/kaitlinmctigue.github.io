@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 import ReactGA from 'react-ga';
 
 import toy from '../images/thumbnails/toy.jpg';
-import dci from '../images/thumbnails/dci.jpg';
-import thor from '../images/thumbnails/thor.jpg';
+import nasa from '../images/thumbnails/nasa2.png';
+import thor from '../images/thumbnails/thor.png';
 import hosp from '../images/thumbnails/environment.png';
 import stanley from '../images/thumbnails/stanley.png';
 import dailyui from '../images/thumbnails/dailyui.png';
@@ -46,13 +46,13 @@ export default class Portfolio extends Component {
 
         this.works = [
             {
-                'id': 2,
-                'title': 'Playsmart RFID Toys Concept',
-                'tags': ['transformational design', 'conversation design'],
-                'desc': 'Leveraging the power of play to teach kids to clean up.',
-                'img': toy,
+                'id': 0,
+                'title': 'NASA Talos',
+                'tags': ['UX Research, UX Design'],
+                'desc': 'Empowering astronauts to independently diagnose spacecraft anomalies on the first crewed mission to Mars.',
+                'img': nasa,
                 'class': 'des',
-                'path': 'playsmart'
+                'path': 'nasa-talos'
             },
             {
                 'id': 4,
@@ -64,13 +64,13 @@ export default class Portfolio extends Component {
                 'path': 'interactive-principles'
             },
             {
-                'id': 6,
-                'title': 'The Art + Human Circuit',
-                'tags': ['ux research', 'ux design'],
-                'desc': 'Breaking the stigma of public art being “boring sculptures” to engage citizens and build community.',
-                'img': ucre,
+                'id': 2,
+                'title': 'Playsmart RFID Toys Concept',
+                'tags': ['transformational design', 'conversation design'],
+                'desc': 'Leveraging the power of play to teach kids to clean up.',
+                'img': toy,
                 'class': 'des',
-                'path': 'art-circuit'
+                'path': 'playsmart'
             },
             {
                 'id': 3,
@@ -82,13 +82,13 @@ export default class Portfolio extends Component {
                 'path': 'environmental-design'
             },
             {
-                'id': 0,
-                'title': 'Diverse Computing Rebrand',
-                'tags': ['branding, Visual Design'],
-                'desc': 'Reimagining a brand that had been overshadowed by its flagship product to reach new markets.',
-                'img': dci,
+                'id': 6,
+                'title': 'The Art + Human Circuit',
+                'tags': ['ux research', 'ux design'],
+                'desc': 'Breaking the stigma of public art being “boring sculptures” to engage citizens and build community.',
+                'img': ucre,
                 'class': 'des',
-                'path': 'dci-brand'
+                'path': 'art-circuit'
             },
             {
                 'id': 1,
@@ -201,8 +201,7 @@ export default class Portfolio extends Component {
                 <div className="portfolio__intro mx-auto">
                     <p>
                         Hi! I’m a product designer who likes to code. <br/>
-                        I’m interested in conversation design, AI, <br/>
-                        game-based UI patterns, and <a href={'/#/contact'}>lots of other stuff</a>.
+                        I’m interested in AI, game-based UI patterns, <br/> and <a href={'/#/contact'}>lots of other stuff</a>.
                     </p>
                 </div>
 

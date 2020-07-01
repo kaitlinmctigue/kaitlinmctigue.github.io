@@ -16,7 +16,7 @@ import { SocialIcon } from 'react-social-icons';
 import Contact from './Contact';
 import Resume from './Resume';
 import Portfolio from './Portfolio';
-import DciBrand from './portfolio/items/DciBrand';
+import NASA from './portfolio/items/NASA';
 import Environmental from './portfolio/items/Environmental';
 import ScrollToTop from './ScrollToTop';
 import WomenDrowning from './portfolio/items/WomenDrowning';
@@ -30,8 +30,8 @@ import GameJam from './portfolio/items/GameJam';
 
 const portfolioItems= [
     {
-        path: 'dci-brand',
-        comp: DciBrand
+        path: 'nasa-talos',
+        comp: NASA
     },
     {
         path: 'environmental-design',
