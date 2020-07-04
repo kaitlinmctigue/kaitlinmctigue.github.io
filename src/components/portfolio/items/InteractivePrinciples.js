@@ -67,6 +67,8 @@ export default class InteractivePrinciples extends Component {
                     nda={false}
                     client={'The OHLab at Carnegie Mellon'}
                     img={logo}
+                    projectLink={'http://www.edugames.design/principles'}
+                    projectLinkText={'edugames.design/principles'}
                 />
 
                 <Section title={'Process'} img={trans} caption={'The Transformational Framework by Sabrina Culyba guided my research process'} />

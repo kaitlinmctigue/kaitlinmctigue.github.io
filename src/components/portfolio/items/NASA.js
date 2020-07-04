@@ -43,9 +43,14 @@ export default class NASA extends Component {
                     year={2020}
                     client={'NASA Ames Research Center'}
                     img={logo}
+                    projectLink={'https://nasa-talos.webflow.io/'}
+                    projectLinkText={'nasa-talos.webflow.io'}
                 />
 
-                <Section title={'View Project Website'} link={'https://nasa-talos.webflow.io/'}/>
+                {/*<Section title={'View Project Website'} link={'https://nasa-talos.webflow.io/'}/>*/}
+
+                <Section title={'This page is under construction!'} quote={'This project is still in progress, and will be completed in August 2020. ' +
+                'Check back soon for an update!'}/>
 
                 <Section title={'View Project Blog'} link={'https://medium.com/mhci-x-nasa-capstone-2020'}/>
 

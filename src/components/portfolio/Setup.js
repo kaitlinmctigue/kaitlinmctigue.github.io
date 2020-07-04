@@ -91,22 +91,37 @@ class Setup extends Component {
 
     render() {
         return (
-            <div className={'section'}>
-                <div className={'row setup'}>
-                    <div className={'col-xs-12 col-sm-6'}>
-                        {this.year()}
-                        {this.client()}
-                        {this.course()}
-                        {this.role()}
-                        {this.team()}
-                    </div>
-                    <div className={'col-xs-12 col-sm-6'}>
-                        {this.img()}
-                        {this.before()}
-                        {this.after()}
-                        {this.requestPermission()}
+            <div>
+                <div className={'section'}>
+                    <div className={'row setup'}>
+                        <div className={'col-xs-12 col-sm-6'}>
+                            {this.year()}
+                            {this.client()}
+                            {this.course()}
+                            {this.role()}
+                            {this.team()}
+                        </div>
+                        <div className={'col-xs-12 col-sm-6'}>
+                            {this.img()}
+                            {this.before()}
+                            {this.after()}
+                            {this.requestPermission()}
+                        </div>
                     </div>
                 </div>
+                {this.props.projectLink ?
+                    <div className={'section'}>
+                        <div className={'row'}>
+                            <div className={'col-xs-12 col-sm-12 section__title'}>
+                                <Title title={'Project Website'} />
+                            </div>
+                            <div className={'col-xs-12 col-sm-12 section__link'}>
+                                <a href={this.props.projectLink} target={'_blank'} className={'link section-quote'}>{this.props.projectLinkText ? this.props.projectLinkText : this.props.projectLink}</a>
+                            </div>
+                        </div>
+                    </div> :
+                    <div/>
+                }
             </div>
         );
     }
@@ -121,7 +136,9 @@ Setup.propTypes = {
     img: PropTypes.string,
     before: PropTypes.string,
     after: PropTypes.string,
-    nda: PropTypes.bool
+    nda: PropTypes.bool,
+    projectLink: PropTypes.string,
+    projectLinkText: PropTypes.string
 };
 
 export default Setup;
