@@ -38,7 +38,7 @@ export default class NASA extends Component {
                 />
 
                 <Setup
-                    role={'UX Researcher, UI Designer, UI Developer'}
+                    role={'Product Designer, Project Manager'}
                     team={'JT Aceron, Nathan Barnhart, Aditi Magal, Megan Parisi'}
                     year={2020}
                     client={'NASA Ames Research Center'}
