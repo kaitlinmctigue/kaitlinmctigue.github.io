@@ -10,7 +10,7 @@ import Setup from '../Setup';
 import Backlink from '../Backlink';
 import Section from '../Section';
 
-const title = 'Empowering astronauts to independently diagnose spacecraft anomalies on the first crewed mission to Mars.';
+const title = 'Empowering astronauts to independently diagnose spacecraft anomalies on the first crewed mission to Mars';
 const tags = ['Product Designer', 'Project Manager'];
 const classification = 'des';
 

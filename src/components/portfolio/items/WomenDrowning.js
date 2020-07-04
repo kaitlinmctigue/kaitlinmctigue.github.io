@@ -15,7 +15,7 @@ import nest from '../../../images/portfolio/womendrowning/nest.jpg';
 import sierra from '../../../images/portfolio/womendrowning/sierra.jpg';
 import Setup from '../Setup';
 
-const title = 'Exploring concepts of power, longing, loss, and femininity, on film and digital.';
+const title = 'Exploring concepts of power, longing, loss, and femininity, on film and digital';
 const tags = ['Photography', 'Art Direction'];
 const classification = 'des';
 const body = 'This collection of images showcases my artistic development learning to work with models. I photographed each of these images in 2015, some on a 35mm film camera and some on my Nikon DSLR. It was my intention to represent that to a certain extent each woman is “drowning” within the narrative of the photo that contains her.';

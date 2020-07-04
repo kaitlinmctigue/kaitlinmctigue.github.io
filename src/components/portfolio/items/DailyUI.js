@@ -12,7 +12,7 @@ import Backlink from '../Backlink';
 
 import Setup from '../Setup';
 
-const title = 'Designing something new every day of quarantine, even if sometimes it totally sucks.';
+const title = 'Designing something new every day of quarantine, even if sometimes it totally sucks';
 const tags = ['Visual Design', 'UI Design', 'Illustration'];
 const classification = 'des';
 const body = 'To avoid completely losing my mind (or just speed up the process), I am completing the 100 day Daily UI challenge while in quarantine because of COVID-19. Every day I complete a design challenge. So far, it has been a great way to work on my visual design chops and try all the crazy UI trends I’ve ever wanted to butcher at no risk. \n' +
@@ -45,9 +45,11 @@ export default class DailyUI extends Component {
                 <Setup
                     team={'Allllll byyyy myseeeeelf'}
                     year={2020}
+                    projectLink={'https://dribbble.com/katiemctigue'}
+                    projectLinkText={'dribbble.com/katiemctigue'}
                 />
 
-                <Section title={'Background'} text={body} link={'https://dribbble.com/katiemctigue'}/>
+                <Section title={'Background'} text={body}/>
 
                 <Section title={'Day 13: "Design a Messaging App"'} img={day13} link={'https://dribbble.com/shots/11005420-Daily-UI-Day-13-Messaging-App'}/>
 

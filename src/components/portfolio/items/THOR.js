@@ -25,7 +25,7 @@ import Section from '../Section';
 import Img from '../Img';
 import Spacer from '../Spacer';
 
-const title = 'Empowering officers to access criminal records on the go, as quickly and safely as possible.';
+const title = 'Empowering officers to access criminal records on the go, as quickly and safely as possible';
 const tags = ['angular2', 'branding'];
 const classification = 'dev';
 const problem = 'Imagine it’s 2 am. An officer pulls over a person, and then calls in to the Tennessee Fusion Center to have an agent run that person’s history. Every minute that officer waits, she is potentially in danger.\n' +

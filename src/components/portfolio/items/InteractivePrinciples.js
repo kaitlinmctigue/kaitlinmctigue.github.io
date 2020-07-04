@@ -8,7 +8,7 @@ import Section from '../Section';
 import Setup from '../Setup';
 import Backlink from '../Backlink';
 
-const title = 'Making learning science principles more accessible to game designers with a virtual deck of cards.';
+const title = 'Making learning science principles more accessible to game designers with a virtual deck of cards';
 const tags = ['research', 'instructional design', 'game design', 'learning science'];
 const classification = 'dev';
 const problem =

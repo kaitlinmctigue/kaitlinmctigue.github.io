@@ -21,7 +21,7 @@ import proposal2 from '../../../images/portfolio/proposal2.jpg';
 import proposal3 from '../../../images/portfolio/proposal3.jpg';
 import Backlink from '../Backlink';
 
-const title = 'Reimagining a brand that had been overshadowed by its flagship product to reach new markets.';
+const title = 'Reimagining a brand that had been overshadowed by its flagship product to reach new markets';
 const tags = ['Branding, Visual Design'];
 const classification = 'des';
 const problem = 'Diverse Computing’s flagship product, eAgent, had overshadowed its parent company. The strength of the eAgent brand made it tricky for DCI to branch out beyond the NCIC (National Crime Information Center database) access domain, and position itself in the criminal justice community as, well, diverse.';

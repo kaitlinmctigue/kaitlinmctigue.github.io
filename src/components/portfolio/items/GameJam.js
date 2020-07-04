@@ -14,7 +14,7 @@ import Backlink from '../Backlink';
 
 import Setup from '../Setup';
 
-const title = 'Prompting players to think about how cultural values change with new experiences.';
+const title = 'Prompting players to think about how cultural values change with new experiences';
 const tags = ['Game Design', 'Transformational Design'];
 const classification = 'des';
 const body = 'The theme for the 2019 Pittsburgh Board Game Jam was “foreign.”\n' +

@@ -8,7 +8,7 @@ import Section from '../Section';
 import Setup from '../Setup';
 import Backlink from '../Backlink';
 
-const title = 'Helping hospital employees beat eye-strain during long shifts, with code changes and environmental changes.';
+const title = 'Helping hospital employees beat eye-strain during long shifts, with code changes and environmental changes';
 const tags = ['UX Research', 'Environmental Design'];
 const classification = 'dev';
 const problem = 'From emergency rooms, to command centers, to unit common areas, hospitals are full of very different lighting environments. Users of an interactive patient-flow dashboard were experiencing eye strain, especially during long shifts.';

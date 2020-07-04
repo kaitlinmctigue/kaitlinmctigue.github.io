@@ -113,7 +113,7 @@ class Setup extends Component {
                     <div className={'section'}>
                         <div className={'row'}>
                             <div className={'col-xs-12 col-sm-12 section__title'}>
-                                <Title title={'Project Website'} />
+                                <Title title={'View Project Website'} />
                             </div>
                             <div className={'col-xs-12 col-sm-12 section__link'}>
                                 <a href={this.props.projectLink} target={'_blank'} className={'link section-quote'}>{this.props.projectLinkText ? this.props.projectLinkText : this.props.projectLink}</a>

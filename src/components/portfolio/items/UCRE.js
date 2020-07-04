@@ -16,7 +16,7 @@ import Backlink from '../Backlink';
 import Setup from '../Setup';
 import TableauViz from '../TableauViz';
 
-const title = 'Breaking the stigma of public art being “boring sculptures” to engage citizens and build community.';
+const title = 'Breaking the stigma of public art being “boring sculptures” to engage citizens and build community';
 const tags = ['UX Research', 'UX Design'];
 const classification = 'des';
 const problem = 'Citizens of Pittsburgh are not as interested in public art as we would like them to be considering the costs. They become numb to it when it is a part of their daily life, and they are not willing to read long plaques.';

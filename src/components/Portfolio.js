@@ -49,7 +49,7 @@ export default class Portfolio extends Component {
                 'id': 0,
                 'title': 'NASA Talos',
                 'tags': ['UX Research, UX Design'],
-                'desc': 'Empowering astronauts to independently diagnose spacecraft anomalies on the first crewed mission to Mars.',
+                'desc': 'Empowering astronauts to independently diagnose spacecraft anomalies on the first crewed mission to Mars',
                 'img': nasa,
                 'class': 'des',
                 'path': 'nasa-talos'
@@ -58,16 +58,16 @@ export default class Portfolio extends Component {
                 'id': 4,
                 'title': 'Interactive Principles Project',
                 'tags': ['research', 'instructional design', 'game design'],
-                'desc': 'Making learning science principles more accessible to game designers with a virtual deck of cards.',
+                'desc': 'Making learning science principles more accessible to game designers with a virtual deck of cards',
                 'img': cards,
-                'class': 'dev',
+                'class': 'both',
                 'path': 'interactive-principles'
             },
             {
                 'id': 2,
                 'title': 'Playsmart RFID Toys Concept',
                 'tags': ['transformational design', 'conversation design'],
-                'desc': 'Leveraging the power of play to teach kids to clean up.',
+                'desc': 'Leveraging the power of play to teach kids to clean up',
                 'img': toy,
                 'class': 'des',
                 'path': 'playsmart'
@@ -76,7 +76,7 @@ export default class Portfolio extends Component {
                 'id': 3,
                 'title': 'Prototyping with Environmental Factors',
                 'tags': ['ux research', 'environmental design'],
-                'desc': 'Helping hospital employees beat eye-strain during long shifts, with code changes and environmental changes.',
+                'desc': 'Helping hospital employees beat eye-strain during long shifts, with code changes and environmental changes',
                 'img': hosp,
                 'class': 'dev',
                 'path': 'environmental-design'
@@ -85,7 +85,7 @@ export default class Portfolio extends Component {
                 'id': 6,
                 'title': 'The Art + Human Circuit',
                 'tags': ['ux research', 'ux design'],
-                'desc': 'Breaking the stigma of public art being “boring sculptures” to engage citizens and build community.',
+                'desc': 'Breaking the stigma of public art being “boring sculptures” to engage citizens and build community',
                 'img': ucre,
                 'class': 'des',
                 'path': 'art-circuit'
@@ -94,9 +94,9 @@ export default class Portfolio extends Component {
                 'id': 1,
                 'title': 'Tennessee Homeland Online Records',
                 'tags': ['angular2', 'branding'],
-                'desc': 'Empowering officers to access criminal records on the go, as quickly and safely as possible.',
+                'desc': 'Empowering officers to access criminal records on the go, as quickly and safely as possible',
                 'img': thor,
-                'class': 'dev',
+                'class': 'both',
                 'path': 'thor'
             }
         ];
@@ -106,7 +106,7 @@ export default class Portfolio extends Component {
                 'id': 2,
                 'title': 'Daily UI Challenge',
                 'tags': ['Visual Design', 'UI Design', 'Illustration'],
-                'desc': 'Designing something new every day of quarantine, even if sometimes it totally sucks.',
+                'desc': 'Designing something new every day of quarantine, even if sometimes it totally sucks',
                 'img': dailyui,
                 'class': 'des',
                 'path': 'daily-ui'
@@ -115,7 +115,7 @@ export default class Portfolio extends Component {
                 'id': 3,
                 'title': 'The End of Our Exploring',
                 'tags': ['Game Design', 'Transformational Design'],
-                'desc': 'Prompting players to think about how cultural values change with new experiences.',
+                'desc': 'Prompting players to think about how cultural values change with new experiences',
                 'img': exploring,
                 'class': 'des',
                 'path': 'end-of-our-exploring'
@@ -124,7 +124,7 @@ export default class Portfolio extends Component {
                 'id': 0,
                 'title': 'Women Drowning Photo Series',
                 'tags': ['Photography', 'Art Direction'],
-                'desc': 'Exploring concepts of power, longing, loss, and femininity, on film and digital.',
+                'desc': 'Exploring concepts of power, longing, loss, and femininity, on film and digital',
                 'img': women,
                 'class': 'des',
                 'path': 'women-drowning'
@@ -132,7 +132,7 @@ export default class Portfolio extends Component {
             {
                 'id': 1,
                 'title': 'The Shining Hotel Project',
-                'desc': 'Imagining what the hotel that inspired The Shining looked like through the eyes of Stephen King in 1977.',
+                'desc': 'Imagining what the hotel that inspired The Shining looked like through the eyes of Stephen King in 1977',
                 'tags': ['react', 'interactive art'],
                 'img': stanley,
                 'class': 'dev',
