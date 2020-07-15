@@ -21,14 +21,15 @@ const ideationtext = 'I paper-prototyped several game ideas, including a “choo
 
 import logo from '../../../images/portfolio/ixprinciples/cmulogos.png';
 import trans from '../../../images/portfolio/ixprinciples/transformational.png';
-import principlesresearch from '../../../images/portfolio/ixprinciples/principlesresearch.png';
+// import principlesresearch from '../../../images/portfolio/ixprinciples/principlesresearch.png';
 import operation from '../../../images/portfolio/ixprinciples/operation.jpg';
 import cards1 from '../../../images/portfolio/ixprinciples/cards1.jpg';
 import cards2 from '../../../images/portfolio/ixprinciples/cards2.jpg';
+import cards2b from '../../../images/portfolio/ixprinciples/cards2.png';
+import cards3 from '../../../images/portfolio/ixprinciples/cards3.png';
 import inspo from '../../../images/portfolio/ixprinciples/inspo.png';
 import screens from '../../../images/portfolio/ixprinciples/screens.png';
 import carddesign from '../../../images/portfolio/ixprinciples/carddesign.png';
-import cardsfinal from '../../../images/portfolio/ixprinciples/cardsfinal.png';
 
 export default class InteractivePrinciples extends Component {
 
@@ -69,7 +70,7 @@ export default class InteractivePrinciples extends Component {
 
                 <Section title={'Process'} img={trans} caption={'The Transformational Framework by Sabrina Culyba guided my research process'} />
 
-                <Section title={'Koedinger’s List of 30 Principles'} img={principlesresearch}
+                <Section title={'Koedinger’s List of 30 Principles'} link={'https://www.learnlab.org/research/wiki/images/c/c0/Koedinger-Science-2013.pdf'}
                     text={'Dr. Harpstead uses Koedinger’s consolidated set of 30 learning science principles for his course. To get a deep understanding of what the principles meant, I spent some time with each of the papers that Koedinger referenced in his set. I began sketching concepts for how we could make players of our solution feel the presence or absence of each principle in a visual way.'}
                 />
 
@@ -117,7 +118,10 @@ export default class InteractivePrinciples extends Component {
                 'We received a very positive response from faculty on the prototype, who expressed gratitude that we were making learning science more accessible. One scholar from the OHLab even called our project “potentially groundbreaking.”\n'}
                 />
 
-                <Section title={'Finding'} quote={'Delightful microinteractions prompt exploration.'}/>
+                <Section title={'Finding'} quote={'Delightful microinteractions prompt curiosity and exploration.'}/>
+
+                <Section title={'Final Design'}
+                    img={cards3} img2={cards2b}/>
 
                 <Section title={'Assessment and Outcomes'}
                     text={'I made many changes based on our testing sessions, and as of the time of this writing the Interactive Principles website is live and ready to be used in the graduate Educational Game Design course next semester. Future OHLab interns will continue to iterate on the website as students use it and provide additional feedback.'}/>
@@ -128,8 +132,7 @@ export default class InteractivePrinciples extends Component {
 
                 <Section title={'View the Source Code'} text={'View the project source code on Github:'} link={'https://github.com/eharpste/interactive-principles'}/>
 
-                <Section title={'Final Product'}
-                    img={cardsfinal}/>
+                <Section title={'Demo Video'}/>
                 <div className={'video-responsive'}>
                     <iframe width="700" height="394" src="https://www.youtube.com/embed/RwJ3SbDKNDc?rel=0&amp;showinfo=0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
