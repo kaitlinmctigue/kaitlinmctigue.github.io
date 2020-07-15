@@ -22,7 +22,7 @@ const title = 'Leveraging the power of play to teach kids to clean up';
 const tags = ['transformational design', 'conversation design', 'physical computing'];
 const classification = 'des';
 const problem = 'Teaching young children to clean up after themselves is exhausting.';
-const solution = 'Using gamification techniques and some low-budget prototyping tools, we imagined a smart playkit that takes the burden of enforcing cleanup off of parents.';
+const solution = 'Using game-based patterns and some low-budget prototyping tools, we imagined a smart playkit that takes the burden of enforcing cleanup off of parents.';
 
 const goals = 'Internet of things technologies are getting cheaper and more powerful, and mobile app developers are making the most of it. We set out to think up a novel, marketable, and scalable use of IoT and mobile. The assigned deliverable for our studio course project was a pitch video in which we “Wizard of Oz"-ed our prototype enough to gauge interest in our product from potential buyers.';
 const story1 = 'We went through 30+ ideas before we landed on our smart playkit idea. To judge the potential of our ideas, we quickly storyboarded them and showed them to anyone with eyes!';

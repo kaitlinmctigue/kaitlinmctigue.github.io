@@ -11,17 +11,13 @@ import Backlink from '../Backlink';
 const title = 'Making learning science principles more accessible to game designers with a virtual deck of cards';
 const tags = ['research', 'instructional design', 'game design', 'learning science'];
 const classification = 'dev';
-const problem =
-    'Memorizing lists is boring.\n' + '\n' +
-    'There are dozens of reputable sets of learning science principles, with hundreds of actual principles. These principles are core to the work of designers of instructional technologies, and especially designers of educational games.\n' +
+const problem ='Memorizing lists is boring.\n' +
     '\n' +
-    'In the Design of Educational Games course at Carnegie Mellon University, Dr. Erik Harpstead uses the set of 30 principles from Koedinger, Booth, and Klahr’s 2013 article Instructional Complexity and the Science to Constrain It. Students are expected to more or less memorize the list, a daunting task that often leads to misconceptions about some of the principles.\n';
+    'Designers of transformational games must have a base understanding of learning science.\n' +
+    '\n' +
+    'In the Design of Educational Games course at Carnegie Mellon University, students struggled to memorize 30 core learning science principles, and frequently formed misconceptions.\n';
 const solution = 'An interactive deck of virtual cards that provide concrete examples and contextualize the design questions that can have pedagogical impacts.\n';
-const ideationtext = 'I set out with the very meta challenge of designing a game experience that used the learning science principles to teach the learning science principles.\n' +
-    '\n' +
-    'Our earliest concept was one big game in which the player could turn the principle off and on to feel it’s absence.\n' +
-    '\n' +
-    'Another idea I paper-prototyped was a “choose your own adventure” style experience in which the player was tasked to teach an alien to make a peanut butter and jelly sandwich by making choices that best utilize the principles. This approach piggybacked on both the Quizzing principle and the Application principle by teaching through repeated exposure, similar to how Duolingo teaches vocabulary.\n';
+const ideationtext = 'I paper-prototyped several game ideas, including a “choose your own adventure” style experience in which the player was tasked to teach an alien to make a peanut butter and jelly sandwich. This approach piggybacked on both the Quizzing principle and the Application principle by teaching through repeated exposure, similar to how Duolingo teaches vocabulary.\n';
 
 import logo from '../../../images/portfolio/ixprinciples/cmulogos.png';
 import trans from '../../../images/portfolio/ixprinciples/transformational.png';
@@ -73,15 +69,17 @@ export default class InteractivePrinciples extends Component {
 
                 <Section title={'Process'} img={trans} caption={'The Transformational Framework by Sabrina Culyba guided my research process'} />
 
-                <Section title={'Learning Science Background Research'} img={principlesresearch}
+                <Section title={'Koedinger’s List of 30 Principles'} img={principlesresearch}
                     text={'Dr. Harpstead uses Koedinger’s consolidated set of 30 learning science principles for his course. To get a deep understanding of what the principles meant, I spent some time with each of the papers that Koedinger referenced in his set. I began sketching concepts for how we could make players of our solution feel the presence or absence of each principle in a visual way.'}
                 />
 
-                <Section title={'Playing Lots of Games (I mean, more research)'}
-                    text={'Another thing I did in this exploratory background research phase was play a LOT of games to find examples of games that leveraged learning science principles. Dr. Harpstead had discovered in his teaching that students were better able to understand learning science principles and less likely to fall into common misconceptions when they were able to experience the principles through play.\n'}
+                <Section title={'Recognizing the Principles in Games'}
+                    text={'Every semester, students have the same common misconceptions about certain principles after reading Koedinger’s paper. \n\nDr. Harpstead had discovered in his teaching that students were better able to understand learning science principles and less likely to fall into common misconceptions when they were able to experience the principles through play.\n'}
                     img={operation}
-                    caption={'Operation is a perfect example of the Immediate Feedback Timing principle, which students often misunderstand. In operation the player knows their mistake as soon as they touch the metal edge of the body (game board).\n'}
+                    caption={'Students often use compiling code as an example of the Immediate Feedback Principle, but it isn’t. Operation is a perfect example of immediate feedback.'}
                 />
+
+                <Section title={'Insight'} quote={'Playing games helps students contextualize the principles, which helps them avoid common misconceptions.'}/>
 
                 <Section title={'Ideation and First Concepts'}
                     text={ideationtext}
@@ -89,18 +87,26 @@ export default class InteractivePrinciples extends Component {
                     img2={cards1}
                 />
 
-                <Section title={'Deck of Cards Concept'}
+                <Section title={'A Big Failure'}
+                    text={'Dr. Harpstead was not impressed. My approach was very literal, a bit heavy-handed, and the experience I designed lacked fun. Fun, it turns out, is a very difficult thing to design!\n' +
+                '\n' +
+                'I took a step back, and asked myself what I could build that would be the most impactful to the students in the course. What could I build in 3 months that would be shippable and scalable?\n'}/>
+
+                <Section title={'Takeaway'}
+                    quote={'My prototype was "chocolate-covered broccoli". No matter how much “fun” you cover the boring content in, people will smell it a mile away.'}
+                />
+                <Section title={'A Big Pivot'}
                     img={inspo}
-                    text={'After playtesting our initial paper prototypes we began to realize the need to view all principles in one place so that students could start from an overview and have control over the level of depth of knowledge they wanted.\n' +
-                    '\n' +
-                    'The deck of cards concept was born from inspiration from Jesse Schell’s deck of lenses for game design. We envisioned an interactive deck of cards that players could use to learn at their own pace through reading, viewing visual representations, and playing games.'}
+                    text={'The deck of cards concept was born from inspiration from Jesse Schell’s deck of lenses for game design. Schell’s cards are “lenses” that prompt the designer to see their game through different perspectives. This model has been used in a number of other educational tools with great results.'}
                     caption={'Inspiration (left to right, top to bottom): The Art of Game Design: A Book of Lenses, Ideation Decks, Tinycards by Duolingo, Coglode, Laws of UX, GAPBIT (Game Design Patterns for Behavioral Therapy)'}
                 />
 
-                <Section title={'Prototyping'} img={carddesign} caption={'Card design concepts'} img2={screens} caption2={'An early iteration of the website design'}
-                    textAfterImg={'In order to test our card prototype we really needed to completely build out content for each principle so that we could test information retention and what content was most important to users.\n' +
-                    '\n' +
-                    'I chose to build the prototype in React for the ease of working with JSON data. We maintained the master file of data in Google Sheets and periodically exported it to JSON using some custom javascript.\n'}/>
+                <Section title={'Prototyping'} img={carddesign}
+                    text={'To design the cards, I needed to understand what one or two data points were the most important for people to quickly understand the principles.\n' +
+                         '\n' +
+                         'I followed the Concreteness Fading Principle for guidance, and started off each card with a real-life concrete example, followed by the more abstract definition.\n'}
+                    caption={'Card design concepts'} img2={screens} caption2={'An early iteration of the website design'}
+                    textAfterImg={'I chose to build the prototype in React for the ease of working with JSON data. We maintained the master file of data in Google Sheets and periodically exported it to JSON using some custom javascript.\n'}/>
 
 
                 <Section title={'Usability Testing and Iteration'}
@@ -111,8 +117,12 @@ export default class InteractivePrinciples extends Component {
                 'We received a very positive response from faculty on the prototype, who expressed gratitude that we were making learning science more accessible. One scholar from the OHLab even called our project “potentially groundbreaking.”\n'}
                 />
 
+                <Section title={'Finding'} quote={'Delightful microinteractions prompt exploration.'}/>
+
                 <Section title={'Assessment and Outcomes'}
                     text={'I made many changes based on our testing sessions, and as of the time of this writing the Interactive Principles website is live and ready to be used in the graduate Educational Game Design course next semester. Future OHLab interns will continue to iterate on the website as students use it and provide additional feedback.'}/>
+
+                <Section title={'Faculty Participant Quote'} quote={'I think this is potentially groundbreaking.'}/>
 
                 <Section title={'View Project'} text={'View the live website:'} link={'http://www.edugames.design/principles'}/>
 
