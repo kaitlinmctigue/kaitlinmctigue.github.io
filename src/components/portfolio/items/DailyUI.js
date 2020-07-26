@@ -4,8 +4,9 @@ import ReactGA from 'react-ga';
 import Header from '../Header';
 import splashImg from '../../../images/thumbnails/dailyui.png';
 import brain from '../../../images/portfolio/dailyui/brainanimate.gif';
-import day3 from '../../../images/portfolio/dailyui/day3.png';
+// import day3 from '../../../images/portfolio/dailyui/day3.png';
 import day13 from '../../../images/portfolio/dailyui/day13.png';
+import day32 from '../../../images/portfolio/dailyui/day32.png';
 
 import Section from '../Section';
 import Backlink from '../Backlink';
@@ -55,7 +56,9 @@ export default class DailyUI extends Component {
 
                 <Section title={'Day 15: "Design a Settings Page"'} img={brain} link={'https://dribbble.com/shots/11018773-Daily-UI-Day-15-On-Off-Switch'}/>
 
-                <Section title={'Day 3: "Design a Landing Page"'} img={day3} link={'https://dribbble.com/shots/10773062-Daily-UI-Day-3-Landing-Page'}/>
+                {/*<Section title={'Day 3: "Design a Landing Page"'} img={day3} link={'https://dribbble.com/shots/10773062-Daily-UI-Day-3-Landing-Page'}/>*/}
+
+                <Section title={'Day 32: "Design a Crowdfunding Campaign"'} img={day32} link={'https://dribbble.com/shots/11350286-Daily-UI-Day-32-Crowdfunding-Campaign'}/>
 
                 <Section title={'Check Out My Progress on Dribble'} link={'https://dribbble.com/katiemctigue'}/>
 
