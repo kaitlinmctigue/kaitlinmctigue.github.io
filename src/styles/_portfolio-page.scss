@@ -182,6 +182,16 @@
       font-size: 24px;
       line-height: 1.4;
       margin-bottom: 5px;
+      white-space: pre-line;
     }
+  }
+}
+
+.svg-images {
+  img {
+    background-color: transparent;
+    border: none!important;
+    max-width: 200px;
+    margin: 5px 0;
   }
 }

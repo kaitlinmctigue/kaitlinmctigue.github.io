@@ -135,7 +135,7 @@ export default class InteractivePrinciples extends Component {
                 <Section title={'Assessment and Outcomes'}
                     text={'I made many changes based on our testing sessions, and as of the time of this writing the Interactive Principles website is live and ready to be used in the graduate Educational Game Design course next semester. Future OHLab interns will continue to iterate on the website as students use it and provide additional feedback.'}/>
 
-                <Section title={'Faculty Participant Quote'} quote={'I think this is potentially groundbreaking.'}/>
+                <Section title={'Faculty Participant Quote:'} quote={'"I think this is potentially groundbreaking."'}/>
 
                 <Section title={'View Project'} text={'View the live website:'} link={'http://www.edugames.design/principles'}/>
 
