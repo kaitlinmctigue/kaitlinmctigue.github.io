@@ -30,6 +30,7 @@ import cards3 from '../../../images/portfolio/ixprinciples/cards3.png';
 import inspo from '../../../images/portfolio/ixprinciples/inspo.png';
 import screens from '../../../images/portfolio/ixprinciples/screens.png';
 import carddesign from '../../../images/portfolio/ixprinciples/carddesign.png';
+import Insight from '../Insight';
 
 export default class InteractivePrinciples extends Component {
 
@@ -80,7 +81,9 @@ export default class InteractivePrinciples extends Component {
                     caption={'Students often use compiling code as an example of the Immediate Feedback Principle, but it isn’t. Operation is a perfect example of immediate feedback.'}
                 />
 
-                <Section title={'Insight'} quote={'Playing games helps students contextualize the principles, which helps them avoid common misconceptions.'}/>
+                <Insight title={'Insight'} insight={'Playing games helps students contextualize the principles, which helps them avoid common misconceptions.'}/>
+
+                {/*<Section title={'Insight'} quote={'Playing games helps students contextualize the principles, which helps them avoid common misconceptions.'}/>*/}
 
                 <Section title={'Ideation and First Concepts'}
                     text={ideationtext}
@@ -93,9 +96,13 @@ export default class InteractivePrinciples extends Component {
                 '\n' +
                 'I took a step back, and asked myself what I could build that would be the most impactful to the students in the course. What could I build in 3 months that would be shippable and scalable?\n'}/>
 
-                <Section title={'Takeaway'}
-                    quote={'My prototype was "chocolate-covered broccoli". No matter how much “fun” you cover the boring content in, people will smell it a mile away.'}
-                />
+                {/*<Section title={'Takeaway'}*/}
+                {/*quote={'My prototype was "chocolate-covered broccoli". No matter how much “fun” you cover the boring content in, people will smell it a mile away.'}*/}
+                {/*/>*/}
+
+                <Insight title={'Takeaway'} insight={'My prototype was "chocolate-covered broccoli". No matter how much “fun” you cover the boring content in, people will smell it a mile away.'}/>
+
+
                 <Section title={'A Big Pivot'}
                     img={inspo}
                     text={'The deck of cards concept was born from inspiration from Jesse Schell’s deck of lenses for game design. Schell’s cards are “lenses” that prompt the designer to see their game through different perspectives. This model has been used in a number of other educational tools with great results.'}
@@ -118,7 +125,9 @@ export default class InteractivePrinciples extends Component {
                 'We received a very positive response from faculty on the prototype, who expressed gratitude that we were making learning science more accessible. One scholar from the OHLab even called our project “potentially groundbreaking.”\n'}
                 />
 
-                <Section title={'Finding'} quote={'Delightful microinteractions prompt curiosity and exploration.'}/>
+                <Insight title={'Finding'} insight={'Delightful microinteractions prompt curiosity and exploration.'}/>
+
+                {/*<Section title={'Finding'} quote={'Delightful microinteractions prompt curiosity and exploration.'}/>*/}
 
                 <Section title={'Final Design'}
                     img={cards3} img2={cards2b}/>

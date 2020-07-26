@@ -15,6 +15,7 @@ import Section from '../Section';
 import Backlink from '../Backlink';
 import Setup from '../Setup';
 import TableauViz from '../TableauViz';
+import Insight from '../Insight';
 
 const title = 'Breaking the stigma of public art being “boring sculptures” to engage citizens and build community';
 const tags = ['UX Research', 'UX Design'];
@@ -75,19 +76,9 @@ export default class UCRE extends Component {
                     quote={'"I\'ve never gone inside a place of art without other people… I just like to be with people… I like to share with them."'}
                 />
 
-                <Section title={'Key Insights'}/>
-                <div className={'row'}>
-                    <div className={'col-xs-12'}>
-                        <p>
-                            When we synthesized our research we uncovered some key insights.
-                        </p>
-                        <ol>
-                            <li>People would rather interact with art than passively read a plaque.</li>
-                            <li>People preferred to share art experiences with their friends and family rather than going alone.</li>
-                            <li>Novelty is key. People become numb to art that they see on a daily basis. People want a break from their daily lives.</li>
-                        </ol>
-                    </div>
-                </div>
+                <Insight title={'Insight #1'} insight={'People would rather interact with art than passively read a plaque.'}/>
+                <Insight title={'Insight #2'} insight={'People preferred to share art experiences with their friends and family rather than going alone.'}/>
+                <Insight title={'Insight #3'} insight={'Novelty is key. People become numb to art that they see on a daily basis. People want a break from their daily lives.'}/>
 
                 <Section title={'We asked ourselves...'} quote={'How might we create an interactive & social experience to increase engagement with public art?'}/>
 
