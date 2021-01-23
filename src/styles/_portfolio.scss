@@ -48,9 +48,16 @@
 
   .title {
     @extend %title-text;
-    margin: 0 auto $spacer--small;
-    line-height: .6;
+    margin: 3px auto 18px;
+    line-height: 1.6;
     max-width: $navbar-max-width;
+    font-size: $font-size--secondary;
+
+    @include themed() {
+      color: t($text-secondary);
+      opacity: .5;
+    }
+
 
     &__des {
       font-size: $font-size--role;

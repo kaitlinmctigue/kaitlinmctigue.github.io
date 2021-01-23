@@ -147,10 +147,7 @@ export default class NASA extends Component {
                     </div>
                 </div>
 
-                <Section title={'This page is under construction!'} quote={'This project is still in progress, and will be completed in August 2020. ' +
-                'Check back soon for an update!'}/>
-
-                <Section title={'View Project Website'} link={'https://nasa-talos.webflow.io/'}/>
+                <Section title={'View Final Solution Website'} link={'https://nasa-talos.webflow.io/'}/>
 
                 <Backlink/>
             </div>

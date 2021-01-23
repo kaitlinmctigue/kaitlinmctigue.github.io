@@ -6,16 +6,16 @@
   &__title {
     position: relative;
     text-align: left;
-    width: 350px;
+    width: 325px;
     font-size: $font-size--page-title - 2px;
-    float: right;
     z-index: 10;
 
     @extend %title-text;
 
     @media (min-width: $screen-sm-min) {
       margin-bottom: -185px;
-      top: 25px;
+      top: 64px;
+      float: right;
     }
   }
 
@@ -30,7 +30,6 @@
       float: left;
 
       @media (max-width: $screen-xs-max) {
-        float: none;
         margin: 0 auto;
         width: 100%;
       }

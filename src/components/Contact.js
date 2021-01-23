@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 import ReactGA from 'react-ga';
 
 import { SocialIcon } from 'react-social-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import headshot from '../images/headshot.jpg';
+import headshot from '../images/headshot.png';
 
 function initializeReactGA() {
     ReactGA.initialize('UA-149504089-1');
@@ -28,7 +28,7 @@ export default class Contact extends Component {
         return (
             <div className={'contact'}>
                 <h1 className={'title contact__title'}>
-                    I’m a <span className={'text--blue'}>big picture</span> thinker but I’m never afraid to get my hands <span className={'text--red'}>dirty</span>.
+                    <span className={'text--blue'}>Designer</span> <br /> turned <br /> <span className={'text--red'}>programmer</span> <br /> turned <br /> <span className={'text--blue'}>researcher</span>
                 </h1>
                 <div className={'contact__img'}>
                     <img src={headshot} className={'img img-responsive'} />
@@ -36,10 +36,7 @@ export default class Contact extends Component {
                 <div className={'contact__text'}>
                     <div className={'contact__text__body'}>
                         <p>
-                            I love seeing projects through from research (to ideation to design to more research) to launch.
-                        </p>
-                        <p>
-                            I’ve found that I can make a big impact when I serve as translator between engineers and product folks. I like writing pixel-perfect css and asking dumb questions that people are afraid to ask.
+                            I like writing pixel-perfect css and asking dumb questions that people are afraid to ask. I’ve found that I can make a big impact when I serve as translator between engineers and product folks.
                         </p>
                         <p>
                             I like playing games, and thinking about ways that game-based patterns can delight people and motivate them to change their behavior.
@@ -48,11 +45,14 @@ export default class Contact extends Component {
                             I used to be afraid of UX research, until I realized that research is really just asking questions and then being strategic about the methods you use to get answers. I’m obsessed with data, but I try not to let that suck the humanity out of everything.
                         </p>
                         <p>
-                            <a className={'link'} href={'mailto:kaitlinmctigue@gmail.com'} target={'_blank'}>
-                                <FontAwesomeIcon icon={'envelope'}/>
-                                shoot me an email at kaitlinmctigue@gmail.com
-                            </a>
+                            These days I’m working at NASA Ames Research Center (via SJSURF contract) doing human factors research, and it’s challenging and amazing. My team works for the Human Research Program to characterize and mitigate risk associated with human-systems integration on long-duration deep space missions.
                         </p>
+                        {/*<p>*/}
+                        {/*<a className={'link'} href={'mailto:kaitlinmctigue@gmail.com'} target={'_blank'}>*/}
+                        {/*<FontAwesomeIcon icon={'envelope'}/>*/}
+                        {/*shoot me an email at kaitlinmctigue@gmail.com*/}
+                        {/*</a>*/}
+                        {/*</p>*/}
 
                         <div className={'contact__text__body__social'}>
                             <div className={'row'}>

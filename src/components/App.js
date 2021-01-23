@@ -14,7 +14,7 @@ library.add(faMoon, faSun, faArrowCircleDown, faArrowRight, faArrowLeft, faArrow
 import { SocialIcon } from 'react-social-icons';
 
 import Contact from './Contact';
-import Resume from './Resume';
+// import Resume from './Resume';
 import Portfolio from './Portfolio';
 import NASA from './portfolio/items/NASA';
 import Environmental from './portfolio/items/Environmental';
@@ -121,11 +121,6 @@ export default class App extends Component {
                                                                 Portfolio
                                                             </NavItem>
                                                         </LinkContainer>
-                                                        <LinkContainer to={'/resume'}>
-                                                            <NavItem eventKey={2} className='header-link'>
-                                                                Resume
-                                                            </NavItem>
-                                                        </LinkContainer>
                                                         <LinkContainer to='/contact'>
                                                             <NavItem eventKey={3} className='header-link'>
                                                                 About
@@ -148,7 +143,7 @@ export default class App extends Component {
                                             {/*main*/}
                                             <Route exact path="/" component={Portfolio} />
                                             <Route path="/home" component={Portfolio} routes={portfolioItems} />
-                                            <Route path="/resume" component={Resume} />
+                                            {/*<Route path="/resume" component={Resume} />*/}
                                             <Route path="/contact" component={Contact} />
 
                                             {/*portfolio*/}

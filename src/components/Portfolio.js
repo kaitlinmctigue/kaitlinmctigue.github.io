@@ -5,8 +5,6 @@ import ReactGA from 'react-ga';
 
 import toy from '../images/thumbnails/toy.jpg';
 import nasa from '../images/thumbnails/nasa2.png';
-import thor from '../images/thumbnails/thor.png';
-import hosp from '../images/thumbnails/environment.png';
 import stanley from '../images/thumbnails/stanley.png';
 import dailyui from '../images/thumbnails/dailyui.png';
 import women from '../images/thumbnails/women.jpg';
@@ -73,15 +71,6 @@ export default class Portfolio extends Component {
                 'path': 'playsmart'
             },
             {
-                'id': 3,
-                'title': 'Prototyping with Environmental Factors',
-                'tags': ['ux research', 'environmental design'],
-                'desc': 'Helping hospital employees beat eye-strain during long shifts, with code changes and environmental changes',
-                'img': hosp,
-                'class': 'dev',
-                'path': 'environmental-design'
-            },
-            {
                 'id': 6,
                 'title': 'The Art + Human Circuit',
                 'tags': ['ux research', 'ux design'],
@@ -89,17 +78,27 @@ export default class Portfolio extends Component {
                 'img': ucre,
                 'class': 'des',
                 'path': 'art-circuit'
-            },
-            {
-                'id': 1,
-                'title': 'Tennessee Homeland Online Records',
-                'tags': ['angular2', 'branding'],
-                'desc': 'Empowering officers to access criminal records on the go, as quickly and safely as possible',
-                'img': thor,
-                'class': 'both',
-                'path': 'thor'
             }
         ];
+
+        // {
+        //     'id': 3,
+        //     'title': 'Prototyping with Environmental Factors',
+        //     'tags': ['ux research', 'environmental design'],
+        //     'desc': 'Helping hospital employees beat eye-strain during long shifts, with code changes and environmental changes',
+        //     'img': hosp,
+        //     'class': 'dev',
+        //     'path': 'environmental-design'
+        // },
+        // {
+        //     'id': 1,
+        //     'title': 'Tennessee Homeland Online Records',
+        //     'tags': ['angular2', 'branding'],
+        //     'desc': 'Empowering officers to access criminal records on the go, as quickly and safely as possible',
+        //     'img': thor,
+        //     'class': 'both',
+        //     'path': 'thor'
+        // }
 
         this.plays = [
             {
@@ -194,14 +193,16 @@ export default class Portfolio extends Component {
         return (
             <div className="portfolio">
                 <div className="title">
-                    <span className="title__des">Designer & </span>
-                    <br className='hidden-sm hidden-md hidden-lg'/>
-                    <span className="title__dev">Developer</span>
+                    Designer, Researcher, Technologist
+                    {/*<span className="title__des">Designer & </span>*/}
+                    {/*<br className='hidden-sm hidden-md hidden-lg'/>*/}
+                    {/*<span className="title__dev">Developer</span>*/}
                 </div>
                 <div className="portfolio__intro mx-auto">
                     <p>
-                        Hi! I’m a product designer who likes to code. <br/>
-                        I’m interested in AI, game-based UI patterns, <br/> and <a href={'/#/contact'}>lots of other stuff</a>.
+                        Hi! I’m a designer who likes to code. <br />
+                        I currently do human factors research at NASA Ames <br />
+                        via San Jose State Univerity Research Foundation.
                     </p>
                 </div>
 
