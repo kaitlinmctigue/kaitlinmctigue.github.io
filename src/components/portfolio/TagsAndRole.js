@@ -9,7 +9,7 @@ class TagsAndRole extends Component {
     render() {
         return (
             <div className={'item-meta'}>
-                <div className='item-meta__role'>
+                {/*<div className='item-meta__role'>
                     <FontAwesomeIcon icon={'user'} className={'item-meta__tags__icon'}/>
                     <span className={'item-meta__role__title'}>role: </span>
                     {(this.props.class == 'des') ?
@@ -26,7 +26,7 @@ class TagsAndRole extends Component {
                                 <span className={'item-meta__role__text item-meta__role__text--dev'}>developer</span>
                             </span>
                         )}
-                </div>
+                </div>*/}
                 <div className='item-meta__tags'>
                     <FontAwesomeIcon icon={'tag'} className={'item-meta__tags__icon'}/>
                     <span className={'item-meta__tags__title'}>

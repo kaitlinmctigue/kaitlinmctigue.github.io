@@ -101,13 +101,13 @@ html, body {
 
 .text--blue {
   @include themed() {
-    color: t($brand-blue);
+    color: t($brand-secondary);
   }
 }
 
 .text--red {
   @include themed() {
-    color: t($brand-red);
+    color: t($brand-primary);
   }
 }
 
@@ -127,7 +127,7 @@ html, body {
   &--design {
     &.badge {
       @include themed() {
-        color: t($brand-blue);
+        color: t($brand-secondary);
         @extend %title-text;
       }
     }
@@ -136,7 +136,7 @@ html, body {
   &--dev {
     &.badge {
       @include themed() {
-        color: t($brand-red);
+        color: t($brand-primary);
         @extend %title-text;
       }
     }

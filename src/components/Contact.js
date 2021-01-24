@@ -28,7 +28,7 @@ export default class Contact extends Component {
         return (
             <div className={'contact'}>
                 <h1 className={'title contact__title'}>
-                    <span className={'text--blue'}>Designer</span> <br /> turned <br /> <span className={'text--red'}>programmer</span> <br /> turned <br /> <span className={'text--blue'}>researcher</span>
+                    Designer <br /> turned <br /> programmer <br /> turned <br /> researcher
                 </h1>
                 <div className={'contact__img'}>
                     <img src={headshot} className={'img img-responsive'} />

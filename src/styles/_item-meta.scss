@@ -53,12 +53,12 @@
 
     &--des {
       @include themed() {
-        color: t($brand-blue);
+        color: t($brand-secondary);
       }
     }
     &--dev {
       @include themed() {
-        color: t($brand-red);
+        color: t($brand-primary);
       }
     }
   }

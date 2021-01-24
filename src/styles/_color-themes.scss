@@ -10,8 +10,8 @@ $link: 'link';
 $hover: 'hover';
 $logo: 'logo';
 $logo2: 'logo-2';
-$brand-blue: 'brand-blue';
-$brand-red: 'brand-red';
+$brand-secondary: 'brand-blue';
+$brand-primary: 'brand-red';
 $border: 'border';
 
 //themes
@@ -26,10 +26,10 @@ $themes: (
                 text-important: $text--imp--light,
                 text-secondary: $text--2--light,
                 text-badge: $text--light,
-                link: $brand--blue--light,
+                link: $brand--secondary--light,
                 hover: $hover--light,
-                brand-red: $brand--red--light,
-                brand-blue: $brand--blue--light,
+                brand-red: $brand--primary--light,
+                brand-blue: $brand--secondary--light,
                 border: $border--light
         ),
         dark: (
@@ -42,10 +42,10 @@ $themes: (
                 text-important: $text--imp--dark,
                 text-secondary: $text--2--dark,
                 text-badge: $text--dark,
-                link: $brand--blue--dark,
+                link: $brand--secondary--dark,
                 hover: $hover--dark,
-                brand-red: $brand--red--dark,
-                brand-blue: $brand--blue--dark,
+                brand-red: $brand--primary--dark,
+                brand-blue: $brand--secondary--dark,
                 border: $border--dark
         ),
 );
