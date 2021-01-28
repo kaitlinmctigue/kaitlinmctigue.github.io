@@ -194,15 +194,12 @@ export default class Portfolio extends Component {
             <div className="portfolio">
                 <div className="title">
                     Designer, Researcher, Technologist
-                    {/*<span className="title__des">Designer & </span>*/}
-                    {/*<br className='hidden-sm hidden-md hidden-lg'/>*/}
-                    {/*<span className="title__dev">Developer</span>*/}
                 </div>
                 <div className="portfolio__intro mx-auto">
                     <p>
                         Hi! I’m a designer who likes to code. <br />
-                        I currently do human factors research at NASA Ames <br />
-                        via San Jose State Univerity Research Foundation.
+                        I currently do human-systems integration <br />
+                        research at NASA Ames Research Center.
                     </p>
                 </div>
 

@@ -157,13 +157,12 @@ export default class App extends Component {
                         </div>
                         <div className={'footer'}>
                             <span className={'footer__text'}>
-                                I made this website with &#10084; and React. © Copyright 2020.
+                                I made this website with &#10084; and React. © Copyright {(new Date().getFullYear())}.
                             </span>
                             <span className={'footer__divider'}>
                                 |
                             </span>
                             <span className={'footer__social'}>
-                                <SocialIcon url="mailto:kaitlinmctigue@gmail.com" style={{ height: 25, width: 25 }} />
                                 <SocialIcon url="https://www.linkedin.com/in/katiemctigue" style={{ height: 25, width: 25 }} />
                                 <SocialIcon url="https://medium.com/@katiemctigue" style={{ height: 25, width: 25 }} />
                                 <SocialIcon url="https://dribbble.com/katiemctigue" style={{ height: 25, width: 25 }} />

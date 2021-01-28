@@ -45,7 +45,7 @@ export default class Contact extends Component {
                             I used to be afraid of UX research, until I realized that research is really just asking questions and then being strategic about the methods you use to get answers. I’m obsessed with data, but I try not to let that suck the humanity out of everything.
                         </p>
                         <p>
-                            These days I’m working at NASA Ames Research Center (via SJSURF contract) doing human factors research, and it’s challenging and amazing. My team works for the Human Research Program to characterize and mitigate risk associated with human-systems integration on long-duration deep space missions.
+                            These days I’m working at NASA Ames Research Center as a Human/Machine Systems Research AST, and it’s challenging and amazing. My team works for the Human Research Program to characterize and mitigate risk associated with human-systems integration on long-duration deep space missions.
                         </p>
                         {/*<p>*/}
                         {/*<a className={'link'} href={'mailto:kaitlinmctigue@gmail.com'} target={'_blank'}>*/}
