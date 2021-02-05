@@ -216,9 +216,6 @@ export default class Portfolio extends Component {
 
                     <div className="portfolio__body__items">
                         {items}
-                        <p className={'portfolio__body__items__nda'}>
-                            Note: All of my work at TeleTracking is protected under an NDA. Please feel free to reach out to discuss further.
-                        </p>
                     </div>
                 </div>
             </div>
